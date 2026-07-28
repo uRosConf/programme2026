@@ -161,7 +161,7 @@
 - **Calibration of Survey Weights in R: A Comparative Overview of Available Packages** — Szymkowiak Marcin
 - **Developing an R Package for Sample Weight Estimation** — Osier Guillaume
 - **samplyr: A Tidy Grammar for Survey Sampling Design in R** — Ahmadou Dicko
-- **From SAS Poulpe to R gustave: A Hands-on Tutorial on Variance Estimation for Complex Surveys** — Delclite Thomas
+- **Making gustave production-ready: multistage designs, wrapper inspection and estimation diagnostics.** — Delclite Thomas
 - **weightflow: a declarative, auditable recipe for survey weighting in R** — Ferreira Juan Pablo
 
 ### B5 — Lightning Talks II: R Tools, Visualisation and Applications
