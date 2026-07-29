@@ -83,7 +83,7 @@
 - **Rapid Crisis-Oriented Survey Visualization in Official Statistics: Flood Damage in Polish Agriculture Using R** — Grabarczyk Kamil
 - **phsshiny: An R Package for Standardisation and Accessibility in the Publication of Health Data** — Gribben Ciara
 - **Public-Facing Shiny Apps at Statistik Austria: Corporate Design, Accessibility, and Secure Deployment by Design** — Seewann Lena
-- **R Shiny Platform for Detecting, Validating, and Reporting River Overflow Periods** — Movsisyan Vahe
+- **R Shiny Platform for Detecting, Validating, and Reporting River Overflow Periods** — Movsisyan Vahe, Habet Madoyan
 - **Creating population pyramids in less than 100 lines of code** — Neutze Michael
 
 ### A3 — Open Source Adoption and the R Community
