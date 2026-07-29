@@ -70,7 +70,7 @@
 6. **From Data to Publication : An Automated R-Based Framework for Consumer Price Index Reporting** — Aoulad Hammou Achou Zineb
 7. **Metadata-driven validation across the statistical production process using R** — Konradsdottir Ragnhildur
 8. **Facilitating R-Based Statistical Validation Through EZR: A Case Study in Melanoma High-Frequency Ultrasound Assessment** — Chalyy Kyrylo
-9. **Outil de monitoring et de prÃ©vision du volume de reprise manuelle** — Coltier Yves
+9. **Manual Rework Volume Monitoring and Forecasting Tool** — Coltier Yves
 10. **Semi-automated editing of large volumes of foreign trade data for the environmental Economy-Wide Material Flow Account** — Campandegui GarcÃ­a Gorka
 11. **VIM::vimpute: A Unified Imputation Engine for Flexible Missing Data Workflows in R** — Kowarik Alexander
 12. **Plans de sondage et contrÃ´le des Ã©chantillons : utilisation des documents Quarto dans les enquÃªtes agricoles** — Levi-Valensin Michael
@@ -161,7 +161,7 @@
 - **Calibration of Survey Weights in R: A Comparative Overview of Available Packages** — Szymkowiak Marcin
 - **Developing an R Package for Sample Weight Estimation** — Osier Guillaume
 - **samplyr: A Tidy Grammar for Survey Sampling Design in R** — Ahmadou Dicko
-- **From SAS Poulpe to R gustave: A Hands-on Tutorial on Variance Estimation for Complex Surveys** — Delclite Thomas
+- **Making gustave production-ready: multistage designs, wrapper inspection and estimation diagnostics.** — Delclite Thomas
 - **weightflow: a declarative, auditable recipe for survey weighting in R** — Ferreira Juan Pablo
 
 ### B5 — Lightning Talks II: R Tools, Visualisation and Applications
