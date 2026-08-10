@@ -98,7 +98,7 @@
 
 - **AccScript: an R-based domain-specific language for reproducible national accounts production** - Taleb Iliass
 - **DuckDB beyond R: demystifying the analytical database in your toolbox** - Hiverlet Ines
-- **National Accountant: A Reproducible Râ€“DuckDB Framework for Balancing Supply and Use Tables with Hard and Soft Constraints** - Kocak Assoc. Prof. Necmettin Alpay
+- **National Accountant: A Reproducible R-DuckDB Framework for Balancing Supply and Use Tables with Hard and Soft Constraints** - Kocak Assoc. Prof. Necmettin Alpay
 - **procR: New Features for End-to-End Table Production in Official Statistics** - Saidani Younes
 - **codelist: working more efficiently with code lists in R** - Van Der Laan Jan
 
