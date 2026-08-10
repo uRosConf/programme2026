@@ -32,7 +32,7 @@
 
 - **110 billion euros, one deadline, zero regression: migrating a critical calculation service to R with AI** — Guyader Vincent
 - **An AI-Powered Analysis Assistant for Large-Scale Official Statistics** — Hauke Oliver
-- **Large Language Models as Assistants for Time Series Analysis in Official Statistics: Opportunities for Innovation and Capacity Building** — SuziÄ‡ Jelena
+- **Large Language Models as Assistants for Time Series Analysis in Official Statistics: Opportunities for Innovation and Capacity Building** — Suzić Jelena
 - **Scaling Local LLM Coding Assistants for R, Python and SAS in Official Statistics** — Fischer Bernhard
 - **Using LLM's for automated translation of Excel files and SAS scripts to R** — Jahn Andreas
 
@@ -56,7 +56,7 @@
 
 - **Beyond Use Cases: Modular R Packages for Automated Coding and Data Extraction** — Niederhametner Nina
 - **Bridging R and Python for AI-Driven NLP** — Lykos Georgios
-- **Structuring Annual Reports for Official Statistics: A Method for Data Editing Using Large Language Models** — BjÃ¸rkholt Solveig
+- **Structuring Annual Reports for Official Statistics: A Method for Data Editing Using Large Language Models** — Bjørkholt Solveig
 - **A Comparison of Model-Based and Unsupervised Learning Methods for Detecting Scaling Errors in R** — Marcello D'orazio
 - **Unsupervised Learning Approaches for Identifying Structural Anomalies in European Regional Statistics** — Bogdan Oancea
 
@@ -65,7 +65,7 @@
 1. **Common pitfalls when switching from SAS to R** — Lamarche Pierre
 2. **Automating Granular Data Pipelines with R: A Case Study from a Central Banking Context** — Kaya Ibrahim Cagan
 3. **Template and Function: A Tabular Configuration Pattern for Large Scale Operations on Files with Varying Schemas in Official Statistics** — Rakotomalala Daniel
-4. **R you useful for maintaining information systemsÂ ?** — MainguenÃ© Alice
+4. **R you useful for maintaining information systems?** — Mainguené Alice
 5. **{IssueTrackeR}: Handling Tickets in R** — Barthelemy Tanguy
 6. **From Data to Publication : An Automated R-Based Framework for Consumer Price Index Reporting** — Aoulad Hammou Achou Zineb
 7. **Metadata-driven validation across the statistical production process using R** — Konradsdottir Ragnhildur
@@ -73,7 +73,7 @@
 9. **Manual Rework Volume Monitoring and Forecasting Tool** — Coltier Yves
 10. **Semi-automated editing of large volumes of foreign trade data for the environmental Economy-Wide Material Flow Account** — Campandegui GarcÃ­a Gorka
 11. **VIM::vimpute: A Unified Imputation Engine for Flexible Missing Data Workflows in R** — Kowarik Alexander
-12. **Plans de sondage et contrÃ´le des Ã©chantillons : utilisation des documents Quarto dans les enquÃªtes agricoles** — Levi-Valensin Michael
+12. **Sampling Designs and Sample Quality Control: Using Quarto Documents in Agricultural Surveys** — Levi-Valensin Michael
 13. **RISQ: Representativity Indicators for Survey Quality** — Idema Reijer
 14. **Reproducible Survey-Based Estimation of Household Living Standards in Morocco Using ENNVM 2022 Microdata** — Baabaa Oussama
 15. **Smart Survey Agent: une nouvelle approche des enquÃªtes en statistique officielle** — Cafieri Simona
@@ -105,8 +105,8 @@
 ### C3 — Statistical Disclosure Control and Synthetic Data
 
 - **A wavelet protection method for publishing maps** — De Jonge Edwin
-- **ckm: an easy application of cell-key method to protect tabular data** — Ferrer-Pradines NadÃ¨ge
-- **Protecting linked tables with non-nested hierarchies: a use case with rtauargus** — Ferrer-Pradines NadÃ¨ge
+- **ckm: an easy application of cell-key method to protect tabular data** — Ferrer-Pradines Nadège
+- **Protecting linked tables with non-nested hierarchies: a use case with rtauargus** — Ferrer-Pradines Nadège
 - **rebalancedNoise: Perturbative Statistical Disclosure Control for Magnitude Tables in R** — Meindl Bernhard
 - **An Open-Source R Framework for Systematic Optimization of Synthetic Data Production** — Calian Violeta
 
@@ -151,7 +151,7 @@
 ### C4 — Record Linkage and Population Registers
 
 - **Building a register-based resident population from administrative data with R** — Danek Zofia
-- **Linking Administrative Data Without Unique Identifiers: A randomForest Approach in R** — NÃ¶lting Christopher
+- **Linking Administrative Data Without Unique Identifiers: A randomForest Approach in R** — Nölting Christopher
 - **postlink: An R Package for Post-Linkage Data Analysis** — Bukke Priyanjali
 - **Probabilistic Record Linkage with the automatedRecLin R package** — Struzik Adam
 - **Reconciling Local and National Demographic Accounts in R** — Ward Daniel
@@ -168,8 +168,8 @@
 
 1. **Who owns R?** — Porsman Maria
 2. **How many R packages in CRAN do you know?** — Kiener Patrice
-3. **ILSAmerge and ILSAstats: Two new R packages for international large-scale assessments** — Christiansen AndrÃ©s
-4. **Rrepest: An Analyzer of International Large Scale Assessments in Education** — Ilizaliturri LÃ³pez Rodolfo
+3. **ILSAmerge and ILSAstats: Two new R packages for international large-scale assessments** — Christiansen Andrés
+4. **Rrepest: An Analyzer of International Large Scale Assessments in Education** — Ilizaliturri López Rodolfo
 5. **{loomer} â€” A high-performance auxiliary R package for analyzing the Danish Lifelines dataset** — Kashnitsky Ilya
 6. **Further microdata anonymisation tools in R** — Caputi Marco
 7. **Automatic classification of pastoral-use parcels / Classification automatique des parcelles Ã usage pastoral** — Thion Romuald
@@ -177,7 +177,7 @@
 9. **Mapping the Gendered Impact of Economic Shocks: A Spatial Analysis of Mancession vs. Shecession across European Regions** — Trascan Andreea-Denisa
 10. **One R, Many Stories: R as a Visual Language to Tell a Country's Public Health Narrative** — Bajador Jerico
 11. **Estimating French election results like the pollsters from partial vote counts on election night: a transparent, reproducible R approach based on open public data** — Guinhut Thomas
-12. **The Effects of Skills on Gender Wage Inequality in the Digital Economy** — PetraÈ™cu Gianina-Maria
+12. **The Effects of Skills on Gender Wage Inequality in the Digital Economy** — Petrașcu Gianina-Maria
 13. **Why Do Some Counties Perform Better? Educational Hubs, High-Tech Development and Skills Mismatch in Romania** — Boboc Cristina
 14. **Understanding International Remittance Flows: A Comparative Analysis Across Distinct Corridors Using Hybrid Machine Learning Methodologies** — Zhang Jing
 15. **The Intellectual Architecture of Artificial Intelligence-Driven Work Transformation: A Large-Scale Scientometric Exploration of Global Research Dynamics** — Ciuhu Ana-Maria
@@ -195,8 +195,8 @@
 - **An R-Based Nowcasting Dashboard for Industrial Production Index: Comparative Analysis of Classical and Machine Learning Methods** — Dedeoglu Duygu
 - **Harvesting Data as Crops Are Harvested : An Automated R Pipeline for Timely Yield Estimates** — Touzani Hanan
 - **Making Singular Spectrum Analysis More Accessible: A Step-by-Step Framework and R Implementation** — Delaune Eulalie
-- **Using R to provide a new interface to an old time series program** — MÃ©lard Guy
-- **KOMA â€“ An R package for Bayesian estimation of simultaneous equation models** — Scherer Merlin
+- **Using R to provide a new interface to an old time series program** — Mélard Guy
+- **KOMA - An R package for Bayesian estimation of simultaneous equation models** — Scherer Merlin
 
 ### B6 — Survey Quality, Metadata and Fieldwork
 
@@ -208,7 +208,7 @@
 
 ### C6 — Seasonal Adjustment in Official Statistics
 
-- **Assessing Direct and Indirect Seasonal Adjustment Approaches for Labour Cost Indices: A Serbian Case Study** — SuziÄ‡ Jelena
+- **Assessing Direct and Indirect Seasonal Adjustment Approaches for Labour Cost Indices: A Serbian Case Study** — Suzić Jelena
 - **pickmdl3: An R package implementing the X-12-ARIMA pickmdl procedure within the JDemetra+ R framework** — Jens Kristoffer Haug
 - **regimeseats: An Adaptive State-Space Extension for TRAMO-SEATS in Official Statistics** — Amoroso Cheyenne
 - **The RJDverse Package Suite for Time Series Econometrics in Official Statistics** — Webel Karsten
