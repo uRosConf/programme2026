@@ -125,12 +125,6 @@
 | 15:45–17:15 | **A6 - Nowcasting and Time-Series Methods** | **B6 - Survey Quality, Metadata and Fieldwork** | **C6 - Seasonal Adjustment in Official Statistics** |
 | 17:15–17:30 | **Closing** |  |  |
 
-### EMOS Presentations
-
-- **An R Framework for AI-Assisted Questionnaires in Official Statistics: An Application to Financial Literacy Surveys** - Rossi Valeria
-- **Developing a territorial One Health indicator using R** - Limone Fenicia Carmen
-- **R-Based Visualization of Continuous-Time Markov Migration Models** - Boukouvala Anna
-- **Typology of business ecosystems in European Union countries** - Dalidovich Ulada
 
 ### A4 - Spatial and Small Area Analysis
 
