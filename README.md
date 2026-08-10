@@ -8,7 +8,7 @@
 |---|---|---|---|
 | 09:00–10:30 | Getting Started with Positron: A Next-Generation IDE for Data Science | Spatial Analysis and Cartography with R | Analyzing Revisions in Official Time Series with the R Package reviser |
 | 10:30–11:00 | **Coffee break** | **Coffee break** | **Coffee break** |
-| 11:00–12:30 | R in the Age of LLMs: From AI-Assisted Development to Chat-Based Data Applications - I | Mapping Official Statistics with the tmapverse and cols4all | Managing statistical disclosure control from microdata to protected linked |
+| 11:00–12:30 | R in the Age of LLMs: From AI-Assisted Development to Chat-Based Data Applications - I | Mapping Official Statistics with the tmapverse and cols4all | Managing statistical disclosure control from microdata to protected linked tables with rtauargus|
 | 12:30–13:30 | **Lunch Break** | **Lunch Break** | **Lunch Break** |
 | 13:30–15:00 | R in the Age of LLMs: From AI-Assisted Development to Chat-Based Data Applications - II | From Data to Models: Hands-On Machine Learning with R | Working with categorical data and codelists in R |
 | 15:30–16:00 | **Coffee break** | **Coffee break** | **Coffee break** |
@@ -71,12 +71,12 @@
 7. **Metadata-driven validation across the statistical production process using R** — Konradsdottir Ragnhildur
 8. **Facilitating R-Based Statistical Validation Through EZR: A Case Study in Melanoma High-Frequency Ultrasound Assessment** — Chalyy Kyrylo
 9. **Manual Rework Volume Monitoring and Forecasting Tool** — Coltier Yves
-10. **Semi-automated editing of large volumes of foreign trade data for the environmental Economy-Wide Material Flow Account** — Campandegui GarcÃ­a Gorka
+10. **Semi-automated editing of large volumes of foreign trade data for the environmental Economy-Wide Material Flow Account** — Campandegui García Gorka
 11. **VIM::vimpute: A Unified Imputation Engine for Flexible Missing Data Workflows in R** — Kowarik Alexander
 12. **Sampling Designs and Sample Quality Control: Using Quarto Documents in Agricultural Surveys** — Levi-Valensin Michael
 13. **RISQ: Representativity Indicators for Survey Quality** — Idema Reijer
 14. **Reproducible Survey-Based Estimation of Household Living Standards in Morocco Using ENNVM 2022 Microdata** — Baabaa Oussama
-15. **Smart Survey Agent: une nouvelle approche des enquÃªtes en statistique officielle** — Cafieri Simona
+15. **Smart Survey Agent: A New Approach to Surveys in Official Statistics** — Cafieri Simona
 
 ### C2 — Shiny Applications and Statistical Visualisation
 
