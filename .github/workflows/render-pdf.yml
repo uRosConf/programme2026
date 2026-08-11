@@ -31,7 +31,6 @@ jobs:
       - name: Install R dependencies
         run: |
           Rscript nicerPDF/install_packages.R
-          Rscript BookOfAbstracts/read_submissions.R
 
       - name: Render programme PDF
         run: Rscript nicerPDF/programme_pdf.R README.md uros2026_programme.pdf
