@@ -35,3 +35,11 @@ jobs:
         with:
           name: uRos-programme
           path: uros2026_programme.pdf
+
+      - name: Render BoC PDF
+        run: Rscript BookOfAbstracts/book_abstracts_pdf.R abstracts.csv uros2026_boc.pdf
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: uRos-Boc
+          path: uros2026_boc.pdf
