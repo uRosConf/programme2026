@@ -26,7 +26,7 @@ jobs:
         uses: browser-actions/setup-chrome@v1
 
       - name: Install R dependencies
-        run: Rscript install_packages.R
+        run: Rscript nicerPDF/install_packages.R
 
       - name: Render PDF
         run: Rscript nicerPDF/programme_pdf.R README.md uros2026_programme.pdf
