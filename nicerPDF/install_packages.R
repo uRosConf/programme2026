@@ -1,4 +1,5 @@
 install.packages("bslib")
+install.packages("data.table")
 packages <- c("rmarkdown", "knitr", "pagedown")
 missing <- packages[
   !vapply(packages, requireNamespace, quietly = TRUE, FUN.VALUE = logical(1))
