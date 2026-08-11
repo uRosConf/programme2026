@@ -29,9 +29,9 @@ jobs:
         run: Rscript install_packages.R
 
       - name: Render PDF
-        run: Rscript nicerPDF/programme_pdf.R README.md programme.pdf
+        run: Rscript nicerPDF/programme_pdf.R README.md uros2026_programme.pdf
 
       - uses: actions/upload-artifact@v4
         with:
           name: uRos-programme
-          path: programme.pdf
+          path: uros2026_programme.pdf
