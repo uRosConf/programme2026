@@ -70,12 +70,10 @@ html_escape <- function(x) {
 # Input should be abstracts.csv (filtered by read_submissions.R)
 abstracts <- fread(input)
 
-
-# Exclude EMOS sessions if present
-abstracts <- abstracts[TYPDOC != "EMOS session", ]
+# Exclude EMOS sessions and Tutorials
+abstracts <- abstracts[!TYPDOC %in% c("EMOS session", "Tutorial"), ]
 
 # Split by presentation type
-tutorial_abstracts <- abstracts[TYPDOC == "Tutorial", ]
 regular_abstracts <- abstracts[TYPDOC == "Regular presentation", ]
 lightning_abstracts <- abstracts[TYPDOC == "lightning talk (5min)", ]
 
@@ -111,7 +109,7 @@ render_section <- function(abstracts_df, section_title) {
   )
 }
 
-render_html_body <- function(tutorial_df, regular_df, lightning_df) {
+render_html_body <- function(regular_df, lightning_df) {
   out <- c(
     '<header class="masthead">',
     '<h1>Book of Abstracts</h1>',
@@ -120,7 +118,6 @@ render_html_body <- function(tutorial_df, regular_df, lightning_df) {
     '</header>'
   )
 
-  out <- c(out, render_section(tutorial_df, "Tutorials"))
   out <- c(out, render_section(regular_df, "Regular Presentations"))
   out <- c(out, render_section(lightning_df, "Lightning Talks"))
 
@@ -128,7 +125,6 @@ render_html_body <- function(tutorial_df, regular_df, lightning_df) {
 }
 
 body <- render_html_body(
-  tutorial_abstracts,
   regular_abstracts,
   lightning_abstracts
 )
