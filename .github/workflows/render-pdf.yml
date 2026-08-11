@@ -7,6 +7,9 @@ on:
       - nicerPDF/programme_pdf.R
       - nicerPDF/programme.css
       - nicerPDF/install_packages.R
+      - BookOfAbstracts/book_abstracts_pdf.R
+      - BookOfAbstracts/read_submissions.R
+      - abstracts.csv
       - .github/workflows/render-pdf.yml
   workflow_dispatch:
 
@@ -26,20 +29,20 @@ jobs:
         uses: browser-actions/setup-chrome@v1
 
       - name: Install R dependencies
-        run: Rscript nicerPDF/install_packages.R
+        run: |
+          Rscript nicerPDF/install_packages.R
+          Rscript BookOfAbstracts/read_submissions.R
 
-      - name: Render PDF
+      - name: Render programme PDF
         run: Rscript nicerPDF/programme_pdf.R README.md uros2026_programme.pdf
-
-      - uses: actions/upload-artifact@v4
-        with:
-          name: uRos-programme
-          path: uros2026_programme.pdf
 
       - name: Render BoC PDF
         run: Rscript BookOfAbstracts/book_abstracts_pdf.R abstracts.csv uros2026_boc.pdf
 
-      - uses: actions/upload-artifact@v4
-        with:
-          name: uRos-Boc
-          path: uros2026_boc.pdf
+      - name: Commit and push PDFs
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add uros2026_programme.pdf uros2026_boc.pdf
+          git commit -m "Update PDF files [skip ci]" || echo "No changes to commit"
+          git push
