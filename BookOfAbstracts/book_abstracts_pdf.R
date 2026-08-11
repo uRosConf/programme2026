@@ -77,7 +77,7 @@ abstracts <- abstracts[TYPDOC != "EMOS session", ]
 # Split by presentation type
 tutorial_abstracts <- abstracts[TYPDOC == "Tutorial", ]
 regular_abstracts <- abstracts[TYPDOC == "Regular presentation", ]
-lightning_abstracts <- abstracts[TYPDOC == "Accepted lightning talk (5min)", ]
+lightning_abstracts <- abstracts[TYPDOC == "lightning talk (5min)", ]
 
 render_abstract <- function(t) {
   speakers <- if (nzchar(t$SPEAKERS)) {
