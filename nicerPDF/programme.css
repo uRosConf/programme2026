@@ -5,7 +5,8 @@
 }
 * { box-sizing: border-box; }
 body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: #222d3b; font-size: 9.4pt; line-height: 1.22; }
-.masthead { padding-top: 4mm; border-bottom: 2px solid #2879b9; padding-bottom: 5mm; margin-bottom: 6mm; }
+.masthead { display: grid; grid-template-columns: minmax(0, 1fr) auto; column-gap: 8mm; align-items: start; padding-top: 4mm; border-bottom: 2px solid #2879b9; padding-bottom: 5mm; margin-bottom: 6mm; }
+.conference-logo { display: block; grid-column: 2; grid-row: 1 / span 3; width: 30mm; height: auto; margin: 0; }
 .masthead h1 { margin: 0 0 2mm; font-size: 31pt; line-height: 1; letter-spacing: -.8pt; }
 .programme-label { font-size: 16pt; margin-bottom: 2mm; }
 .subtitle { font-size: 10.5pt; color: #657386; }

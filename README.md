@@ -1,4 +1,4 @@
-# uRos 2026 Programme
+# uRos2026 Programme
 
 **Paris · 18–20 November 2026**
 

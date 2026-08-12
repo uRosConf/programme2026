@@ -40,6 +40,16 @@ if (!file.exists(css_file)) {
     call. = FALSE
   )
 }
+logo_candidates <- c(
+  file.path(dirname(script_dir), "uros2026_logo.jpg"),
+  file.path(dirname(input), "uros2026_logo.jpg"),
+  file.path(getwd(), "uros2026_logo.jpg")
+)
+logo_matches <- logo_candidates[file.exists(logo_candidates)]
+if (!length(logo_matches)) {
+  stop("uros2026_logo.jpg not found", call. = FALSE)
+}
+logo_file <- normalizePath(logo_matches[[1]], mustWork = TRUE)
 
 library(data.table)
 
@@ -109,13 +119,26 @@ render_section <- function(abstracts_df, section_title) {
   )
 }
 
-render_html_body <- function(regular_df, lightning_df) {
+render_title_page <- function(logo_src) {
+  paste(
+    c(
+      '<section class="title-page">',
+      sprintf(
+        '<img class="title-logo" src="%s" alt="uRos 2026 logo">',
+        html_escape(logo_src)
+      ),
+      '<h1>Book of Abstracts</h1>',
+      '<div class="programme-label">The Use of R in Official Statistics - uRos2026 Conference</div>',
+      '<div class="subtitle">Paris · 18–20 November 2026</div>',
+      '</section>'
+    ),
+    collapse = "\n"
+  )
+}
+
+render_html_body <- function(regular_df, lightning_df, logo_src) {
   out <- c(
-    '<header class="masthead">',
-    '<h1>Book of Abstracts</h1>',
-    '<div class="programme-label">uRos 2026 Conference</div>',
-    '<div class="subtitle">Paris · 18–20 November 2026</div>',
-    '</header>'
+    render_title_page(logo_src)
   )
 
   out <- c(out, render_section(regular_df, "Regular Presentations"))
@@ -126,13 +149,15 @@ render_html_body <- function(regular_df, lightning_df) {
 
 body <- render_html_body(
   regular_abstracts,
-  lightning_abstracts
+  lightning_abstracts,
+  "uros2026_logo.jpg"
 )
 
 tmp <- tempfile("uros-abstracts-")
 dir.create(tmp)
 on.exit(unlink(tmp, recursive = TRUE, force = TRUE), add = TRUE)
-file.copy(css_file, file.path(tmp, "programme.css"), overwrite = TRUE)
+invisible(file.copy(css_file, file.path(tmp, "programme.css"), overwrite = TRUE))
+invisible(file.copy(logo_file, file.path(tmp, "uros2026_logo.jpg"), overwrite = TRUE))
 
 # Create modified CSS for abstracts
 abstracts_css <- file.path(tmp, "abstracts.css")
@@ -140,8 +165,12 @@ writeLines(
   c(
     readLines(css_file),
     "",
+    ".title-page { min-height: 260mm; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; break-after: page; }",
+    ".title-logo { display: block; width: 48mm; height: auto; margin: 0 0 12mm; }",
+    ".title-page h1 { margin: 0 0 4mm; font-size: 34pt; line-height: 1.05; }",
+    ".title-page .programme-label { max-width: 150mm; font-size: 15pt; line-height: 1.25; margin-bottom: 3mm; }",
+    ".title-page .subtitle { font-size: 11pt; }",
     ".abstract-section { break-before: page; }",
-    ".abstract-section:first-of-type { break-before: auto; }",
     ".abstract-section h2 { font-size: 18pt; color: #2879b9; margin-bottom: 4mm; }",
     ".abstract-list { columns: 1; }",
     ".abstract { break-inside: avoid; margin-bottom: 6mm; padding: 3mm; background: #f9f9f9; border-radius: 4px; }",

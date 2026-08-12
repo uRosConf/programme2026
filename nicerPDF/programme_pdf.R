@@ -26,6 +26,14 @@ script_dir <- if (length(script_arg)) {
 }
 css_file <- file.path(script_dir, "programme.css")
 if (!file.exists(css_file)) stop("programme.css not found next to programme_pdf.R", call. = FALSE)
+logo_candidates <- c(
+  file.path(dirname(script_dir), "uros2026_logo.jpg"),
+  file.path(dirname(input), "uros2026_logo.jpg"),
+  file.path(getwd(), "uros2026_logo.jpg")
+)
+logo_matches <- logo_candidates[file.exists(logo_candidates)]
+if (!length(logo_matches)) stop("uros2026_logo.jpg not found", call. = FALSE)
+logo_file <- normalizePath(logo_matches[[1]], mustWork = TRUE)
 
 required <- c("rmarkdown", "pagedown", "knitr")
 missing <- required[!vapply(required, requireNamespace, quietly = TRUE, FUN.VALUE = logical(1))]
@@ -221,9 +229,13 @@ render_session <- function(s) {
   )
 }
 
-render_html_body <- function(doc) {
+render_html_body <- function(doc, logo_src) {
   out <- c(
     '<header class="masthead">',
+    sprintf(
+      '<img class="conference-logo" src="%s" alt="uRos 2026 logo">',
+      html_escape(logo_src)
+    ),
     sprintf('<h1>%s</h1>', html_escape(doc$title)),
     '<div class="programme-label">Conference Programme</div>',
     sprintf('<div class="subtitle">%s</div>', html_escape(doc$subtitle)),
@@ -249,12 +261,13 @@ render_html_body <- function(doc) {
 
 text <- paste(readLines(input, warn = FALSE, encoding = "UTF-8"), collapse = "\n")
 doc <- parse_programme(text)
-body <- render_html_body(doc)
+body <- render_html_body(doc, "uros2026_logo.jpg")
 
 tmp <- tempfile("uros-programme-")
 dir.create(tmp)
 on.exit(unlink(tmp, recursive = TRUE, force = TRUE), add = TRUE)
-file.copy(css_file, file.path(tmp, "programme.css"), overwrite = TRUE)
+invisible(file.copy(css_file, file.path(tmp, "programme.css"), overwrite = TRUE))
+invisible(file.copy(logo_file, file.path(tmp, "uros2026_logo.jpg"), overwrite = TRUE))
 
 rmd <- file.path(tmp, "programme.Rmd")
 html <- file.path(tmp, "programme.html")
