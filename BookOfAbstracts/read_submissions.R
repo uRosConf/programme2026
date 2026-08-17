@@ -1,3 +1,4 @@
+library(data.table)
 abstracts <- fread("submissions_uRos.csv")
 colnames(abstracts) <- c(colnames(abstracts)[-1], "V1")
 abstracts <- abstracts[
