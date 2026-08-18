@@ -66,6 +66,15 @@ clean_md <- function(x) {
   trimws(x)
 }
 
+clean_table_cell <- function(x) {
+  x <- trimws(x)
+  x <- gsub("\\\\\\*", "*", x)
+  x <- gsub("\\\\-", "-", x)
+  x <- gsub("\\\\\\.", ".", x)
+  x <- gsub("\\\\\\|", "|", x)
+  trimws(x)
+}
+
 split_talk <- function(x) {
   x <- clean_md(x)
   # Split at the final em dash surrounded by spaces; fall back to final " - ".
@@ -94,10 +103,10 @@ parse_table <- function(lines, i) {
   rows <- list()
   n <- length(lines)
   while (i <= n && is_table_row(lines[[i]])) {
-    s <- clean_md(lines[[i]])
+    s <- clean_table_cell(lines[[i]])
     s <- sub("^\\|", "", s)
     s <- sub("\\|$", "", s)
-    cells <- strsplit(s, "\\|", fixed = FALSE)[[1]] |> clean_md()
+    cells <- strsplit(s, "\\|", fixed = FALSE)[[1]] |> clean_table_cell()
     compact <- gsub(" ", "", cells, fixed = TRUE)
     separator <- all(grepl("^:?-{3,}:?$", compact))
     if (!separator) rows[[length(rows) + 1L]] <- cells
@@ -192,6 +201,26 @@ parse_programme <- function(text) {
   doc
 }
 
+render_schedule_cell <- function(x) {
+  x <- clean_table_cell(x)
+  if (!nzchar(x)) return("")
+
+  bold_match <- regexec("^\\*\\*(.*?)\\*\\*\\s*(?:(?:\u2014|-)\\s*)?(.*?)\\s*$", x, perl = TRUE)
+  parts <- regmatches(x, bold_match)[[1]]
+  if (length(parts) == 3L) {
+    title <- html_escape(clean_md(parts[[2]]))
+    author <- clean_md(parts[[3]])
+    author_html <- if (nzchar(author)) {
+      sprintf('<div class="author schedule-author">%s</div>', html_escape(author))
+    } else {
+      ""
+    }
+    return(sprintf("<strong>%s</strong>%s", title, author_html))
+  }
+
+  html_escape(clean_md(x))
+}
+
 render_table <- function(rows) {
   if (!length(rows)) return("")
   header <- rows[[1]]
@@ -202,12 +231,12 @@ render_table <- function(rows) {
     "</tr></thead><tbody>"
   )
   for (row in body) {
-    joined <- tolower(paste(row, collapse = " "))
+    joined <- tolower(paste(clean_md(row), collapse = " "))
     event <- any(vapply(c("break", "registration", "opening", "keynote", "closing"),
                         grepl, logical(1), x = joined, fixed = TRUE))
     cls <- if (event) ' class="event-row"' else ""
     h <- paste0(h, "<tr", cls, ">",
-                paste(sprintf("<td>%s</td>", html_escape(row)), collapse = ""),
+                paste(sprintf("<td>%s</td>", vapply(row, render_schedule_cell, character(1))), collapse = ""),
                 "</tr>")
   }
   paste0(h, "</tbody></table>")

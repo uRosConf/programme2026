@@ -21,6 +21,7 @@ h2 { margin: 0 0 5mm; font-size: 21pt; line-height: 1.05; }
 .schedule td { vertical-align: top; padding: 2.2mm 2.3mm; border-right: .3pt solid #d3dde6; border-bottom: .3pt solid #d3dde6; background: white; }
 .schedule td:first-child { font-weight: 700; color: #40556c; border-left: .3pt solid #d3dde6; white-space: nowrap; }
 .schedule tr.event-row td { background: #eaf0f5; font-weight: 700; color: #40556c; }
+.schedule-author { font-weight: 400; }
 .schedule tbody tr:last-child td:first-child { border-radius: 0 0 0 5px; }
 .schedule tbody tr:last-child td:last-child { border-radius: 0 0 5px 0; }
 .sessions { columns: 2; column-gap: 5mm; }
