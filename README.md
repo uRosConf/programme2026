@@ -20,7 +20,7 @@
 |---|---|---|---|
 | 08:00–09:00 | **Registration and walk-in** |  |  |
 | 09:00–09:30 | **Opening** |  |  |
-| 09:30–10:30 | **Keynote** |  |  |
+| 09:30–10:30 | **Keynote: R and Open-Source: A love story** - Rebecca Killick |  |  |
 | 10:30–11:00 | **Coffee break** | **Coffee break** | **Coffee break** |
 | 11:00–12:30 | **A1 - AI Assistants for Statistical Production** | **B1 - Reproducible Statistical Production Pipelines** | **C1 - Automated and Accessible Statistical Publishing** |
 | 12:30–14:00 | **Lunch break** | **Lunch break** | **Lunch break** |
@@ -115,7 +115,7 @@
 | Time | Room 1 | Room 2 | Room 3 |
 |---|---|---|---|
 | 08:00–09:00 | **Registration and walk-in** |  |  |
-| 09:00–10:00 | **Keynote** |  |  |
+| 09:00–10:00 | **Keynote: Practical AI for Data Science** - Simon Couch|  |  |
 | 10:00–10:45 | **EMOS presentations** |  |  |
 | 10:45–11:15 | **Coffee break** | **Coffee break** | **Coffee break** |
 | 11:15–12:45 | **A4 - Spatial and Small Area Analysis** | **B4 - Social and Economic Applications** | **C4 - Record Linkage and Population Registers** |
