@@ -7,25 +7,25 @@
 | Time | Room 1 | Room 2 | Room 3 |
 |---|---|---|---|
 | 09:00–10:30 | **Getting Started with Positron: A Next-Generation IDE for Data Science** - Cetinkaya-Rundel Mine, Dervieux Christophe | **Spatial Analysis and Cartography with R** - Antunez Kim| **Analyzing Revisions in Official Time Series with the R Package reviser** - Wegmüller Philipp |
-| 10:30–11:00 | **Coffee break** | **Coffee break** | **Coffee break** |
+| 10:30–11:00 | **Coffee break** |
 | 11:00–12:30 | **R in the Age of LLMs: From AI-Assisted Development to Chat-Based Data Applications - I**  - Michonneau François | **Mapping Official Statistics with the tmapverse and cols4all** - Tennekes Martijn | **Managing statistical disclosure control from microdata to protected linked tables with rtauargus** - Ferrer-Pradines Nadège, Desclodure Julien |
-| 12:30–13:30 | **Lunch Break** | **Lunch Break** | **Lunch Break** |
+| 12:30–13:30 | **Lunch Break**  |
 | 13:30–15:00 | **R in the Age of LLMs: From AI-Assisted Development to Chat-Based Data Applications - II** - Michonneau François | **From Data to Models: Hands-On Machine Learning with R** - Pérez Bote Adrián,  Barragán Andrés Sandra | **Working with categorical data and codelists in R** - Van der Laan Jan,  de Jonge Edwin|
-| 15:30–16:00 | **Coffee break** | **Coffee break** | **Coffee break** |
+| 15:30–16:00 | **Coffee break** |
 | 16:00–17:30 | **Opening the Black Box: Interpreting Machine Learning Models with SHAP Values in R** - Panaiotis Thelma |  | **Tidy Survey Analysis in R: Working with Weights and Sampling Designs for Official Statistics** - Zimmer Stephanie, Powell Rebecca, Velásquez Isabella|
 
 ## Thursday, 19 November 2026 - Conference Day 1
 
 | Time | Room 1 | Room 2 | Room 3 |
 |---|---|---|---|
-| 08:00–09:00 | **Registration and walk-in** |  |  |
-| 09:00–09:30 | **Opening** |  |  |
-| 09:30–10:30 | **Keynote: R and Open-Source: A love story** - Rebecca Killick |  |  |
-| 10:30–11:00 | **Coffee break** | **Coffee break** | **Coffee break** |
+| 08:00–09:00 | **Registration and walk-in** |
+| 09:00–09:30 | **Opening** |
+| 09:30–10:30 | **Keynote: R and Open-Source: A love story** - Rebecca Killick |
+| 10:30–11:00 | **Coffee break** |
 | 11:00–12:30 | **A1 - AI Assistants for Statistical Production** | **B1 - Reproducible Statistical Production Pipelines** | **C1 - Automated and Accessible Statistical Publishing** |
-| 12:30–14:00 | **Lunch break** | **Lunch break** | **Lunch break** |
+| 12:30–14:00 | **Lunch break** |
 | 14:00–15:30 | **A2 - AI, Machine Learning and Intelligent Automation** | **B2 - Lightning Talks I: Production, Validation and Survey Methods** | **C2 - Shiny Applications and Statistical Visualisation** |
-| 15:30–16:00 | **Coffee break** | **Coffee break** | **Coffee break** |
+| 15:30–16:00 | **Coffee break** |
 | 16:00–17:30 | **A3 - Open Source Adoption and the R Community** | **B3 - Infrastructure and Tools for Statistical Production** | **C3 - Statistical Disclosure Control and Synthetic Data** |
 
 ### A1 - AI Assistants for Statistical Production
@@ -114,16 +114,16 @@
 
 | Time | Room 1 | Room 2 | Room 3 |
 |---|---|---|---|
-| 08:00–09:00 | **Registration and walk-in** |  |  |
-| 09:00–10:00 | **Keynote: Practical AI for Data Science** - Simon Couch|  |  |
-| 10:00–10:45 | **EMOS presentations** |  |  |
-| 10:45–11:15 | **Coffee break** | **Coffee break** | **Coffee break** |
+| 08:00–09:00 | **Registration and walk-in** |
+| 09:00–10:00 | **Keynote: Practical AI for Data Science** - Simon Couch |
+| 10:00–10:45 | **EMOS presentations** |
+| 10:45–11:15 | **Coffee break** |
 | 11:15–12:45 | **A4 - Spatial and Small Area Analysis** | **B4 - Social and Economic Applications** | **C4 - Record Linkage and Population Registers** |
-| 12:45–13:45 | **Lunch break** | **Lunch break** | **Lunch break** |
+| 12:45–13:45 | **Lunch break** |
 | 13:45–15:15 | **A5 - Survey Sampling, Weighting and Variance Estimation** | **B5 - Lightning Talks II: R Tools, Visualisation and Applications** | **C5 - Imputation and Advanced Statistical Methods** |
-| 15:15–15:45 | **Coffee break** | **Coffee break** | **Coffee break** |
+| 15:15–15:45 | **Coffee break** |
 | 15:45–17:15 | **A6 - Nowcasting and Time-Series Methods** | **B6 - Survey Quality, Metadata and Fieldwork** | **C6 - Seasonal Adjustment in Official Statistics** |
-| 17:15–17:30 | **Closing** |  |  |
+| 17:15–17:30 | **Closing** |
 
 
 ### A4 - Spatial and Small Area Analysis

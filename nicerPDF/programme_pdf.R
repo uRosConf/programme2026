@@ -210,34 +210,49 @@ render_schedule_cell <- function(x) {
   if (length(parts) == 3L) {
     title <- html_escape(clean_md(parts[[2]]))
     author <- clean_md(parts[[3]])
+    keynote <- grepl("^Keynote:", title, ignore.case = TRUE)
+    title_class <- if (keynote) "schedule-title keynote-title" else "schedule-title"
     author_html <- if (nzchar(author)) {
       sprintf('<div class="author schedule-author">%s</div>', html_escape(author))
     } else {
       ""
     }
-    return(sprintf("<strong>%s</strong>%s", title, author_html))
+    return(sprintf('<strong class="%s">%s</strong>%s', title_class, title, author_html))
   }
 
   html_escape(clean_md(x))
+}
+
+is_event_row <- function(row) {
+  joined <- tolower(paste(clean_md(row), collapse = " "))
+  any(vapply(c("break", "registration", "opening", "keynote", "closing", "emos presentations"),
+             grepl, logical(1), x = joined, fixed = TRUE))
 }
 
 render_table <- function(rows) {
   if (!length(rows)) return("")
   header <- rows[[1]]
   body <- rows[-1]
+  n_cols <- length(header)
   h <- paste0(
     '<table class="schedule"><thead><tr>',
     paste(sprintf("<th>%s</th>", html_escape(header)), collapse = ""),
     "</tr></thead><tbody>"
   )
   for (row in body) {
-    joined <- tolower(paste(clean_md(row), collapse = " "))
-    event <- any(vapply(c("break", "registration", "opening", "keynote", "closing"),
-                        grepl, logical(1), x = joined, fixed = TRUE))
+    event <- is_event_row(row)
     cls <- if (event) ' class="event-row"' else ""
-    h <- paste0(h, "<tr", cls, ">",
-                paste(sprintf("<td>%s</td>", vapply(row, render_schedule_cell, character(1))), collapse = ""),
-                "</tr>")
+    cells <- vapply(row, render_schedule_cell, character(1))
+    if (length(cells) == 2L && n_cols > 2L) {
+      row_html <- paste0(
+        sprintf("<td>%s</td>", cells[[1]]),
+        sprintf('<td colspan="%d">%s</td>', n_cols - 1L, cells[[2]])
+      )
+    } else {
+      if (length(cells) < n_cols) cells <- c(cells, rep("", n_cols - length(cells)))
+      row_html <- paste(sprintf("<td>%s</td>", cells), collapse = "")
+    }
+    h <- paste0(h, "<tr", cls, ">", row_html, "</tr>")
   }
   paste0(h, "</tbody></table>")
 }
