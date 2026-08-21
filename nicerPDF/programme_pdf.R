@@ -224,9 +224,16 @@ render_schedule_cell <- function(x) {
 }
 
 is_event_row <- function(row) {
-  joined <- tolower(paste(clean_md(row), collapse = " "))
-  any(vapply(c("break", "registration", "opening", "keynote", "closing", "emos presentations"),
-             grepl, logical(1), x = joined, fixed = TRUE))
+  labels <- tolower(clean_md(row[-1]))
+  labels <- labels[nzchar(labels)]
+  if (!length(labels)) return(FALSE)
+
+  is_event_label <- function(x) {
+    x %in% c("coffee break", "lunch break", "registration and walk-in",
+             "opening", "closing", "emos presentations") ||
+      grepl("^keynote:", x)
+  }
+  all(vapply(labels, is_event_label, logical(1)))
 }
 
 render_table <- function(rows) {
