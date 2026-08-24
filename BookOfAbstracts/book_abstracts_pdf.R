@@ -69,11 +69,62 @@ if (length(missing)) {
 }
 
 html_escape <- function(x) {
+  x[is.na(x)] <- ""
   x <- gsub("&", "&amp;", x, fixed = TRUE)
   x <- gsub("<", "&lt;", x, fixed = TRUE)
   x <- gsub(">", "&gt;", x, fixed = TRUE)
   x <- gsub('"', "&quot;", x, fixed = TRUE)
   x
+}
+
+value_or_empty <- function(x) {
+  if (is.null(x) || length(x) == 0L || is.na(x)) {
+    return("")
+  }
+  x
+}
+
+split_people <- function(x) {
+  x <- value_or_empty(x)
+  if (!nzchar(trimws(x))) {
+    return(character())
+  }
+  people <- trimws(strsplit(x, ",", fixed = TRUE)[[1]])
+  people[nzchar(people)]
+}
+
+normalize_person <- function(x) {
+  x <- gsub("\\x{00A0}", " ", x, perl = TRUE)
+  x <- gsub("\\([^)]*\\)", "", x)
+  x <- gsub("[[:punct:]]+", " ", x)
+  x <- gsub("[[:space:]]+", " ", x)
+  trimws(tolower(x))
+}
+
+render_authors <- function(authors, speakers) {
+  author_names <- split_people(authors)
+  if (!length(author_names)) {
+    author_names <- split_people(speakers)
+  }
+  if (!length(author_names)) {
+    return("")
+  }
+
+  speaker_keys <- normalize_person(split_people(speakers))
+  author_html <- vapply(
+    author_names,
+    function(author) {
+      escaped_author <- html_escape(author)
+      if (normalize_person(author) %in% speaker_keys) {
+        sprintf('<span class="speaker-author">%s</span>', escaped_author)
+      } else {
+        escaped_author
+      }
+    },
+    character(1)
+  )
+
+  sprintf('<div class="author">%s</div>', paste(author_html, collapse = ", "))
 }
 
 # Read and process abstracts
@@ -89,15 +140,12 @@ regular_abstracts <- abstracts[TYPDOC == "Regular presentation", ]
 lightning_abstracts <- abstracts[TYPDOC == "lightning talk (5min)", ]
 
 render_abstract <- function(t) {
-  speakers <- if (nzchar(t$SPEAKERS)) {
-    sprintf('<div class="author">%s</div>', html_escape(trimws(t$SPEAKERS)))
-  } else {
-    ""
-  }
+  authors <- if ("Authors" %in% names(t)) t$Authors else t$SPEAKERS
+  authors <- render_authors(authors, t$SPEAKERS)
   sprintf(
     '<div class="abstract"><div class="abstract-title">%s</div>%s<div class="abstract-text">%s</div></div>',
     html_escape(t$TITLE),
-    speakers,
+    authors,
     html_escape(t$ABSTRACT)
   )
 }
@@ -179,6 +227,7 @@ writeLines(
     ".abstract { break-inside: avoid; margin-bottom: 6mm; padding: 3mm; background: #f9f9f9; border-radius: 4px; }",
     ".abstract-title { font-size: 13pt; font-weight: 700; margin-bottom: 2mm; color: #222d3b; }",
     ".abstract .author { color: #657386; font-size: 9pt; margin-bottom: 3mm; font-style: italic; }",
+    ".speaker-author { text-decoration: underline; text-underline-offset: 1.5px; }",
     ".abstract-text { font-size: 9pt; line-height: 1.4; text-align: justify; }",
     ".abstract-text p { margin: 0 0 2mm; }"
   ),

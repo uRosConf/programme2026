@@ -42,6 +42,6 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add uros2026_programme.pdf uros2026_boc.pdf
+          git add uros2026_programme.pdf uros2026_book_of_abstracts.pdf
           git commit -m "Update PDF files [skip ci]" || echo "No changes to commit"
           git push
