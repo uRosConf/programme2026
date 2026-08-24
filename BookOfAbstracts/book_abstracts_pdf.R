@@ -127,6 +127,15 @@ render_authors <- function(authors, speakers) {
   sprintf('<div class="author">%s</div>', paste(author_html, collapse = ", "))
 }
 
+render_affiliations <- function(labos) {
+  labos <- trimws(value_or_empty(labos))
+  if (!nzchar(labos)) {
+    return("")
+  }
+
+  sprintf('<div class="affiliation">%s</div>', html_escape(labos))
+}
+
 # Read and process abstracts
 # Input should be abstracts.csv (filtered by read_submissions.R)
 abstracts <- fread(input)
@@ -142,10 +151,12 @@ lightning_abstracts <- abstracts[TYPDOC == "lightning talk (5min)", ]
 render_abstract <- function(t) {
   authors <- if ("Authors" %in% names(t)) t$Authors else t$SPEAKERS
   authors <- render_authors(authors, t$SPEAKERS)
+  affiliations <- if ("LABOS" %in% names(t)) render_affiliations(t$LABOS) else ""
   sprintf(
-    '<div class="abstract"><div class="abstract-title">%s</div>%s<div class="abstract-text">%s</div></div>',
+    '<div class="abstract"><div class="abstract-title">%s</div>%s%s<div class="abstract-text">%s</div></div>',
     html_escape(t$TITLE),
     authors,
+    affiliations,
     html_escape(t$ABSTRACT)
   )
 }
@@ -226,7 +237,8 @@ writeLines(
     ".abstract-list { columns: 1; }",
     ".abstract { break-inside: avoid; margin-bottom: 6mm; padding: 3mm; background: #f9f9f9; border-radius: 4px; }",
     ".abstract-title { font-size: 13pt; font-weight: 700; margin-bottom: 2mm; color: #222d3b; }",
-    ".abstract .author { color: #657386; font-size: 9pt; margin-bottom: 3mm; font-style: italic; }",
+    ".abstract .author { color: #657386; font-size: 9pt; margin-bottom: 1mm; font-style: italic; }",
+    ".abstract .affiliation { color: #657386; font-size: 8pt; margin-bottom: 3mm; }",
     ".speaker-author { text-decoration: underline; text-underline-offset: 1.5px; }",
     ".abstract-text { font-size: 9pt; line-height: 1.4; text-align: justify; }",
     ".abstract-text p { margin: 0 0 2mm; }"
