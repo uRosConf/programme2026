@@ -36,7 +36,7 @@ jobs:
         run: Rscript nicerPDF/programme_pdf.R README.md uros2026_programme.pdf
 
       - name: Render BoC PDF
-        run: Rscript BookOfAbstracts/book_abstracts_pdf.R abstracts.csv uros2026_boc.pdf
+        run: Rscript BookOfAbstracts/book_abstracts_pdf.R abstracts.csv uros2026_book_of_abstracts.pdf
 
       - name: Commit and push PDFs
         run: |
