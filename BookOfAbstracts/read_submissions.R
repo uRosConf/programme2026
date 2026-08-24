@@ -2,32 +2,38 @@ library(data.table)
 
 capitalize_after_nbsp <- function(x) {
   nbsp <- intToUtf8(160)
+
   vapply(
     x,
     function(value) {
-      if (is.na(value) || !grepl("\\x{00A0}", value, fixed = FALSE, perl = TRUE)) {
+      if (is.na(value)) {
+        return(NA_character_)
+      }
+
+      value <- gsub("&nbsp;", nbsp, value, fixed = TRUE)
+      if (!grepl(nbsp, value, fixed = TRUE)) {
         return(value)
       }
 
-      parts <- strsplit(value, nbsp, fixed = TRUE)[[1]]
-      if (length(parts) < 2L) {
-        return(value)
+      chars <- strsplit(value, "", useBytes = FALSE)[[1]]
+      capitalize_next <- FALSE
+
+      for (i in seq_along(chars)) {
+        if (identical(chars[[i]], nbsp)) {
+          chars[[i]] <- " "
+          capitalize_next <- TRUE
+        } else if (capitalize_next && grepl("[[:alpha:]]", chars[[i]], perl = TRUE)) {
+          chars[[i]] <- toupper(chars[[i]])
+          capitalize_next <- FALSE
+        } else if (capitalize_next && !grepl("[[:space:]]", chars[[i]], perl = TRUE)) {
+          capitalize_next <- FALSE
+        }
       }
 
-      parts[-1] <- vapply(
-        parts[-1],
-        function(part) {
-          if (!nzchar(part)) {
-            return(part)
-          }
-          paste0(toupper(substr(part, 1L, 1L)), substr(part, 2L, nchar(part)))
-        },
-        character(1)
-      )
-
-      paste(parts, collapse = " ")
+      paste0(chars, collapse = "")
     },
-    character(1)
+    character(1),
+    USE.NAMES = FALSE
   )
 }
 
