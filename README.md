@@ -56,7 +56,7 @@
 
 - **Beyond Use Cases: Modular R Packages for Automated Coding and Data Extraction** - Niederhametner Nina, Vattheuer Eileen, Steiner Marlene
 - **Bridging R and Python for AI-Driven NLP** - Lykos Georgios, Dimas Spyridon, Panagopoulou Georgia, Vikentios Michail
-- **Structuring Annual Reports for Official Statistics: A Method for Data Editing Using Large Language Models** - Bjørkholt Solveig, Aarrestad Nygård Ida, Islam Mousumi Mona
+- **Structuring Annual Reports for Official Statistics: A Method for Data Editing Using Large Language Models** - Solveig Bjørkholt, Mousumi Mona Islam, Sarah Torvholm Frøystad, Odin Johansen, Maryam Javed
 - **A Comparison of Model-Based and Unsupervised Learning Methods for Detecting Scaling Errors in R** - Marcello D'orazio, Faricelli Cristina, Magistro Renato
 - **Unsupervised Learning Approaches for Identifying Structural Anomalies in European Regional Statistics** - Bogdan Oancea
 
