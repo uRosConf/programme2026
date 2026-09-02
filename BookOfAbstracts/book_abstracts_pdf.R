@@ -140,13 +140,14 @@ render_affiliations <- function(labos) {
 # Input should be abstracts.csv (filtered by read_submissions.R)
 abstracts <- fread(input)
 
-# Exclude EMOS sessions and Tutorials
-abstracts <- abstracts[!TYPDOC %in% c("EMOS session", "Tutorial"), ]
+# Exclude Tutorials from the Book of Abstracts.
+abstracts <- abstracts[TYPDOC != "Tutorial", ]
 
 # Split by presentation type
 keynote_abstracts <- abstracts[TYPDOC == "Keynote presentation", ]
 regular_abstracts <- abstracts[TYPDOC == "Regular presentation", ]
 lightning_abstracts <- abstracts[TYPDOC == "lightning talk (5min)", ]
+emos_abstracts <- abstracts[TYPDOC == "EMOS session", ]
 
 render_abstract <- function(t) {
   authors <- if ("Authors" %in% names(t)) t$Authors else t$SPEAKERS
@@ -196,7 +197,7 @@ render_title_page <- function(logo_src) {
   )
 }
 
-render_html_body <- function(keynote_df, regular_df, lightning_df, logo_src) {
+render_html_body <- function(keynote_df, regular_df, lightning_df, emos_df, logo_src) {
   out <- c(
     render_title_page(logo_src)
   )
@@ -204,6 +205,7 @@ render_html_body <- function(keynote_df, regular_df, lightning_df, logo_src) {
   out <- c(out, render_section(keynote_df, "Keynotes"))
   out <- c(out, render_section(regular_df, "Regular Presentations"))
   out <- c(out, render_section(lightning_df, "Lightning Talks"))
+  out <- c(out, render_section(emos_df, "EMOS presentations"))
 
   paste(out, collapse = "\n")
 }
@@ -212,6 +214,7 @@ body <- render_html_body(
   keynote_abstracts,
   regular_abstracts,
   lightning_abstracts,
+  emos_abstracts,
   "uros2026_logo.jpg"
 )
 
