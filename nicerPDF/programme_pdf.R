@@ -97,6 +97,17 @@ split_talk <- function(x) {
   list(title = clean_md(title), author = clean_md(author))
 }
 
+split_chair <- function(x) {
+  x <- clean_md(x)
+  chair_match <- regexec("^(.*?)\\s*\\((chair:\\s*[^)]*)\\)\\s*$", x, perl = TRUE, ignore.case = TRUE)
+  parts <- regmatches(x, chair_match)[[1]]
+  if (length(parts) == 3L) {
+    list(title = clean_md(parts[[2]]), chair = paste0("(", clean_md(parts[[3]]), ")"))
+  } else {
+    list(title = x, chair = "")
+  }
+}
+
 is_table_row <- function(x) grepl("^\\s*\\|.*\\|\\s*$", clean_md(x))
 
 parse_table <- function(lines, i) {
@@ -208,16 +219,19 @@ render_schedule_cell <- function(x) {
   bold_match <- regexec("^\\*\\*(.*?)\\*\\*\\s*(?:(?:\u2014|-)\\s*)?(.*?)\\s*$", x, perl = TRUE)
   parts <- regmatches(x, bold_match)[[1]]
   if (length(parts) == 3L) {
-    title <- html_escape(clean_md(parts[[2]]))
+    title_parts <- split_chair(parts[[2]])
+    title <- html_escape(title_parts$title)
     author <- clean_md(parts[[3]])
     keynote <- grepl("^Keynote:", title, ignore.case = TRUE)
     title_class <- if (keynote) "schedule-title keynote-title" else "schedule-title"
-    author_html <- if (nzchar(author)) {
-      sprintf('<div class="author schedule-author">%s</div>', html_escape(author))
+    meta <- c(author, title_parts$chair)
+    meta <- meta[nzchar(meta)]
+    meta_html <- if (length(meta)) {
+      paste(sprintf('<div class="author schedule-author">%s</div>', html_escape(meta)), collapse = "")
     } else {
       ""
     }
-    return(sprintf('<strong class="%s">%s</strong>%s', title_class, title, author_html))
+    return(sprintf('<strong class="%s">%s</strong>%s', title_class, title, meta_html))
   }
 
   html_escape(clean_md(x))
