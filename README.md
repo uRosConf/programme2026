@@ -19,14 +19,21 @@
 | Time | Room 1 | Room 2 | Room 3 |
 |---|---|---|---|
 | 08:00–09:00 | **Registration and walk-in** |
-| 09:00–09:30 | **Opening** |
-| 09:30–10:30 | **Keynote: R and Open-Source: A love story** - Rebecca Killick |
-| 10:30–11:00 | **Coffee break** |
-| 11:00–12:30 | **A1 - AI Assistants for Statistical Production** | **B1 - Reproducible Statistical Production Pipelines** | **C1 - Automated and Accessible Statistical Publishing** |
-| 12:30–14:00 | **Lunch break** |
+| 09:00–09:15 | **Opening** |
+| 09:15-10:15 | **Keynote: R and Open-Source: A love story** - Rebecca Killick |
+| 10:15–11:00 | **EMOS session I (chair: Carola Carstens)** |
+| 11:00–11:30 | **Coffee break** |
+| 11:30–13:00 | **A1 - AI Assistants for Statistical Production** | **B1 - Reproducible Statistical Production Pipelines** | **C1 - Automated and Accessible Statistical Publishing** |
+| 13:00–14:00 | **Lunch break** |
 | 14:00–15:30 | **A2 - AI, Machine Learning and Intelligent Automation** | **B2 - Lightning Talks I: Production, Validation and Survey Methods** | **C2 - Shiny Applications and Statistical Visualisation** |
 | 15:30–16:00 | **Coffee break** |
-| 16:00–17:30 | **A3 - Open Source Adoption and the R Community** | **B3 - Infrastructure and Tools for Statistical Production** | **C3 - Statistical Disclosure Control and Synthetic Data** |
+| 16:00–17:30 | **A3 - Open Source Adoption and the R Community** | **B3 - Seasonal Adjustment in Official Statistics** | **C3 - Statistical Disclosure Control and Synthetic Data** |
+
+### EMOS session I
+
+- **An R Framework for AI-Assisted Questionnaires in Official Statistics: An Application to Financial Literacy Surveys** - Rossi Valeria
+- **Subsampling Non-Response Follow-Up in the Canadian Housing Survey: Comparing the Historical Hansen-Hurwitz Method and Non-Probability Estimation** - Guinhut Thomas
+- **R-Based Visualization of Continuous-Time Markov Migration Models** - Boukouvala Anna, Tsaklidis George
 
 ### A1 - AI Assistants for Statistical Production
 
@@ -94,13 +101,13 @@
 - **What makes the R community unique?** - Lesur Romain
 - **Publishing in the R Journal** - Van Der Loo Mark
 
-### B3 - Infrastructure and Tools for Statistical Production
+### B3 - Seasonal Adjustment in Official Statistics
 
-- **AccScript: an R-based domain-specific language for reproducible national accounts production** - Taleb Iliass
-- **DuckDB beyond R: demystifying the analytical database in your toolbox** - Hiverlet Ines
-- **National Accountant: A Reproducible R-DuckDB Framework for Balancing Supply and Use Tables with Hard and Soft Constraints** - Kocak Assoc. Prof. Necmettin Alpay
-- **procR: New Features for End-to-End Table Production in Official Statistics** - Saidani Younes, Tran Ngoc-Han
-- **codelist: working more efficiently with code lists in R** - Van Der Laan Jan
+- **Assessing Direct and Indirect Seasonal Adjustment Approaches for Labour Cost Indices: A Serbian Case Study** - Suzić Jelena, Tokai Melinda, Katić Dunja, Markovic Ana
+- **pickmdl3: An R package implementing the X-12-ARIMA pickmdl procedure within the JDemetra+ R framework** - Jens Kristoffer Haug, Langsrud Øyvind, Seierstad Ane, Jentoft Susie, Hamre Jørn Ivar, Pham Dinh Quang
+- **regimeseats: An Adaptive State-Space Extension for TRAMO-SEATS in Official Statistics** - Amoroso Cheyenne, Aneiros Germán, García-Martos Carolina, Koopman Siem Jan, Vilar José A.
+- **The RJDverse Package Suite for Time Series Econometrics in Official Statistics** - Webel Karsten, Smyk Anna
+- **{stlpro}: Seasonal Adjustment with Cross-Validated Filter Selection** - Ollech Daniel
 
 ### C3 - Statistical Disclosure Control and Synthetic Data
 
@@ -116,15 +123,20 @@
 |---|---|---|---|
 | 08:00–09:00 | **Registration and walk-in** |
 | 09:00–10:00 | **Keynote: Practical AI for Data Science** - Simon Couch |
-| 10:00–10:45 | **EMOS presentations** |
+| 10:00–10:45 | **EMOS session II (chair: Carola Carstens)** |
 | 10:45–11:15 | **Coffee break** |
 | 11:15–12:45 | **A4 - Spatial and Small Area Analysis** | **B4 - Social and Economic Applications** | **C4 - Record Linkage and Population Registers** |
 | 12:45–13:45 | **Lunch break** |
 | 13:45–15:15 | **A5 - Survey Sampling, Weighting and Variance Estimation** | **B5 - Lightning Talks II: R Tools, Visualisation and Applications** | **C5 - Imputation and Advanced Statistical Methods** |
 | 15:15–15:45 | **Coffee break** |
-| 15:45–17:15 | **A6 - Nowcasting and Time-Series Methods** | **B6 - Survey Quality, Metadata and Fieldwork** | **C6 - Seasonal Adjustment in Official Statistics** |
+| 15:45–17:15 | **A6 - Nowcasting and Time-Series Methods** | **B6 - Survey Quality, Metadata and Fieldwork** | **C6 - Infrastructure and Tools for Statistical Production** |
 | 17:15–17:30 | **Closing** |
 
+### EMOS session II
+
+- **Typology of business ecosystems in European Union countries** - Ulada Dalidovich
+- **AI, Robotization and Perceived Occupational Displacement across European regions - an R based Spatial Econometrics Analysis** - Petre Vlad-Andrei, Cimpoeru Smaranda
+- **Beyond the Mean: Multi-Dimensional Performance Benchmarking of Regional Units Using Wasserstein Distance and Optimal Transport in R** - Mohamed Khalif
 
 ### A4 - Spatial and Small Area Analysis
 
@@ -200,10 +212,10 @@
 - **The Survey Fieldwork Digital Twin: An R-Based Early-Warning System for Mixed-Mode Official Statistics** - Resulbegoviq Hakile, Čađenović Vuk
 - **The Metadata Quality Assistant (MQA): an R/Shiny prototype for supporting the preparation of SIMS quality reports** - Spiliopoulou Vasiliki, Pierrakou Christina, Molfetas Konstantinos
 
-### C6 - Seasonal Adjustment in Official Statistics
+### C6 - Infrastructure and Tools for Statistical Production
 
-- **Assessing Direct and Indirect Seasonal Adjustment Approaches for Labour Cost Indices: A Serbian Case Study** - Suzić Jelena, Tokai Melinda, Katić Dunja, Markovic Ana
-- **pickmdl3: An R package implementing the X-12-ARIMA pickmdl procedure within the JDemetra+ R framework** - Jens Kristoffer Haug, Langsrud Øyvind, Seierstad Ane, Jentoft Susie, Hamre Jørn Ivar, Pham Dinh Quang
-- **regimeseats: An Adaptive State-Space Extension for TRAMO-SEATS in Official Statistics** - Amoroso Cheyenne, Aneiros Germán, García-Martos Carolina, Koopman Siem Jan, Vilar José A.
-- **The RJDverse Package Suite for Time Series Econometrics in Official Statistics** - Webel Karsten, Smyk Anna
-- **{stlpro}: Seasonal Adjustment with Cross-Validated Filter Selection** - Ollech Daniel
+- **AccScript: an R-based domain-specific language for reproducible national accounts production** - Taleb Iliass
+- **DuckDB beyond R: demystifying the analytical database in your toolbox** - Hiverlet Ines
+- **National Accountant: A Reproducible R-DuckDB Framework for Balancing Supply and Use Tables with Hard and Soft Constraints** - Kocak Assoc. Prof. Necmettin Alpay
+- **procR: New Features for End-to-End Table Production in Official Statistics** - Saidani Younes, Tran Ngoc-Han
+- **codelist: working more efficiently with code lists in R** - Van Der Laan Jan
