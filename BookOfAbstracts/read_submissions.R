@@ -58,10 +58,18 @@ clean_text <- function(x) {
 
 abstracts <- fread("submissions_uRos.csv")
 colnames(abstracts) <- c(colnames(abstracts)[-1], "V1")
-accepted_emos_docids <- c("757980", "754557", "758046", "757239", "758051", "758090")
+accepted_emos_docids <- c(
+  "757980",
+  "754557",
+  "757979",
+  "757239",
+  "758051",
+  "758044"
+)
 abstracts <- abstracts[
   STATUT == "Accepted" &
-    (TYPDOC != "EMOS session" | (TYPDOC == "EMOS session" & DOCID %in% accepted_emos_docids)),
+    (TYPDOC != "EMOS session" |
+      (TYPDOC == "EMOS session" & DOCID %in% accepted_emos_docids)),
   .(SPEAKERS, Authors = AUTHORS, LABOS, TYPDOC, TITLE, ABSTRACT)
 ]
 abstracts[, SPEAKERS := clean_people(SPEAKERS)]

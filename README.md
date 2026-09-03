@@ -32,7 +32,7 @@
 ### EMOS session I
 
 - **An R Framework for AI-Assisted Questionnaires in Official Statistics: An Application to Financial Literacy Surveys** - Rossi Valeria
-- **Subsampling Non-Response Follow-Up in the Canadian Housing Survey: Comparing the Historical Hansen-Hurwitz Method and Non-Probability Estimation** - Guinhut Thomas
+- **Developing a territorial One Health indicator using R** - Limone Fenicia Carmen
 - **R-Based Visualization of Continuous-Time Markov Migration Models** - Boukouvala Anna, Tsaklidis George
 
 ### A1 - AI Assistants for Statistical Production
@@ -136,7 +136,7 @@
 
 - **Typology of business ecosystems in European Union countries** - Ulada Dalidovich
 - **AI, Robotization and Perceived Occupational Displacement across European regions - an R based Spatial Econometrics Analysis** - Petre Vlad-Andrei, Cimpoeru Smaranda
-- **Beyond the Mean: Multi-Dimensional Performance Benchmarking of Regional Units Using Wasserstein Distance and Optimal Transport in R** - Mohamed Khalif
+- **Long-Term Effects of the Czech National Bank's Exchange-Rate Commitment: A Synthetic Control Approach in R** - Valtr Ondřej
 
 ### A4 - Spatial and Small Area Analysis
 
