@@ -94,10 +94,21 @@ split_people <- function(x) {
 
 normalize_person <- function(x) {
   x <- gsub("\\x{00A0}", " ", x, perl = TRUE)
+  x <- iconv(x, from = "UTF-8", to = "ASCII//TRANSLIT")
   x <- gsub("\\([^)]*\\)", "", x)
   x <- gsub("[[:punct:]]+", " ", x)
   x <- gsub("[[:space:]]+", " ", x)
   trimws(tolower(x))
+}
+
+person_match_keys <- function(x) {
+  normalized <- normalize_person(x)
+  if (!nzchar(normalized)) {
+    return(character())
+  }
+  words <- strsplit(normalized, " ", fixed = TRUE)[[1]]
+  words <- words[nzchar(words)]
+  unique(c(normalized, paste(sort(words), collapse = " ")))
 }
 
 normalize_title <- function(x) {
@@ -163,12 +174,12 @@ render_authors <- function(authors, speakers) {
     return("")
   }
 
-  speaker_keys <- normalize_person(split_people(speakers))
+  speaker_keys <- unique(unlist(lapply(split_people(speakers), person_match_keys), use.names = FALSE))
   author_html <- vapply(
     author_names,
     function(author) {
       escaped_author <- html_escape(author)
-      if (normalize_person(author) %in% speaker_keys) {
+      if (any(person_match_keys(author) %in% speaker_keys)) {
         sprintf('<span class="speaker-author">%s</span>', escaped_author)
       } else {
         escaped_author
