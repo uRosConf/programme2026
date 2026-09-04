@@ -56,7 +56,7 @@
 - **Automated Public Science Communication: Building a Bluesky Bot for Real-Time Official Statistics Visualisation with R** - Damien Dupre
 - **Beyond parametrised reports: Adventures automating country notes at the OECD** - Caldas Rivera Maria Paula, Ilizaliturri López Rodolfo
 - **From code to print-ready publication: Automating layout at the French Ministry of Justice** - Marsal Adam, Allard Fanny
-- **From R Markdown to AccAn open-source R framework for systematic optimizationessible PDF: Building Tagged Word Documents and Templates for Official Statistics Publications** - Dominik Ernst
+- **From R Markdown to Accessible PDF: Building Tagged Word Documents and Templates for Official Statistics Publications** - Dominik Ernst
 - **Reproducible Statistical Publications with Quarto** - Dervieux Christophe
 
 ### A2 - AI, Machine Learning and Intelligent Automation
