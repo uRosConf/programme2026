@@ -96,7 +96,7 @@
 ### A3 - Open Source Adoption and the R Community
 
 - **Beyond code: supporting teams through the transition to Open Source** - Simon Raphael, Biot Vincent, Rigollot Nathalie, Said Meriem
-- **From SAS to R, one small step for data production, on giant leap for official statistics** - Lamarche Pierre, Rousset Clément
+- **From SAS to R, one small step for data production, one giant leap for official statistics** - Lamarche Pierre, Rousset Clément
 - **Towards metrics for awesome software packages: first results** - Ten Bosch Olav, Van Der Loo Mark
 - **What makes the R community unique?** - Lesur Romain
 - **Publishing in the R Journal** - Van Der Loo Mark
