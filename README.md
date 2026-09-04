@@ -125,9 +125,9 @@
 | 09:00–10:00 | **Keynote: Practical AI for Data Science** - Simon Couch |
 | 10:00–10:45 | **EMOS session II (chair: Carola Carstens)** |
 | 10:45–11:15 | **Coffee break** |
-| 11:15–12:45 | **A4 - Spatial and Small Area Analysis** | **B4 - Social and Economic Applications** | **C4 - Record Linkage and Population Registers** |
+| 11:15–12:45 | **A4 - Survey Sampling, Weighting and Variance Estimation** | **B4 - Social and Economic Applications** | **C4 - Record Linkage and Population Registers** |
 | 12:45–13:45 | **Lunch break** |
-| 13:45–15:15 | **A5 - Survey Sampling, Weighting and Variance Estimation** | **B5 - Lightning Talks II: R Tools, Visualisation and Applications** | **C5 - Imputation and Advanced Statistical Methods** |
+| 13:45–15:15 | **A5 - Spatial and Small Area Analysis** | **B5 - Lightning Talks II: R Tools, Visualisation and Applications** | **C5 - Imputation and Advanced Statistical Methods** |
 | 15:15–15:45 | **Coffee break** |
 | 15:45–17:15 | **A6 - Nowcasting and Time-Series Methods** | **B6 - Survey Quality, Metadata and Fieldwork** | **C6 - Infrastructure and Tools for Statistical Production** |
 | 17:15–17:30 | **Closing** |
@@ -138,13 +138,15 @@
 - **AI, Robotization and Perceived Occupational Displacement across European regions - an R based Spatial Econometrics Analysis** - Petre Vlad-Andrei, Cimpoeru Smaranda
 - **Long-Term Effects of the Czech National Bank's Exchange-Rate Commitment: A Synthetic Control Approach in R** - Valtr Ondřej
 
-### A4 - Spatial and Small Area Analysis
+### A4 - Survey Sampling, Weighting and Variance Estimation
 
-- **3D Thematic Mapping in R with tmap v4 and tmap.mapgl** - Tennekes Martijn
-- **Measuring Spatial Inequalities in University Accessibility Using R and GTFS Data: Evidence from Rome** - D'aniello Armando, Salvucci Gianluigi
-- **Bayesian Small Area Estimation for Multinomial Health Indicators Using R: An Application to Official Statistics** - Nikolaidis Ioannis, Giakoumatos Stefanos
-- **Small Area Estimation of Poverty in the Practice of Statistics Poland** - Szymkowiak Marcin, Wilak Kamil, Józefowski Tomasz, Yoshida Nobuo
-- **Automating Educational Statistics Production Processes Using R and Shiny: A Case Study from Turkish Statistical Institute** - Ozbek Fethi Saban
+- **Calibration of Survey Weights in R: A Comparative Overview of Available Packages** - Szymkowiak Marcin, Wilak Kamil
+- **Developing an R Package for Sample Weight Estimation** - Osier Guillaume, Lamboray Claude
+- **samplyr: A Tidy Grammar for Survey Sampling Design in R** - Ahmadou Dicko
+- **Making gustave production-ready: multistage designs, wrapper inspection and estimation diagnostics.** - Delclite Thomas
+- **weightflow: a declarative, auditable recipe for survey weighting in R** - Ferreira Juan Pablo
+
+
 
 ### B4 - Social and Economic Applications
 
@@ -162,13 +164,13 @@
 - **Probabilistic Record Linkage with the automatedRecLin R package** - Struzik Adam, Beręsewicz Maciej
 - **Reconciling Local and National Demographic Accounts in R** - Ward Daniel
 
-### A5 - Survey Sampling, Weighting and Variance Estimation
+### A5 - Spatial and Small Area Analysis
 
-- **Calibration of Survey Weights in R: A Comparative Overview of Available Packages** - Szymkowiak Marcin, Wilak Kamil
-- **Developing an R Package for Sample Weight Estimation** - Osier Guillaume, Lamboray Claude
-- **samplyr: A Tidy Grammar for Survey Sampling Design in R** - Ahmadou Dicko
-- **Making gustave production-ready: multistage designs, wrapper inspection and estimation diagnostics.** - Delclite Thomas
-- **weightflow: a declarative, auditable recipe for survey weighting in R** - Ferreira Juan Pablo
+- **3D Thematic Mapping in R with tmap v4 and tmap.mapgl** - Tennekes Martijn
+- **Measuring Spatial Inequalities in University Accessibility Using R and GTFS Data: Evidence from Rome** - D'aniello Armando, Salvucci Gianluigi
+- **Bayesian Small Area Estimation for Multinomial Health Indicators Using R: An Application to Official Statistics** - Nikolaidis Ioannis, Giakoumatos Stefanos
+- **Small Area Estimation of Poverty in the Practice of Statistics Poland** - Szymkowiak Marcin, Wilak Kamil, Józefowski Tomasz, Yoshida Nobuo
+- **Automating Educational Statistics Production Processes Using R and Shiny: A Case Study from Turkish Statistical Institute** - Ozbek Fethi Saban
 
 ### B5 - Lightning Talks II: R Tools, Visualisation and Applications
 
