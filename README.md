@@ -56,7 +56,7 @@
 - **Automated Public Science Communication: Building a Bluesky Bot for Real-Time Official Statistics Visualisation with R** - Damien Dupre
 - **Beyond parametrised reports: Adventures automating country notes at the OECD** - Caldas Rivera Maria Paula, Ilizaliturri López Rodolfo
 - **From code to print-ready publication: Automating layout at the French Ministry of Justice** - Marsal Adam, Allard Fanny
-- **From R Markdown to Accessible PDF: Building Tagged Word Documents and Templates for Official Statistics Publications** - Dominik Ernst
+- **From R Markdown to AccAn open-source R framework for systematic optimizationessible PDF: Building Tagged Word Documents and Templates for Official Statistics Publications** - Dominik Ernst
 - **Reproducible Statistical Publications with Quarto** - Dervieux Christophe
 
 ### A2 - AI, Machine Learning and Intelligent Automation
@@ -115,7 +115,6 @@
 - **ckm: an easy application of cell-key method to protect tabular data** - Ferrer-Pradines Nadège, Desclodure Julien, Lemaire Dimitri
 - **Protecting linked tables with non-nested hierarchies: a use case with rtauargus** - Ferrer-Pradines Nadège, Desclodure Julien, Lemaire Dimitri
 - **rebalancedNoise: Perturbative Statistical Disclosure Control for Magnitude Tables in R** - Meindl Bernhard
-- **An Open-Source R Framework for Systematic Optimization of Synthetic Data Production** - Calian Violeta, Lopez Flores Nidia Guadalupe
 
 ## Friday, 20 November 2026 - Conference Day 2
 

@@ -67,8 +67,10 @@ accepted_emos_docids <- c(
   "758051",
   "758044"
 )
+excluded_docids <- c("750510")
 abstracts <- abstracts[
   STATUT == "Accepted" &
+    !as.character(DOCID) %in% excluded_docids &
     (TYPDOC != "EMOS session" |
       (TYPDOC == "EMOS session" & DOCID %in% accepted_emos_docids)),
   .(SPEAKERS, Authors = AUTHORS, LABOS, TYPDOC, TITLE, ABSTRACT)
