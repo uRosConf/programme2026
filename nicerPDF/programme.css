@@ -38,6 +38,7 @@ h2 { margin: 0 0 5mm; font-size: 21pt; line-height: 1.05; }
 .talk:before { content: '•'; position: absolute; left: 1mm; top: 0; }
 .talk-title { font-size: 9.2pt; }
 .author { color: #66788c; font-size: 8.1pt; margin-top: .7mm; }
+.speaker-author { text-decoration: underline; text-underline-offset: 1.5px; }
 .lightning { break-inside: auto; }
 .lightning .talk-list { columns: 1; }
 .lightning .talk { break-inside: avoid; }

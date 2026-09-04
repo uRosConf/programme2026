@@ -47,10 +47,18 @@ if (length(missing)) {
 }
 
 html_escape <- function(x) {
+  x[is.na(x)] <- ""
   x <- gsub("&", "&amp;", x, fixed = TRUE)
   x <- gsub("<", "&lt;", x, fixed = TRUE)
   x <- gsub(">", "&gt;", x, fixed = TRUE)
   x <- gsub('"', "&quot;", x, fixed = TRUE)
+  x
+}
+
+value_or_empty <- function(x) {
+  if (is.null(x) || length(x) == 0L || is.na(x)) {
+    return("")
+  }
   x
 }
 
@@ -73,6 +81,103 @@ clean_table_cell <- function(x) {
   x <- gsub("\\\\\\.", ".", x)
   x <- gsub("\\\\\\|", "|", x)
   trimws(x)
+}
+
+split_people <- function(x) {
+  x <- value_or_empty(x)
+  if (!nzchar(trimws(x))) {
+    return(character())
+  }
+  people <- trimws(strsplit(x, ",", fixed = TRUE)[[1]])
+  people[nzchar(people)]
+}
+
+normalize_person <- function(x) {
+  x <- gsub("\\x{00A0}", " ", x, perl = TRUE)
+  x <- gsub("\\([^)]*\\)", "", x)
+  x <- gsub("[[:punct:]]+", " ", x)
+  x <- gsub("[[:space:]]+", " ", x)
+  trimws(tolower(x))
+}
+
+normalize_title <- function(x) {
+  x <- value_or_empty(x)
+  x <- clean_md(x)
+  x <- sub("^Keynote:\\s*", "", x, ignore.case = TRUE)
+  x <- gsub("[\u2018\u2019\u201c\u201d]", "", x)
+  x <- sub("\\s+[-\u2013\u2014]\\s+(i|ii|iii|iv|v)\\s*$", "", x, ignore.case = TRUE)
+  x <- gsub("\\x{00A0}", " ", x, perl = TRUE)
+  x <- iconv(x, from = "UTF-8", to = "ASCII//TRANSLIT")
+  x <- gsub("[[:punct:]]+", " ", x)
+  x <- gsub("[[:space:]]+", " ", x)
+  trimws(tolower(x))
+}
+
+load_speaker_lookup <- function(input) {
+  candidates <- c(
+    file.path(dirname(input), "abstracts.csv"),
+    file.path(getwd(), "abstracts.csv"),
+    file.path(dirname(script_dir), "abstracts.csv")
+  )
+  matches <- candidates[file.exists(candidates)]
+  if (!length(matches)) {
+    return(new.env(parent = emptyenv()))
+  }
+
+  abstracts <- utils::read.csv(
+    matches[[1]],
+    stringsAsFactors = FALSE,
+    check.names = FALSE,
+    fileEncoding = "UTF-8"
+  )
+  required_cols <- c("TITLE", "SPEAKERS")
+  if (!all(required_cols %in% names(abstracts))) {
+    return(new.env(parent = emptyenv()))
+  }
+
+  lookup <- new.env(parent = emptyenv())
+  for (i in seq_len(nrow(abstracts))) {
+    key <- normalize_title(abstracts$TITLE[[i]])
+    if (nzchar(key) && !exists(key, lookup, inherits = FALSE)) {
+      assign(key, abstracts$SPEAKERS[[i]], envir = lookup)
+    }
+  }
+  lookup
+}
+
+find_speakers <- function(title, speaker_lookup) {
+  key <- normalize_title(title)
+  if (nzchar(key) && exists(key, speaker_lookup, inherits = FALSE)) {
+    get(key, speaker_lookup, inherits = FALSE)
+  } else {
+    ""
+  }
+}
+
+render_authors <- function(authors, speakers) {
+  author_names <- split_people(authors)
+  if (!length(author_names)) {
+    author_names <- split_people(speakers)
+  }
+  if (!length(author_names)) {
+    return("")
+  }
+
+  speaker_keys <- normalize_person(split_people(speakers))
+  author_html <- vapply(
+    author_names,
+    function(author) {
+      escaped_author <- html_escape(author)
+      if (normalize_person(author) %in% speaker_keys) {
+        sprintf('<span class="speaker-author">%s</span>', escaped_author)
+      } else {
+        escaped_author
+      }
+    },
+    character(1)
+  )
+
+  paste(author_html, collapse = ", ")
 }
 
 split_talk <- function(x) {
@@ -212,7 +317,7 @@ parse_programme <- function(text) {
   doc
 }
 
-render_schedule_cell <- function(x) {
+render_schedule_cell <- function(x, speaker_lookup) {
   x <- clean_table_cell(x)
   if (!nzchar(x)) return("")
 
@@ -222,12 +327,18 @@ render_schedule_cell <- function(x) {
     title_parts <- split_chair(parts[[2]])
     title <- html_escape(title_parts$title)
     author <- clean_md(parts[[3]])
+    speakers <- find_speakers(title_parts$title, speaker_lookup)
     keynote <- grepl("^Keynote:", title, ignore.case = TRUE)
     title_class <- if (keynote) "schedule-title keynote-title" else "schedule-title"
-    meta <- c(author, title_parts$chair)
+    author_html <- if (nzchar(author)) {
+      render_authors(author, speakers)
+    } else {
+      ""
+    }
+    meta <- c(author_html, html_escape(title_parts$chair))
     meta <- meta[nzchar(meta)]
     meta_html <- if (length(meta)) {
-      paste(sprintf('<div class="author schedule-author">%s</div>', html_escape(meta)), collapse = "")
+      paste(sprintf('<div class="author schedule-author">%s</div>', meta), collapse = "")
     } else {
       ""
     }
@@ -250,7 +361,7 @@ is_event_row <- function(row) {
   all(vapply(labels, is_event_label, logical(1)))
 }
 
-render_table <- function(rows) {
+render_table <- function(rows, speaker_lookup) {
   if (!length(rows)) return("")
   header <- rows[[1]]
   body <- rows[-1]
@@ -263,7 +374,7 @@ render_table <- function(rows) {
   for (row in body) {
     event <- is_event_row(row)
     cls <- if (event) ' class="event-row"' else ""
-    cells <- vapply(row, render_schedule_cell, character(1))
+    cells <- vapply(row, render_schedule_cell, character(1), speaker_lookup = speaker_lookup)
     if (length(cells) == 2L && n_cols > 2L) {
       row_html <- paste0(
         sprintf("<td>%s</td>", cells[[1]]),
@@ -278,12 +389,17 @@ render_table <- function(rows) {
   paste0(h, "</tbody></table>")
 }
 
-render_session <- function(s) {
+render_session <- function(s, speaker_lookup) {
   code_first <- substr(s$code, 1L, 1L)
   track <- if (code_first %in% c("A", "B", "C")) tolower(code_first) else "e"
   lightning <- if (length(s$talks) > 9L) " lightning" else ""
   talks <- vapply(s$talks, function(t) {
-    author <- if (nzchar(t$author)) sprintf('<div class="author">%s</div>', html_escape(t$author)) else ""
+    speakers <- find_speakers(t$title, speaker_lookup)
+    author <- if (nzchar(t$author)) {
+      sprintf('<div class="author">%s</div>', render_authors(t$author, speakers))
+    } else {
+      ""
+    }
     sprintf('<div class="talk"><div class="talk-title">%s</div>%s</div>', html_escape(t$title), author)
   }, character(1))
   sprintf(
@@ -294,7 +410,7 @@ render_session <- function(s) {
   )
 }
 
-render_html_body <- function(doc, logo_src) {
+render_html_body <- function(doc, logo_src, speaker_lookup) {
   out <- c(
     '<header class="masthead">',
     sprintf(
@@ -313,11 +429,11 @@ render_html_body <- function(doc, logo_src) {
       sprintf('<section class="day%s">', first),
       sprintf('<div class="eyebrow">%s</div>', toupper(html_escape(day$label))),
       sprintf('<h2>%s</h2>', html_escape(day$date)),
-      render_table(day$table)
+      render_table(day$table, speaker_lookup)
     )
     if (length(day$sessions)) {
       out <- c(out, '<div class="sessions">',
-               vapply(day$sessions, render_session, character(1)), '</div>')
+               vapply(day$sessions, render_session, character(1), speaker_lookup = speaker_lookup), '</div>')
     }
     out <- c(out, '</section>')
   }
@@ -326,7 +442,8 @@ render_html_body <- function(doc, logo_src) {
 
 text <- paste(readLines(input, warn = FALSE, encoding = "UTF-8"), collapse = "\n")
 doc <- parse_programme(text)
-body <- render_html_body(doc, "uros2026_logo.jpg")
+speaker_lookup <- load_speaker_lookup(input)
+body <- render_html_body(doc, "uros2026_logo.jpg", speaker_lookup)
 
 tmp <- tempfile("uros-programme-")
 dir.create(tmp)
