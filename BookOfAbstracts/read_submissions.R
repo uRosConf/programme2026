@@ -47,6 +47,7 @@ clean_people <- function(x) {
   x <- gsub("[[:space:]]+", " ", x)
   x <- gsub("[[:space:]]+,", ",", x)
   x <- gsub(",[[:space:]]*", ", ", x)
+  x <- gsub(" Assoc. Prof.", " ", x)
   trimws(x)
 }
 
