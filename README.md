@@ -70,20 +70,19 @@
 ### B2 - Lightning Talks I: Production, Validation and Survey Methods
 
 1. **Common pitfalls when switching from SAS to R** - Lamarche Pierre
-2. **Automating Granular Data Pipelines with R: A Case Study from a Central Banking Context** - Kaya Ibrahim Cagan
-3. **Template and Function: A Tabular Configuration Pattern for Large Scale Operations on Files with Varying Schemas in Official Statistics** - Rakotomalala Daniel
-4. **R you useful for maintaining information systems?** - Mainguené Alice
-5. **{IssueTrackeR}: Handling Tickets in R** - Barthelemy Tanguy
-6. **From Data to Publication : An Automated R-Based Framework for Consumer Price Index Reporting** - Aoulad Hammou Achou Zineb, Halhal Zakariae
-7. **Metadata-driven validation across the statistical production process using R** - Konradsdottir Ragnhildur, Calian Violeta
-8. **Facilitating R-Based Statistical Validation Through EZR: A Case Study in Melanoma High-Frequency Ultrasound Assessment** - Chalyy Kyrylo, Hryshchenko Roman, Bogomolets Olga, Stepanenko Viktor
-9. **Manual Rework Volume Monitoring and Forecasting Tool** - Coltier Yves
-10. **Semi-automated editing of large volumes of foreign trade data for the environmental Economy-Wide Material Flow Account** - Campandegui García Gorka, Maestro López Julia
-11. **VIM::vimpute: A Unified Imputation Engine for Flexible Missing Data Workflows in R** - Kowarik Alexander, Vattheuer Eileen, Templ Matthias, Gussenbauer Johannes, Niederhametner Nina
-12. **Sampling Designs and Sample Quality Control: Using Quarto Documents in Agricultural Surveys** - Levi-Valensin Michael
-13. **RISQ: Representativity Indicators for Survey Quality** - Idema Reijer
-14. **Reproducible Survey-Based Estimation of Household Living Standards in Morocco Using ENNVM 2022 Microdata** - Baabaa Oussama
-15. **SmartSurveyAgent: A New Approach to Survey Data Collection in Official Statistics** - Cafieri Simona
+2. **Template and Function: A Tabular Configuration Pattern for Large Scale Operations on Files with Varying Schemas in Official Statistics** - Rakotomalala Daniel
+3. **R you useful for maintaining information systems?** - Mainguené Alice
+4. **{IssueTrackeR}: Handling Tickets in R** - Barthelemy Tanguy
+5. **From Data to Publication : An Automated R-Based Framework for Consumer Price Index Reporting** - Aoulad Hammou Achou Zineb, Halhal Zakariae
+6. **Metadata-driven validation across the statistical production process using R** - Konradsdottir Ragnhildur, Calian Violeta
+7. **Facilitating R-Based Statistical Validation Through EZR: A Case Study in Melanoma High-Frequency Ultrasound Assessment** - Chalyy Kyrylo, Hryshchenko Roman, Bogomolets Olga, Stepanenko Viktor
+8. **Manual Rework Volume Monitoring and Forecasting Tool** - Coltier Yves
+9. **Semi-automated editing of large volumes of foreign trade data for the environmental Economy-Wide Material Flow Account** - Campandegui García Gorka, Maestro López Julia
+10. **VIM::vimpute: A Unified Imputation Engine for Flexible Missing Data Workflows in R** - Kowarik Alexander, Vattheuer Eileen, Templ Matthias, Gussenbauer Johannes, Niederhametner Nina
+11. **Sampling Designs and Sample Quality Control: Using Quarto Documents in Agricultural Surveys** - Levi-Valensin Michael
+12. **RISQ: Representativity Indicators for Survey Quality** - Idema Reijer
+13. **Reproducible Survey-Based Estimation of Household Living Standards in Morocco Using ENNVM 2022 Microdata** - Baabaa Oussama
+14. **SmartSurveyAgent: A New Approach to Survey Data Collection in Official Statistics** - Cafieri Simona
 
 ### C2 - Shiny Applications and Statistical Visualisation
 
