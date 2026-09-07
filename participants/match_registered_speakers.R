@@ -6,6 +6,7 @@ submissions_file <- "submissions_uRos.csv"
 speakers_file <- "speakers.csv"
 registered_file <- "participants/list_user_registered.csv"
 summary_file <- "participants/speaker_registration_summary.csv"
+summary_file_missing <- "participants/speaker_registration_missing.csv"
 
 normalize_export_columns <- function(x) {
   # The SciencesConf exports in this project have an extra empty trailing field.
@@ -21,49 +22,100 @@ ascii_fold <- function(x) {
   x <- enc2utf8(x)
 
   entity_map <- c(
-    "&agrave;" = "a", "&aacute;" = "a", "&acirc;" = "a",
-    "&atilde;" = "a", "&auml;" = "a", "&aring;" = "a",
-    "&Agrave;" = "A", "&Aacute;" = "A", "&Acirc;" = "A",
-    "&Atilde;" = "A", "&Auml;" = "A", "&Aring;" = "A",
-    "&ccedil;" = "c", "&Ccedil;" = "C",
-    "&egrave;" = "e", "&eacute;" = "e", "&ecirc;" = "e",
-    "&euml;" = "e", "&Egrave;" = "E", "&Eacute;" = "E",
-    "&Ecirc;" = "E", "&Euml;" = "E",
-    "&igrave;" = "i", "&iacute;" = "i", "&icirc;" = "i",
-    "&iuml;" = "i", "&Igrave;" = "I", "&Iacute;" = "I",
-    "&Icirc;" = "I", "&Iuml;" = "I",
-    "&ntilde;" = "n", "&Ntilde;" = "N",
-    "&ograve;" = "o", "&oacute;" = "o", "&ocirc;" = "o",
-    "&otilde;" = "o", "&ouml;" = "o", "&oslash;" = "o",
-    "&Ograve;" = "O", "&Oacute;" = "O", "&Ocirc;" = "O",
-    "&Otilde;" = "O", "&Ouml;" = "O", "&Oslash;" = "O",
-    "&ugrave;" = "u", "&uacute;" = "u", "&ucirc;" = "u",
-    "&uuml;" = "u", "&Ugrave;" = "U", "&Uacute;" = "U",
-    "&Ucirc;" = "U", "&Uuml;" = "U",
-    "&yacute;" = "y", "&yuml;" = "y", "&Yacute;" = "Y"
+    "&agrave;" = "a",
+    "&aacute;" = "a",
+    "&acirc;" = "a",
+    "&atilde;" = "a",
+    "&auml;" = "a",
+    "&aring;" = "a",
+    "&Agrave;" = "A",
+    "&Aacute;" = "A",
+    "&Acirc;" = "A",
+    "&Atilde;" = "A",
+    "&Auml;" = "A",
+    "&Aring;" = "A",
+    "&ccedil;" = "c",
+    "&Ccedil;" = "C",
+    "&egrave;" = "e",
+    "&eacute;" = "e",
+    "&ecirc;" = "e",
+    "&euml;" = "e",
+    "&Egrave;" = "E",
+    "&Eacute;" = "E",
+    "&Ecirc;" = "E",
+    "&Euml;" = "E",
+    "&igrave;" = "i",
+    "&iacute;" = "i",
+    "&icirc;" = "i",
+    "&iuml;" = "i",
+    "&Igrave;" = "I",
+    "&Iacute;" = "I",
+    "&Icirc;" = "I",
+    "&Iuml;" = "I",
+    "&ntilde;" = "n",
+    "&Ntilde;" = "N",
+    "&ograve;" = "o",
+    "&oacute;" = "o",
+    "&ocirc;" = "o",
+    "&otilde;" = "o",
+    "&ouml;" = "o",
+    "&oslash;" = "o",
+    "&Ograve;" = "O",
+    "&Oacute;" = "O",
+    "&Ocirc;" = "O",
+    "&Otilde;" = "O",
+    "&Ouml;" = "O",
+    "&Oslash;" = "O",
+    "&ugrave;" = "u",
+    "&uacute;" = "u",
+    "&ucirc;" = "u",
+    "&uuml;" = "u",
+    "&Ugrave;" = "U",
+    "&Uacute;" = "U",
+    "&Ucirc;" = "U",
+    "&Uuml;" = "U",
+    "&yacute;" = "y",
+    "&yuml;" = "y",
+    "&Yacute;" = "Y"
   )
   for (entity in names(entity_map)) {
     x <- gsub(entity, entity_map[[entity]], x, fixed = TRUE)
   }
 
   replacement_groups <- c(
-    a = "[àáâãäåāăąǎǻ]", A = "[ÀÁÂÃÄÅĀĂĄǍǺ]",
-    ae = "[æǽ]", AE = "[ÆǼ]",
-    c = "[çćčĉċ]", C = "[ÇĆČĈĊ]",
-    d = "[ďđð]", D = "[ĎĐÐ]",
-    e = "[èéêëēĕėęě]", E = "[ÈÉÊËĒĔĖĘĚ]",
-    i = "[ìíîïĩīĭįıǐ]", I = "[ÌÍÎÏĨĪĬĮİǏ]",
-    l = "[ĺļľł]", L = "[ĹĻĽŁ]",
-    n = "[ñńņň]", N = "[ÑŃŅŇ]",
-    o = "[òóôõöøōŏőǒ]", O = "[ÒÓÔÕÖØŌŎŐǑ]",
-    oe = "[œ]", OE = "[Œ]",
-    r = "[ŕŗř]", R = "[ŔŖŘ]",
-    s = "[śŝşš]", S = "[ŚŜŞŠ]",
+    a = "[àáâãäåāăąǎǻ]",
+    A = "[ÀÁÂÃÄÅĀĂĄǍǺ]",
+    ae = "[æǽ]",
+    AE = "[ÆǼ]",
+    c = "[çćčĉċ]",
+    C = "[ÇĆČĈĊ]",
+    d = "[ďđð]",
+    D = "[ĎĐÐ]",
+    e = "[èéêëēĕėęě]",
+    E = "[ÈÉÊËĒĔĖĘĚ]",
+    i = "[ìíîïĩīĭįıǐ]",
+    I = "[ÌÍÎÏĨĪĬĮİǏ]",
+    l = "[ĺļľł]",
+    L = "[ĹĻĽŁ]",
+    n = "[ñńņň]",
+    N = "[ÑŃŅŇ]",
+    o = "[òóôõöøōŏőǒ]",
+    O = "[ÒÓÔÕÖØŌŎŐǑ]",
+    oe = "[œ]",
+    OE = "[Œ]",
+    r = "[ŕŗř]",
+    R = "[ŔŖŘ]",
+    s = "[śŝşš]",
+    S = "[ŚŜŞŠ]",
     ss = "[ß]",
-    t = "[ţťŧ]", T = "[ŢŤŦ]",
-    u = "[ùúûüũūŭůűųǔ]", U = "[ÙÚÛÜŨŪŬŮŰŲǓ]",
-    y = "[ýÿŷ]", Y = "[ÝŸŶ]",
-    z = "[źżž]", Z = "[ŹŻŽ]"
+    t = "[ţťŧ]",
+    T = "[ŢŤŦ]",
+    u = "[ùúûüũūŭůűųǔ]",
+    U = "[ÙÚÛÜŨŪŬŮŰŲǓ]",
+    y = "[ýÿŷ]",
+    Y = "[ÝŸŶ]",
+    z = "[źżž]",
+    Z = "[ŹŻŽ]"
   )
   for (replacement in names(replacement_groups)) {
     x <- gsub(replacement_groups[[replacement]], replacement, x, perl = TRUE)
@@ -363,16 +415,29 @@ registered_speaker_names <- vapply(
 summary <- detail[, .(
   DOCID,
   TITLE,
-  submission_speaker_names = vapply(speakers_by_row, collapse_people, character(1)),
+  submission_speaker_names = vapply(
+    speakers_by_row,
+    collapse_people,
+    character(1)
+  ),
+  Authors,
   registered_speaker_names = registered_speaker_names,
   at_least_one_author_registered = at_least_one_author_registered,
   at_least_one_speaker_registered = at_least_one_speaker_registered
 )]
 
+fwrite(
+  summary[
+    at_least_one_author_registered == FALSE &
+      at_least_one_speaker_registered == FALSE
+  ],
+  summary_file_missing,
+  na = "NA"
+)
+
 fwrite(summary, summary_file, na = "NA")
 
-print(summary[
-  ,
+print(summary[,
   .N,
   by = .(at_least_one_author_registered, at_least_one_speaker_registered)
 ])

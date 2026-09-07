@@ -21,7 +21,7 @@
 | 08:00–09:00 | **Registration and walk-in** |
 | 09:00–09:15 | **Opening** |
 | 09:15-10:15 | **Keynote: R and Open-Source: A love story** - Killick Rebecca |
-| 10:15–11:00 | **EMOS session I (chair: Carola Carstens)** |
+| 10:15–11:00 | **EMOS session I (chair: Tina Steenvoorden)** |
 | 11:00–11:30 | **Coffee break** |
 | 11:30–13:00 | **A1 - AI Assistants for Statistical Production** | **B1 - Reproducible Statistical Production Pipelines** | **C1 - Automated and Accessible Statistical Publishing** |
 | 13:00–14:00 | **Lunch break** |
@@ -121,7 +121,7 @@
 |---|---|---|---|
 | 08:00–09:00 | **Registration and walk-in** |
 | 09:00–10:00 | **Keynote: Practical AI for Data Science** - Couch Simon |
-| 10:00–10:45 | **EMOS session II (chair: Carola Carstens)** |
+| 10:00–10:45 | **EMOS session II (chair: Tina Steenvoorden)** |
 | 10:45–11:15 | **Coffee break** |
 | 11:15–12:45 | **A4 - Survey Sampling, Weighting and Variance Estimation** | **B4 - Social and Economic Applications** | **C4 - Record Linkage and Population Registers** |
 | 12:45–13:45 | **Lunch break** |

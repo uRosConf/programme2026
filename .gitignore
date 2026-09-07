@@ -6,3 +6,4 @@ AGENTS.md
 speakers.csv
 list_user_registered.csv
 participants/speaker_registration_summary.csv
+participants/speaker_registration_missing.csv
