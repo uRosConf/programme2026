@@ -151,7 +151,6 @@
 - **Behind-the-Scenes Complexity, Clear Insights Up Front: Longitudinal Minimum Income Benefit Analysis in a French Local Authority, from Database to Simple Indicators** - Chosson Elie
 - **Event-sequence analysis of fertility histories with TraMineR, INDSCAL and DISQUAL** - Morand Elisabeth
 - **Mental health and social participation: A data-driven analysis using R** - Camelia Maria Dan, Cristina Rodica Boboc
-- **Measurement and Determinants of Multidimensional Poverty of Fishers and Farmers in the Philippines Using 2024 CBMS Data** - Giray Evette, Balilo Nerie
 - **Reproducible Machine Learning with Tidymodels for NHL Draft Prediction** - Lochner Tobias, Friedman Alon
 
 ### C4 - Record Linkage and Population Registers
