@@ -67,7 +67,7 @@ accepted_emos_docids <- c(
   "758051",
   "758044"
 )
-excluded_docids <- c("750510", "735527", "752233")
+excluded_docids <- c("750510", "735527", "752233", "746316")
 abstracts <- abstracts[
   STATUT == "Accepted" &
     !as.character(DOCID) %in% excluded_docids &

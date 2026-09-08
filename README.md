@@ -6,7 +6,7 @@
 
 | Time | Room 1 | Room 2 | Room 3 |
 |---|---|---|---|
-| 09:00–10:30 | **Getting Started with Positron: A Next-Generation IDE for Data Science** - Cetinkaya-Rundel Mine, Dervieux Christophe | **Spatial Analysis and Cartography with R** - Antunez Kim | **Analyzing Revisions in Official Time Series with the R Package reviser** - Wegmüller Philipp |
+| 09:00–10:30 | **Getting Started with Positron: A Next-Generation IDE for Data Science** - Cetinkaya-Rundel Mine, Dervieux Christophe | **Spatial Analysis and Cartography with R** - Antunez Kim | |
 | 10:30–11:00 | **Coffee break** |
 | 11:00–12:30 | **R in the Age of LLMs: From AI-Assisted Development to Chat-Based Data Applications - I** - Michonneau François | **Mapping Official Statistics with the tmapverse and cols4all** - Tennekes Martijn | **Managing statistical disclosure control from microdata to protected linked tables with rtauargus** - Ferrer-Pradines Nadège, Desclodure Julien |
 | 12:30–13:30 | **Lunch Break**  |
