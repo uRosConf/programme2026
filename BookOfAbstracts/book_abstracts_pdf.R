@@ -282,7 +282,8 @@ pagedown::chrome_print(
   input = html,
   output = output,
   wait = 1,
-  verbose = 0
+  verbose = 0,
+  extra_args = c("--disable-gpu", "--no-sandbox", "--disable-dev-shm-usage")
 )
 
 cat(normalizePath(output, mustWork = FALSE), "\n")
