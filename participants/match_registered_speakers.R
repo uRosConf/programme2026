@@ -288,10 +288,10 @@ registered <- normalize_export_columns(suppressWarnings(
 
 docids <- submissions[
   STATUT == "Accepted",
-  .(DOCID, TITLE)
+  .(DOCID, TITLE, MAIL)
 ]
 docids[, title_key := normalize_title(TITLE)]
-docids <- unique(docids[, .(title_key, DOCID)], by = "title_key")
+docids <- unique(docids[, .(title_key, DOCID, MAIL)], by = "title_key")
 
 abstracts[, row_id := .I]
 abstracts[, title_key := normalize_title(TITLE)]
@@ -323,7 +323,7 @@ authors_by_row <- lapply(abstracts$Authors, split_people)
 speakers_by_row <- lapply(abstracts$SPEAKERS, split_people)
 max_authors <- max(lengths(authors_by_row), 0L)
 
-detail <- abstracts[, .(DOCID, TITLE, Authors)]
+detail <- abstracts[, .(DOCID, MAIL, TITLE, Authors)]
 for (author_id in seq_len(max_authors)) {
   author_col <- paste0("author", author_id)
   registered_col <- paste0("registered_author", author_id)
@@ -414,6 +414,7 @@ registered_speaker_names <- vapply(
 
 summary <- detail[, .(
   DOCID,
+  MAIL,
   TITLE,
   submission_speaker_names = vapply(
     speakers_by_row,
@@ -429,7 +430,8 @@ summary <- detail[, .(
 fwrite(
   summary[
     at_least_one_author_registered == FALSE &
-      at_least_one_speaker_registered == FALSE
+      at_least_one_speaker_registered == FALSE,
+    .(DOCID, MAIL, TITLE, submission_speaker_names, Authors)
   ],
   summary_file_missing,
   na = "NA"
