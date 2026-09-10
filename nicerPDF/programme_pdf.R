@@ -295,8 +295,10 @@ parse_programme <- function(text) {
 
     if (grepl("^### ", raw) && current_day > 0L) {
       h <- clean_md(sub("^### ", "", raw))
-      if (identical(h, "EMOS Presentations")) {
-        code <- "EMOS Presentations"; name <- "EMOS Presentations"
+      if (identical(h, "EMOS Presentations") ||
+          grepl("^EMOS session\\b", h, ignore.case = TRUE)) {
+        code <- h
+        name <- "Presentations"
       } else if (grepl("^[ABC][0-9]+", h)) {
         code <- sub("^([ABC][0-9]+).*$", "\\1", h)
         name <- sub("^[ABC][0-9]+\\s*(?:\u2014|-)?\\s*", "", h, perl = TRUE)
@@ -367,6 +369,7 @@ is_event_row <- function(row) {
   is_event_label <- function(x) {
     x %in% c("coffee break", "lunch break", "registration and walk-in",
              "opening", "closing", "emos presentations") ||
+      grepl("^emos session\\b", x) ||
       grepl("^keynote:", x)
   }
   all(vapply(labels, is_event_label, logical(1)))

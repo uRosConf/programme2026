@@ -48,7 +48,7 @@ Paris · 18–20 November 2026
 - **Another presentation title** — Presenter Name
 ```
 
-Numbered lists are also accepted, which is useful for Lightning Talks. `### EMOS Presentations` is treated as a special session.
+Numbered lists are also accepted, which is useful for Lightning Talks. `### EMOS Presentations` and numbered headings such as `### EMOS session I` are treated as special sessions.
 
 ## How it works
 
