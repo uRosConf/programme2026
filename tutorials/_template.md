@@ -2,10 +2,10 @@
 ## Title
 
 
-## Basic information
+### Basic information
 
 |Item     |entry |
-|---------| |
+|---------|------|
 |Duration |90:00 |
 |Materials|[course materials](https://mywebsite.com/uroscourse.zip)|
 
