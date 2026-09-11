@@ -1,13 +1,23 @@
 
 ## Title
 
+_short inviting text, for example:_
+
+This short, hands-on tutorial will get you started with the latest and most
+advanced time series models in R.
+
+
+[Back to program page](../README.md)
+
 
 ### Basic information
 
 |Item     |entry |
 |---------|------|
+|Presentor(s) |  |
 |Duration |90:00 |
 |Materials|[course materials](https://mywebsite.com/uroscourse.zip)|
+
 
 
 
@@ -25,7 +35,8 @@ After this course, participants will...
 
 The following topics will be treated
 
-- 
+- topic 1
+- topic 2 
 
 
 ### Target audience
