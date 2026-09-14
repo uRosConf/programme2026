@@ -33,7 +33,7 @@
 
 - **An R Framework for AI-Assisted Questionnaires in Official Statistics: An Application to Financial Literacy Surveys** - Rossi Valeria
 - **Developing a territorial One Health indicator using R** - Limone Fenicia Carmen
-- **R-Based Visualization of Continuous-Time Markov Migration Models** - Boukouvala Anna, Tsaklidis George
+- **Long-Term Effects of the Czech National Bank's Exchange-Rate Commitment: A Synthetic Control Approach in R** - Valtr Ondřej
 
 ### A1 - AI Assistants for Statistical Production
 
@@ -74,15 +74,14 @@
 3. **R you useful for maintaining information systems?** - Mainguené Alice
 4. **{IssueTrackeR}: Handling Tickets in R** - Barthelemy Tanguy
 5. **From Data to Publication : An Automated R-Based Framework for Consumer Price Index Reporting** - Aoulad Hammou Achou Zineb, Halhal Zakariae
-6. **Metadata-driven validation across the statistical production process using R** - Konradsdottir Ragnhildur, Calian Violeta
-7. **Facilitating R-Based Statistical Validation Through EZR: A Case Study in Melanoma High-Frequency Ultrasound Assessment** - Chalyy Kyrylo, Hryshchenko Roman, Bogomolets Olga, Stepanenko Viktor
-8. **Manual Rework Volume Monitoring and Forecasting Tool** - Coltier Yves
-9. **Semi-automated editing of large volumes of foreign trade data for the environmental Economy-Wide Material Flow Account** - Campandegui García Gorka, Maestro López Julia
-10. **VIM::vimpute: A Unified Imputation Engine for Flexible Missing Data Workflows in R** - Kowarik Alexander, Vattheuer Eileen, Templ Matthias, Gussenbauer Johannes, Niederhametner Nina
-11. **Sampling Designs and Sample Quality Control: Using Quarto Documents in Agricultural Surveys** - Levi-Valensin Michael
-12. **RISQ: Representativity Indicators for Survey Quality** - Idema Reijer
-13. **Reproducible Survey-Based Estimation of Household Living Standards in Morocco Using ENNVM 2022 Microdata** - Baabaa Oussama
-14. **SmartSurveyAgent: A New Approach to Survey Data Collection in Official Statistics** - Cafieri Simona
+6. **Facilitating R-Based Statistical Validation Through EZR: A Case Study in Melanoma High-Frequency Ultrasound Assessment** - Chalyy Kyrylo, Hryshchenko Roman, Bogomolets Olga, Stepanenko Viktor
+7. **Manual Rework Volume Monitoring and Forecasting Tool** - Coltier Yves
+8. **Semi-automated editing of large volumes of foreign trade data for the environmental Economy-Wide Material Flow Account** - Campandegui García Gorka, Maestro López Julia
+9. **VIM::vimpute: A Unified Imputation Engine for Flexible Missing Data Workflows in R** - Kowarik Alexander, Vattheuer Eileen, Templ Matthias, Gussenbauer Johannes, Niederhametner Nina
+10. **Sampling Designs and Sample Quality Control: Using Quarto Documents in Agricultural Surveys** - Levi-Valensin Michael
+11. **RISQ: Representativity Indicators for Survey Quality** - Idema Reijer
+12. **Reproducible Survey-Based Estimation of Household Living Standards in Morocco Using ENNVM 2022 Microdata** - Baabaa Oussama
+13. **SmartSurveyAgent: A New Approach to Survey Data Collection in Official Statistics** - Cafieri Simona
 
 ### C2 - Shiny Applications and Statistical Visualisation
 
@@ -134,7 +133,7 @@
 
 - **Typology of business ecosystems in European Union countries** - Ulada Dalidovich
 - **AI, Robotization and Perceived Occupational Displacement across European regions - an R based Spatial Econometrics Analysis** - Petre Vlad-Andrei, Cimpoeru Smaranda
-- **Long-Term Effects of the Czech National Bank's Exchange-Rate Commitment: A Synthetic Control Approach in R** - Valtr Ondřej
+- **R-Based Visualization of Continuous-Time Markov Migration Models** - Boukouvala Anna, Tsaklidis George
 
 ### A4 - Survey Sampling, Weighting and Variance Estimation
 
