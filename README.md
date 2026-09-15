@@ -154,10 +154,8 @@
 
 ### C4 - Record Linkage and Population Registers
 
-- **Building a register-based resident population from administrative data with R** - Danek Zofia, Strojny Tymoteusz, Beręsewicz Maciej, Czerniawska Aniela
 - **Linking Administrative Data Without Unique Identifiers: A randomForest Approach in R** - Nölting Christopher, Hajiyev Murad
 - **postlink: An R Package for Post-Linkage Data Analysis** - Bukke Priyanjali, Kamat Gauri, Cui Jiahao, Gutman Roee, Slawski Martin
-- **Probabilistic Record Linkage with the automatedRecLin R package** - Struzik Adam, Beręsewicz Maciej
 - **Reconciling Local and National Demographic Accounts in R** - Ward Daniel
 
 ### A5 - Spatial and Small Area Analysis
