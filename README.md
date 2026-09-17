@@ -56,7 +56,6 @@
 - **Automated Public Science Communication: Building a Bluesky Bot for Real-Time Official Statistics Visualisation with R** - Damien Dupre
 - **Beyond parametrised reports: Adventures automating country notes at the OECD** - Caldas Rivera Maria Paula, Ilizaliturri López Rodolfo
 - **From code to print-ready publication: Automating layout at the French Ministry of Justice** - Marsal Adam, Allard Fanny
-- **From R Markdown to Accessible PDF: Building Tagged Word Documents and Templates for Official Statistics Publications** - Dominik Ernst
 - **Reproducible Statistical Publications with Quarto** - Dervieux Christophe
 
 ### A2 - AI, Machine Learning and Intelligent Automation
@@ -87,7 +86,6 @@
 
 - **Rapid Crisis-Oriented Survey Visualization in Official Statistics: Flood Damage in Polish Agriculture Using R** - Grabarczyk Kamil
 - **phsshiny: An R Package for Standardisation and Accessibility in the Publication of Health Data** - Gribben Ciara, Mccreath Russell, Mcbride Bateman
-- **Public-Facing Shiny Apps at Statistik Austria: Corporate Design, Accessibility, and Secure Deployment by Design** - Seewann Lena, Dominik Ernst
 - **R Shiny Platform for Detecting, Validating, and Reporting River Overflow Periods** - Movsisyan Vahe, Habet Madoyan, Karapetyan Ina
 - **Creating population pyramids in less than 100 lines of code** - Neutze Michael
 
