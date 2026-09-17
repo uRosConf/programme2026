@@ -168,21 +168,20 @@
 
 ### B5 - Lightning Talks II: R Tools, Visualisation and Applications
 
-1. **Who owns R?** - Porsman Maria
-2. **How many R packages in CRAN do you know?** - Kiener Patrice, Dutang Christophe
-3. **ILSAmerge and ILSAstats: Two new R packages for international large-scale assessments** - Christiansen Andrés
-4. **Rrepest: An Analyzer of International Large Scale Assessments in Education** - Ilizaliturri López Rodolfo, Avvisati Francesco, Keslair François
-5. **{loomer} - A high-performance auxiliary R package for analyzing the Danish Lifelines dataset** - Kashnitsky Ilya
-6. **Further microdata anonymisation tools in R** - Caputi Marco
-7. **Automatic classification of pastoral-use parcels / Classification automatique des parcelles Ã usage pastoral** - Thion Romuald
-8. **Use of R Packages for Cartography: The Case of Road Traffic Accident Statistics in Luxembourg** - Osier Guillaume, Dere Alexi, Bodson Lucile
-9. **Mapping the Gendered Impact of Economic Shocks: A Spatial Analysis of Mancession vs. Shecession across European Regions** - Trascan Andreea-Denisa, Camelia Maria Dan
-10. **One R, Many Stories: R as a Visual Language to Tell a Country's Public Health Narrative** - Bajador Jerico
-11. **Estimating French election results like the pollsters from partial vote counts on election night: a transparent, reproducible R approach based on open public data** - Guinhut Thomas, Delaune Eulalie, Winckell Romain
-12. **The Effects of Skills on Gender Wage Inequality in the Digital Economy** - Petrașcu Gianina-Maria, Trascan Andreea-Denisa
-13. **Why Do Some Counties Perform Better? Educational Hubs, High-Tech Development and Skills Mismatch in Romania** - Boboc Cristina, Petrașcu Gianina Maria
-14. **Understanding International Remittance Flows: A Comparative Analysis Across Distinct Corridors Using Hybrid Machine Learning Methodologies** - Zhang Jing
-15. **The Intellectual Architecture of Artificial Intelligence-Driven Work Transformation: A Large-Scale Scientometric Exploration of Global Research Dynamics** - Barbulescu Ioana, Ciuhu Ana-Maria, Vasile Valentina, Suciu Andrei
+1. **How many R packages in CRAN do you know?** - Kiener Patrice, Dutang Christophe
+2. **ILSAmerge and ILSAstats: Two new R packages for international large-scale assessments** - Christiansen Andrés
+3. **Rrepest: An Analyzer of International Large Scale Assessments in Education** - Ilizaliturri López Rodolfo, Avvisati Francesco, Keslair François
+4. **{loomer} - A high-performance auxiliary R package for analyzing the Danish Lifelines dataset** - Kashnitsky Ilya
+5. **Further microdata anonymisation tools in R** - Caputi Marco
+6. **Automatic classification of pastoral-use parcels / Classification automatique des parcelles Ã usage pastoral** - Thion Romuald
+7. **Use of R Packages for Cartography: The Case of Road Traffic Accident Statistics in Luxembourg** - Osier Guillaume, Dere Alexi, Bodson Lucile
+8. **Mapping the Gendered Impact of Economic Shocks: A Spatial Analysis of Mancession vs. Shecession across European Regions** - Trascan Andreea-Denisa, Camelia Maria Dan
+9. **One R, Many Stories: R as a Visual Language to Tell a Country's Public Health Narrative** - Bajador Jerico
+10. **Estimating French election results like the pollsters from partial vote counts on election night: a transparent, reproducible R approach based on open public data** - Guinhut Thomas, Delaune Eulalie, Winckell Romain
+11. **The Effects of Skills on Gender Wage Inequality in the Digital Economy** - Petrașcu Gianina-Maria, Trascan Andreea-Denisa
+12. **Why Do Some Counties Perform Better? Educational Hubs, High-Tech Development and Skills Mismatch in Romania** - Boboc Cristina, Petrașcu Gianina Maria
+13. **Understanding International Remittance Flows: A Comparative Analysis Across Distinct Corridors Using Hybrid Machine Learning Methodologies** - Zhang Jing
+14. **The Intellectual Architecture of Artificial Intelligence-Driven Work Transformation: A Large-Scale Scientometric Exploration of Global Research Dynamics** - Barbulescu Ioana, Ciuhu Ana-Maria, Vasile Valentina, Suciu Andrei
 
 ### C5 - Imputation and Advanced Statistical Methods
 
