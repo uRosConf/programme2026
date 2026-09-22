@@ -4,9 +4,7 @@ README_files
 submissions_uRos.csv
 AGENTS.md
 speakers.csv
-list_user_registered.csv
-participants/speaker_registration_summary.csv
-participants/speaker_registration_missing.csv
+participants/*.csv
 lightning/B2/dummy1.pdf
 lightning/B2/dummy2.pdf
 lightning/B2/dummy3.pdf
