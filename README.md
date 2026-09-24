@@ -51,12 +51,13 @@
 - **The {ProduceR} package: streamlining and improving the reliability of statistical production** - Reduron Vincent
 - **Building an internal package ecosystem for data processing** - Kis Viktoria, Lee Erika, Normandeau Simon, Otavo Peña Sara
 
-### C1 - Automated and Accessible Statistical Publishing
+### C1 - Automated and Accessible Statistical Outputs
 
 - **Automated Public Science Communication: Building a Bluesky Bot for Real-Time Official Statistics Visualisation with R** - Damien Dupre
 - **Beyond parametrised reports: Adventures automating country notes at the OECD** - Caldas Rivera Maria Paula, Ilizaliturri López Rodolfo
 - **From code to print-ready publication: Automating layout at the French Ministry of Justice** - Marsal Adam, Allard Fanny
 - **Reproducible Statistical Publications with Quarto** - Dervieux Christophe
+- **From Data Acquisition to Harmonised Outputs: A Reproducible R Workflow for Official Statistics** - Alexandru Ciprian
 
 ### A2 - AI, Machine Learning and Intelligent Automation
 
