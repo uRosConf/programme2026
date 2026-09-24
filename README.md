@@ -149,7 +149,6 @@
 - **Behind-the-Scenes Complexity, Clear Insights Up Front: Longitudinal Minimum Income Benefit Analysis in a French Local Authority, from Database to Simple Indicators** - Chosson Elie
 - **Event-sequence analysis of fertility histories with TraMineR, INDSCAL and DISQUAL** - Morand Elisabeth
 - **Mental health and social participation: A data-driven analysis using R** - Camelia Maria Dan, Cristina Rodica Boboc
-- **Reproducible Machine Learning with Tidymodels for NHL Draft Prediction** - Lochner Tobias, Friedman Alon
 
 ### C4 - Record Linkage and Population Registers
 
@@ -169,21 +168,19 @@
 
 1. **How many R packages in CRAN do you know?** - Kiener Patrice, Dutang Christophe
 2. **ILSAmerge and ILSAstats: Two new R packages for international large-scale assessments** - Christiansen Andrés
-3. **Rrepest: An Analyzer of International Large Scale Assessments in Education** - Ilizaliturri López Rodolfo, Avvisati Francesco, Keslair François
-4. **{loomer} - A high-performance auxiliary R package for analyzing the Danish Lifelines dataset** - Kashnitsky Ilya
-5. **Further microdata anonymisation tools in R** - Caputi Marco
-6. **Automatic classification of pastoral-use parcels / Classification automatique des parcelles Ã usage pastoral** - Thion Romuald
-7. **Use of R Packages for Cartography: The Case of Road Traffic Accident Statistics in Luxembourg** - Osier Guillaume, Dere Alexi, Bodson Lucile
-8. **Mapping the Gendered Impact of Economic Shocks: A Spatial Analysis of Mancession vs. Shecession across European Regions** - Trascan Andreea-Denisa, Camelia Maria Dan
-9. **One R, Many Stories: R as a Visual Language to Tell a Country's Public Health Narrative** - Bajador Jerico
-10. **Estimating French election results like the pollsters from partial vote counts on election night: a transparent, reproducible R approach based on open public data** - Guinhut Thomas, Delaune Eulalie, Winckell Romain
-11. **The Effects of Skills on Gender Wage Inequality in the Digital Economy** - Petrașcu Gianina-Maria, Trascan Andreea-Denisa
-12. **Why Do Some Counties Perform Better? Educational Hubs, High-Tech Development and Skills Mismatch in Romania** - Boboc Cristina, Petrașcu Gianina Maria
-13. **The Intellectual Architecture of Artificial Intelligence-Driven Work Transformation: A Large-Scale Scientometric Exploration of Global Research Dynamics** - Barbulescu Ioana, Ciuhu Ana-Maria, Vasile Valentina, Suciu Andrei
+3. **{loomer} - A high-performance auxiliary R package for analyzing the Danish Lifelines dataset** - Kashnitsky Ilya
+4. **Further microdata anonymisation tools in R** - Caputi Marco
+5. **Automatic classification of pastoral-use parcels / Classification automatique des parcelles Ã usage pastoral** - Thion Romuald
+6. **Use of R Packages for Cartography: The Case of Road Traffic Accident Statistics in Luxembourg** - Osier Guillaume, Dere Alexi, Bodson Lucile
+7. **Mapping the Gendered Impact of Economic Shocks: A Spatial Analysis of Mancession vs. Shecession across European Regions** - Trascan Andreea-Denisa, Camelia Maria Dan
+8. **One R, Many Stories: R as a Visual Language to Tell a Country's Public Health Narrative** - Bajador Jerico
+9. **Estimating French election results like the pollsters from partial vote counts on election night: a transparent, reproducible R approach based on open public data** - Guinhut Thomas, Delaune Eulalie, Winckell Romain
+10. **The Effects of Skills on Gender Wage Inequality in the Digital Economy** - Petrașcu Gianina-Maria, Trascan Andreea-Denisa
+11. **Why Do Some Counties Perform Better? Educational Hubs, High-Tech Development and Skills Mismatch in Romania** - Boboc Cristina, Petrașcu Gianina Maria
+12. **The Intellectual Architecture of Artificial Intelligence-Driven Work Transformation: A Large-Scale Scientometric Exploration of Global Research Dynamics** - Barbulescu Ioana, Ciuhu Ana-Maria, Vasile Valentina, Suciu Andrei
 
 ### C5 - Imputation and Advanced Statistical Methods
 
-- **MRimputation: An R Package for Multiply Robust Imputation** - Czerniawska Aniela, Beręsewicz Maciej
 - **Preprocessing Categorical Variables through Edit-Induced Equivalence Classes in ARTIC** - Toti Simona, Filippini Romina
 - **Aggregating incomplete data: accounting for hierarchical relationships** - Kis Viktoria, Lee Erika, Normandeau Simon, Otavo Peña Sara
 - **Estimate distributions with fat and skewed tails with the FatTailsR package** - Kiener Patrice
@@ -200,8 +197,6 @@
 ### B6 - Survey Quality, Metadata and Fieldwork
 
 - **BuSuCo: A package for business survey coordination** - Straubinger Johannes
-- **A Psychometric Approach of Eurostat Business and Consumer Survey: Reliability, Factor Structure and Item Response Theory Analysis using R** - Sandu Mihaela Cornelia
-- **Predicting Response in Official Mixed-Mode Household Surveys: A Machine Learning Approach** - Succi Raffaella, Di Consiglio Loredana, Mamolo Marija
 - **The Survey Fieldwork Digital Twin: An R-Based Early-Warning System for Mixed-Mode Official Statistics** - Resulbegoviq Hakile, Čađenović Vuk
 - **The Metadata Quality Assistant (MQA): an R/Shiny prototype for supporting the preparation of SIMS quality reports** - Spiliopoulou Vasiliki, Pierrakou Christina, Molfetas Konstantinos
 
