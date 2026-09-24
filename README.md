@@ -178,8 +178,7 @@
 10. **Estimating French election results like the pollsters from partial vote counts on election night: a transparent, reproducible R approach based on open public data** - Guinhut Thomas, Delaune Eulalie, Winckell Romain
 11. **The Effects of Skills on Gender Wage Inequality in the Digital Economy** - Petrașcu Gianina-Maria, Trascan Andreea-Denisa
 12. **Why Do Some Counties Perform Better? Educational Hubs, High-Tech Development and Skills Mismatch in Romania** - Boboc Cristina, Petrașcu Gianina Maria
-13. **Understanding International Remittance Flows: A Comparative Analysis Across Distinct Corridors Using Hybrid Machine Learning Methodologies** - Zhang Jing
-14. **The Intellectual Architecture of Artificial Intelligence-Driven Work Transformation: A Large-Scale Scientometric Exploration of Global Research Dynamics** - Barbulescu Ioana, Ciuhu Ana-Maria, Vasile Valentina, Suciu Andrei
+13. **The Intellectual Architecture of Artificial Intelligence-Driven Work Transformation: A Large-Scale Scientometric Exploration of Global Research Dynamics** - Barbulescu Ioana, Ciuhu Ana-Maria, Vasile Valentina, Suciu Andrei
 
 ### C5 - Imputation and Advanced Statistical Methods
 

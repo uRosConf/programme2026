@@ -77,7 +77,8 @@ excluded_docids <- c(
   "752426",
   "751177",
   "752613",
-  "752805"
+  "752805",
+  "751833"
 )
 abstracts <- abstracts[
   STATUT == "Accepted" &
