@@ -69,7 +69,7 @@
 
 ### B2 - Lightning Talks I: Production, Validation and Survey Methods
 
-1. **Common pitfalls when switching from SAS to R** - Lamarche Pierre
+1. **How many R packages in CRAN do you know?** - Kiener Patrice, Dutang Christophe
 2. **Template and Function: A Tabular Configuration Pattern for Large Scale Operations on Files with Varying Schemas in Official Statistics** - Rakotomalala Daniel
 3. **R you useful for maintaining information systems?** - Mainguené Alice
 4. **{IssueTrackeR}: Handling Tickets in R** - Barthelemy Tanguy
@@ -82,6 +82,7 @@
 11. **RISQ: Representativity Indicators for Survey Quality** - Idema Reijer
 12. **Reproducible Survey-Based Estimation of Household Living Standards in Morocco Using ENNVM 2022 Microdata** - Baabaa Oussama
 13. **SmartSurveyAgent: A New Approach to Survey Data Collection in Official Statistics** - Cafieri Simona
+
 
 ### C2 - Shiny Applications and Statistical Visualisation
 
@@ -170,7 +171,7 @@
 
 ### B5 - Lightning Talks II: R Tools, Visualisation and Applications
 
-1. **How many R packages in CRAN do you know?** - Kiener Patrice, Dutang Christophe
+1. **Common pitfalls when switching from SAS to R** - Lamarche Pierre
 2. **ILSAmerge and ILSAstats: Two new R packages for international large-scale assessments** - Christiansen Andrés
 3. **{loomer} - A high-performance auxiliary R package for analyzing the Danish Lifelines dataset** - Kashnitsky Ilya
 4. **Further microdata anonymisation tools in R** - Caputi Marco
