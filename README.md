@@ -119,8 +119,8 @@
 |---|---|---|---|
 | 08:00–09:00 | **Registration and walk-in** |
 | 09:00–10:00 | **Keynote: Practical AI for Data Science** - Couch Simon |
-| 10:00–10:45 | **EMOS session II (chair: Tina Steenvoorden)** |
-| 10:45–11:15 | **Coffee break** |
+| 10:00–10:50 | **EMOS session II (chair: Tina Steenvoorden)** |
+| 10:50–11:15 | **Coffee break** |
 | 11:15–12:45 | **A4 - Survey Sampling, Weighting and Variance Estimation** | **B4 - Social and Economic Applications** | **C4 - Record Linkage and Population Registers** |
 | 12:45–13:45 | **Lunch break** |
 | 13:45–15:15 | **A5 - Spatial and Small Area Analysis** | **B5 - Lightning Talks II: R Tools, Visualisation and Applications** | **C5 - Imputation and Advanced Statistical Methods** |
@@ -133,6 +133,7 @@
 - **Typology of business ecosystems in European Union countries** - Ulada Dalidovich
 - **AI, Robotization and Perceived Occupational Displacement across European regions - an R based Spatial Econometrics Analysis** - Petre Vlad-Andrei, Cimpoeru Smaranda
 - **R-Based Visualization of Continuous-Time Markov Migration Models** - Boukouvala Anna, Tsaklidis George
+- **Subsampling Non-Response Follow-Up in the Canadian Housing Survey: Comparing the Historical Hansen-Hurwitz Method and Non-Probability Estimation** - Guinhut Thomas
 
 ### A4 - Survey Sampling, Weighting and Variance Estimation
 
