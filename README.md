@@ -121,11 +121,11 @@
 | 09:00–10:00 | **Keynote: Practical AI for Data Science** - Couch Simon |
 | 10:00–10:50 | **EMOS session II (chair: Tina Steenvoorden)** |
 | 10:50–11:15 | **Coffee break** |
-| 11:15–12:45 | **A4 - Survey Sampling, Weighting and Variance Estimation** | **B4 - Social and Economic Applications** | **C4 - Record Linkage and Population Registers** |
+| 11:15–12:45 | **A4 - Survey Sampling, Weighting and Variance Estimation** | **B4 - Social and Economic Applications** | **C4 - Infrastructure and Tools for Statistical Production** |
 | 12:45–13:45 | **Lunch break** |
 | 13:45–15:15 | **A5 - Spatial and Small Area Analysis** | **B5 - Lightning Talks II: R Tools, Visualisation and Applications** | **C5 - Imputation and Advanced Statistical Methods** |
 | 15:15–15:45 | **Coffee break** |
-| 15:45–17:15 | **A6 - Nowcasting and Time-Series Methods** | **B6 - Survey Quality, Metadata and Fieldwork** | **C6 - Infrastructure and Tools for Statistical Production** |
+| 15:45–17:15 | **A6 - Nowcasting and Time-Series Methods** | | **C6 - Data Integration, Survey Processes and Quality** |
 | 17:15–17:30 | **Closing** |
 
 ### EMOS session II
@@ -150,12 +150,15 @@
 - **Behind-the-Scenes Complexity, Clear Insights Up Front: Longitudinal Minimum Income Benefit Analysis in a French Local Authority, from Database to Simple Indicators** - Chosson Elie
 - **Event-sequence analysis of fertility histories with TraMineR, INDSCAL and DISQUAL** - Morand Elisabeth
 - **Mental health and social participation: A data-driven analysis using R** - Camelia Maria Dan, Cristina Rodica Boboc
-
-### C4 - Record Linkage and Population Registers
-
-- **Linking Administrative Data Without Unique Identifiers: A randomForest Approach in R** - Nölting Christopher, Hajiyev Murad
-- **postlink: An R Package for Post-Linkage Data Analysis** - Bukke Priyanjali, Kamat Gauri, Cui Jiahao, Gutman Roee, Slawski Martin
 - **Reconciling Local and National Demographic Accounts in R** - Ward Daniel
+
+### C4 - Infrastructure and Tools for Statistical Production
+
+- **AccScript: an R-based domain-specific language for reproducible national accounts production** - Taleb Iliass
+- **DuckDB beyond R: demystifying the analytical database in your toolbox** - Hiverlet Ines
+- **National Accountant: A Reproducible R-DuckDB Framework for Balancing Supply and Use Tables with Hard and Soft Constraints** - Kocak Necmettin Alpay
+- **procR: New Features for End-to-End Table Production in Official Statistics** - Saidani Younes, Tran Ngoc-Han
+- **codelist: working more efficiently with code lists in R** - Van Der Laan Jan
 
 ### A5 - Spatial and Small Area Analysis
 
@@ -195,16 +198,9 @@
 - **Using R to provide a new interface to an old time series program** - Mélard Guy
 - **KOMA - An R package for Bayesian estimation of simultaneous equation models** - Sarferaz Samad, Scherer Merlin
 
-### B6 - Survey Quality, Metadata and Fieldwork
-
+### C6 - Data Integration, Survey Processes and Quality
+- **Linking Administrative Data Without Unique Identifiers: A randomForest Approach in R** - Nölting Christopher, Hajiyev Murad
+- **postlink: An R Package for Post-Linkage Data Analysis** - Bukke Priyanjali, Kamat Gauri, Cui Jiahao, Gutman Roee, Slawski Martin
 - **BuSuCo: A package for business survey coordination** - Straubinger Johannes
 - **The Survey Fieldwork Digital Twin: An R-Based Early-Warning System for Mixed-Mode Official Statistics** - Resulbegoviq Hakile, Čađenović Vuk
 - **The Metadata Quality Assistant (MQA): an R/Shiny prototype for supporting the preparation of SIMS quality reports** - Spiliopoulou Vasiliki, Pierrakou Christina, Molfetas Konstantinos
-
-### C6 - Infrastructure and Tools for Statistical Production
-
-- **AccScript: an R-based domain-specific language for reproducible national accounts production** - Taleb Iliass
-- **DuckDB beyond R: demystifying the analytical database in your toolbox** - Hiverlet Ines
-- **National Accountant: A Reproducible R-DuckDB Framework for Balancing Supply and Use Tables with Hard and Soft Constraints** - Kocak Necmettin Alpay
-- **procR: New Features for End-to-End Table Production in Official Statistics** - Saidani Younes, Tran Ngoc-Han
-- **codelist: working more efficiently with code lists in R** - Van Der Laan Jan
