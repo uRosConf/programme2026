@@ -92,7 +92,15 @@ abstracts <- abstracts[
     !as.character(DOCID) %in% excluded_docids &
     (TYPDOC != "EMOS session" |
       (TYPDOC == "EMOS session" & DOCID %in% accepted_emos_docids)),
-  .(SPEAKERS, Authors = AUTHORS, LABOS, TYPDOC, TITLE, ABSTRACT)
+  .(
+    SPEAKERS,
+    Authors = AUTHORS,
+    LABOS,
+    TYPDOC,
+    TITLE,
+    ABSTRACT,
+    Email = MAIL
+  )
 ]
 abstracts[, SPEAKERS := clean_people(SPEAKERS)]
 abstracts[, Authors := clean_people(Authors)]
@@ -128,6 +136,17 @@ Particular attention is given to practical challenges encountered by an R user w
 '
   )
 )
-
-
+fwrite(
+  abstracts[TYPDOC == "Regular presentation", .(Authors, SPEAKERS, Email)],
+  file = "emailRegular.csv"
+)
+fwrite(
+  abstracts[TYPDOC == "lightning talk (5min)", .(Authors, SPEAKERS, Email)],
+  file = "emailLightning.csv"
+)
+fwrite(
+  abstracts[TYPDOC == "EMOS session", .(Authors, SPEAKERS, Email)],
+  file = "emailEMOS.csv"
+)
+abstracts[, Email := NULL]
 fwrite(rbind(abstracts, keynotes), file = "abstracts.csv")
