@@ -80,8 +80,7 @@
 9. **VIM::vimpute: A Unified Imputation Engine for Flexible Missing Data Workflows in R** - Kowarik Alexander, Vattheuer Eileen, Templ Matthias, Gussenbauer Johannes, Niederhametner Nina
 10. **Sampling Designs and Sample Quality Control: Using Quarto Documents in Agricultural Surveys** - Levi-Valensin Michael
 11. **RISQ: Representativity Indicators for Survey Quality** - Idema Reijer
-12. **Reproducible Survey-Based Estimation of Household Living Standards in Morocco Using ENNVM 2022 Microdata** - Baabaa Oussama
-13. **SmartSurveyAgent: A New Approach to Survey Data Collection in Official Statistics** - Cafieri Simona
+12. **SmartSurveyAgent: A New Approach to Survey Data Collection in Official Statistics** - Cafieri Simona
 
 
 ### C2 - Shiny Applications and Statistical Visualisation
