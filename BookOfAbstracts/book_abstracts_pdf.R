@@ -152,7 +152,11 @@ emos_abstracts <- abstracts[TYPDOC == "EMOS session", ]
 render_abstract <- function(t) {
   authors <- if ("Authors" %in% names(t)) t$Authors else t$SPEAKERS
   authors <- render_authors(authors, t$SPEAKERS)
-  affiliations <- if ("LABOS" %in% names(t)) render_affiliations(t$LABOS) else ""
+  affiliations <- if ("LABOS" %in% names(t)) {
+    render_affiliations(t$LABOS)
+  } else {
+    ""
+  }
   sprintf(
     '<div class="abstract"><div class="abstract-title">%s</div>%s%s<div class="abstract-text">%s</div></div>',
     html_escape(t$TITLE),
@@ -188,16 +192,29 @@ render_title_page <- function(logo_src) {
         '<img class="title-logo" src="%s" alt="uRos 2026 logo">',
         html_escape(logo_src)
       ),
-      '<h1>Book of Abstracts</h1>',
-      '<div class="programme-label">The Use of R in Official Statistics - uRos2026 Conference</div>',
-      '<div class="subtitle">Paris · 18–20 November 2026</div>',
+      '<h1>uRos 2026 <br/> Use of R in Official Statistics <br/> Book of Abstracts</h1>',
+      '<div class="edition-credits">',
+      '<div class="credit-group"><div class="credit-label">Coordinator of the edition:</div>',
+      '<div class="credit-name"><b>Ciprian Alexandru</b> – Ecological University of Bucharest<br/><br/></div></div>',
+      '<div class="credit-group"><div class="credit-label">Editors:</div>',
+      '<div class="credit-name"><b>Ana-Maria Ciuhu</b> – National Institute of Statistics Romania &amp; Institute of National Economy, Romanian Academy</div>',
+      '<div class="credit-name"><b>Alexander Kowarik</b> – Statistics Austria</div>',
+      '<div class="credit-name"><b>Mark van der Loo</b> – Eurostat</div></div>',
+      '</div>',
+      '<div class="subtitle">Paris, France | 18–20 November 2026</div>',
       '</section>'
     ),
     collapse = "\n"
   )
 }
 
-render_html_body <- function(keynote_df, regular_df, lightning_df, emos_df, logo_src) {
+render_html_body <- function(
+  keynote_df,
+  regular_df,
+  lightning_df,
+  emos_df,
+  logo_src
+) {
   out <- c(
     render_title_page(logo_src)
   )
@@ -221,8 +238,16 @@ body <- render_html_body(
 tmp <- tempfile("uros-abstracts-")
 dir.create(tmp)
 on.exit(unlink(tmp, recursive = TRUE, force = TRUE), add = TRUE)
-invisible(file.copy(css_file, file.path(tmp, "programme.css"), overwrite = TRUE))
-invisible(file.copy(logo_file, file.path(tmp, "uros2026_logo.jpg"), overwrite = TRUE))
+invisible(file.copy(
+  css_file,
+  file.path(tmp, "programme.css"),
+  overwrite = TRUE
+))
+invisible(file.copy(
+  logo_file,
+  file.path(tmp, "uros2026_logo.jpg"),
+  overwrite = TRUE
+))
 
 # Create modified CSS for abstracts
 abstracts_css <- file.path(tmp, "abstracts.css")
@@ -232,8 +257,11 @@ writeLines(
     "",
     ".title-page { min-height: 260mm; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; break-after: page; }",
     ".title-logo { display: block; width: 48mm; height: auto; margin: 0 0 12mm; }",
-    ".title-page h1 { margin: 0 0 4mm; font-size: 34pt; line-height: 1.05; }",
-    ".title-page .programme-label { max-width: 150mm; font-size: 15pt; line-height: 1.25; margin-bottom: 3mm; }",
+    ".title-page h1 { max-width: 165mm; margin: 0 0 8mm; font-size: 28pt; line-height: 1.12; }",
+    ".title-page .edition-credits { max-width: 150mm; font-size: 10.5pt; line-height: 1.35; margin-bottom: 6mm; }",
+    ".title-page .credit-group { margin-bottom: 3mm; }",
+    ".title-page .credit-label { font-weight: 700; margin-bottom: 1mm; }",
+    ".title-page .credit-name { margin-bottom: 3mm; }",
     ".title-page .subtitle { font-size: 11pt; }",
     ".abstract-section { break-before: page; }",
     ".abstract-section h2 { font-size: 18pt; color: #2879b9; margin-bottom: 4mm; }",
