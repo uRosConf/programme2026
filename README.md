@@ -6,13 +6,13 @@
 
 | Time | Auditorium | Bloch-Lainé 1 (access “cour”) | Bloch-Lainé 2 (access “rue”)  |
 |---|---|---|---|
-| 09:00–10:30 | **[Getting Started with Positron: A Next-Generation IDE for Data Science](tutorials/tutorial_positron.md)** -  François Michonneau, Christophe Dervieux, Mine Çetinkaya-Rundel | **Spatial Analysis and Cartography with R** - Kim Antunez | |
+| 09:00–10:30 | **[Getting Started with Positron: A Next-Generation IDE for Data Science](tutorials/tutorial_positron.md)** -  François Michonneau, Christophe Dervieux, Mine Çetinkaya-Rundel | **[Spatial Analysis and Cartography with R](tutorials/tutorial_spatial-analyses-and-cartography-with-R.md)** - Kim Antunez | |
 | 10:30–11:00 | **Coffee break** |
-| 11:00–12:30 | **R in the Age of LLMs: From AI-Assisted Development to Chat-Based Data Applications - I** - François Michonneau  | **Mapping Official Statistics with the tmapverse and cols4all** - Martijn Tennekes | **Managing statistical disclosure control from microdata to protected linked tables with rtauargus** - Nadège Ferrer-Pradines, Julien Desclodure |
+| 11:00–12:30 | **[R in the Age of LLMs: From AI-Assisted Development to Chat-Based Data Applications - I](tutorials/tutorial_R-in-the-age-of-LLMs.md)** - François Michonneau  | **[Mapping Official Statistics with the tmapverse and cols4all](tutorials/tutorial_mapping-official-statistics-with-the-tmapverse-and-colls4all.md)** - Martijn Tennekes | **[Managing statistical disclosure control from microdata to protected linked tables with rtauargus](tutorials/tutorial_sdc-rtauargus.md)** - Nadège Ferrer-Pradines, Julien Desclodure |
 | 12:30–13:30 | **Lunch Break**  |
-| 13:30–15:00 | **R in the Age of LLMs: From AI-Assisted Development to Chat-Based Data Applications - II** - François Michonneau | **From Data to Models: Hands-On Machine Learning with R** - Adrián Pérez Bote, Sandra Barragán Andrés | **Working with categorical data and codelists in R** - Jan van Der Laan, Edwin de Jonge |
+| 13:30–15:00 | **[R in the Age of LLMs: From AI-Assisted Development to Chat-Based Data Applications - II](tutorials/tutorial_R-in-the-age-of-LLMs.md)** - François Michonneau | **[From Data to Models: Hands-On Machine Learning with R](tutorials/tutorial_from-data-to-models.md)** - Adrián Pérez Bote, Sandra Barragán Andrés | **[Working with categorical data and codelists in R](tutorials/tutorial_categorical-data-and-codelists.md)** - Jan van Der Laan, Edwin de Jonge |
 | 15:30–16:00 | **Coffee break** |
-| 16:00–17:30 | **Opening the Black Box: Interpreting Machine Learning Models with SHAP Values in R** - Thelma Panaiotis |  | **Tidy Survey Analysis in R: Working with Weights and Sampling Designs for Official Statistics** - Stephanie Zimmer, Rebecca Powell, Isabella Velásquez |
+| 16:00–17:30 | **[Opening the Black Box: Interpreting Machine Learning Models with SHAP Values in R](tutorials/tutorial_shap-values-in-R.md)** - Thelma Panaiotis |  | **[Tidy Survey Analysis in R: Working with Weights and Sampling Designs for Official Statistics](tutorials/tutorial_survey-analysis-in-R.md)** - Stephanie Zimmer, Rebecca Powell, Isabella Velásquez |
 
 ## Thursday, 19 November 2026 - Conference Day 1
 
