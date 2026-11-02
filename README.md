@@ -65,6 +65,7 @@
 - **Bridging R and Python for AI-Driven NLP** - Georgios Lykos, Spyridon Dimas, Georgia Panagopoulou, Michail Vikentios
 - **Structuring Annual Reports for Official Statistics: A Method for Data Editing Using Large Language Models** - Bjørkholt Solveig, Mona Islam Mousumi, Sarah Torvholm Frøystad, Odin Johansen, Maryam Javed
 - **A Comparison of Model-Based and Unsupervised Learning Methods for Detecting Scaling Errors in R** - Marcello D'orazio, Cristina Faricelli, Renato Magistro
+- **Unsupervised Learning Approaches for Identifying Structural Anomalies in European Regional Statistics** - Bogdan Oancea, Ciprian Alexandru
 
 ### B2 - Lightning Talks I: Production, Validation and Survey Methods
 
