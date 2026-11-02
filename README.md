@@ -4,7 +4,7 @@
 
 ## Wednesday, 18 November 2026 - Tutorial Day
 
-| Time | Auditorium | Bloch-Lainé 1 (access “cour”) | Bloch-Lainé 2 (access “rue”)  |
+| Time | Auditorium | Bloch-Lainé 1 (“cour”) | Bloch-Lainé 2 (“rue”)  |
 |---|---|---|---|
 | 09:00–10:30 | **[Getting Started with Positron: A Next-Generation IDE for Data Science](tutorials/tutorial_positron.md)** -  François Michonneau, Christophe Dervieux, Mine Çetinkaya-Rundel | **[Spatial Analysis and Cartography with R](tutorials/tutorial_spatial-analyses-and-cartography-with-R.md)** - Kim Antunez | |
 | 10:30–11:00 | **Coffee break** |
@@ -16,7 +16,7 @@
 
 ## Thursday, 19 November 2026 - Conference Day 1
 
-| Time | Auditorium | Bloch-Lainé 1 (access “cour”) | Bloch-Lainé 2 (access “rue”)  |
+| Time | Auditorium | Bloch-Lainé 1 (“cour”) | Bloch-Lainé 2 (“rue”)  |
 |---|---|---|---|
 | 08:00–09:00 | **Registration and walk-in** |
 | 09:00–09:15 | **Opening** |
@@ -115,7 +115,7 @@
 
 ## Friday, 20 November 2026 - Conference Day 2
 
-| Time | Auditorium | Bloch-Lainé 1 (access “cour”) | Bloch-Lainé 2 (access “rue”)  |
+| Time | Auditorium | Bloch-Lainé 1 (“cour”) | Bloch-Lainé 2 (“rue”)  |
 |---|---|---|---|
 | 08:00–09:00 | **Registration and walk-in** |
 | 09:00–10:00 | **Keynote: Practical AI for Data Science** - Simon Couch (chair: Mark van der Loo) |
