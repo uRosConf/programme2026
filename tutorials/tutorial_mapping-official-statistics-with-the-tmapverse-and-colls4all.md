@@ -3,6 +3,7 @@
 
 Maps are among the most effective ways to communicate official statistics, but
 producing them well requires both the right tools and careful design choices.
+
 This tutorial introduces the
 [tmapverse](https://cran.r-project.org/package=tmapverse): the tmap package
 together with its growing family of extensions. With tmap (version 4),
@@ -82,3 +83,4 @@ You can install it with:
 ```r
 install.packages("tmapverse")
 ```
+

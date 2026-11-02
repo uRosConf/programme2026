@@ -49,20 +49,13 @@ During this hands-on tutorial, participants will learn how to:
 
 ### Target audience
 
-_What should a participating member already know?_
+The audience is expected to to be comfortable working with R, including writing scripts 
+and functions.
 
 
 
 ### Before coming to the course
 
-Please make sure you have installed R and RStudio and have the latest versions
-of the following packages installed:
-
-- package1
-- package2
-
-(possible other software needed)
-
-Please download the [course materials](https://mywebsite.com/uroscourse.zip).
+The Positron IDE is available from [https://positron.posit.co/](https://positron.posit.co/)
 
 

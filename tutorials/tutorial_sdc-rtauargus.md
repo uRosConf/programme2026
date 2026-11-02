@@ -1,7 +1,7 @@
 
 ## Managing statistical disclosure control from microdata to protected linked tables with rtauargus 
 
-In this tutorial, we will follow a dissemination project, from microdata and
+In this tutorial we will follow a dissemination project, from microdata and
 dissemination template to protected linked tables, including non-nested
 hierarchies. 
 
@@ -52,18 +52,31 @@ The following topics will be treated:
 
 What should a participating member already know?
 
-We expect participants to have a working knowledge of base R, and RStudio projects.
-Furthermore, some experience with `dplyr` is recommendable. 
-Participants should also be familiar with tabulated data for dissemination in official statistics. Experience as data producer is not mandatory but would give more context to the goals pursued.
+We expect participants to have a working knowledge of base R, and RStudio
+projects.  Furthermore, some experience with `dplyr` is recommendable. 
+
+Participants should also be familiar with tabulated data for dissemination in
+official statistics and a basic knowledge of statistical disclosure control.
+Experience as data producer is not mandatory but would give more context to the
+goals pursued.
 
 
 ### Before coming to the course
 
-Warning: you will **only be able to follow this tutorial with a Windows operating system**, as tau-Argus is not compiled to Linux to date.
-Follow the instructions for TauArgus installation:
-- [TauArgus4.2.3](https://github.com/sdcTools/tauargus/releases/tag/v4.2.3) : unzip the downloaded zip archive into a folder where you have read, write, and execute permissions; install the software in a directory path that does not contain spaces (for example, use C:\TauArgus instead of C:\Program Files\TauArgus) to prevent runtime errors.
+Warning: you will **only be able to follow this tutorial with a Windows
+operating system**, as tau-Argus is not compiled to Linux to date.
 
-Please make sure you have installed R and RStudio then install rtauargus with the following R command:
+
+Follow the instructions for TauArgus installation:
+
+- [TauArgus4.2.3](https://github.com/sdcTools/tauargus/releases/tag/v4.2.3) :
+  unzip the downloaded zip archive into a folder where you have read, write,
+  and execute permissions; install the software in a directory path that does not
+  contain spaces (for example, use C:\TauArgus instead of C:\Program
+  Files\TauArgus) to prevent runtime errors.
+
+Please make sure you have installed R and RStudio then install rtauargus with
+the following R command:
 
 ```
 install.packages("remotes")
@@ -74,6 +87,7 @@ remotes::install_github(
 )
 ```
 
-A GitHub repository will soon be available to download the R project dedicated to the tutorial.
+A GitHub repository will soon be available to download the R project dedicated
+to the tutorial.
 
 

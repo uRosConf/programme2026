@@ -6,7 +6,7 @@
 
 | Time | Auditorium | Bloch-Lainé 1 (access “cour”) | Bloch-Lainé 2 (access “rue”)  |
 |---|---|---|---|
-| 09:00–10:30 | **Getting Started with Positron: A Next-Generation IDE for Data Science** -  François Michonneau, Christophe Dervieux, Mine Çetinkaya-Rundel | **Spatial Analysis and Cartography with R** - Kim Antunez | |
+| 09:00–10:30 | **[Getting Started with Positron: A Next-Generation IDE for Data Science](tutorials/positron.md)** -  François Michonneau, Christophe Dervieux, Mine Çetinkaya-Rundel | **Spatial Analysis and Cartography with R** - Kim Antunez | |
 | 10:30–11:00 | **Coffee break** |
 | 11:00–12:30 | **R in the Age of LLMs: From AI-Assisted Development to Chat-Based Data Applications - I** - François Michonneau  | **Mapping Official Statistics with the tmapverse and cols4all** - Martijn Tennekes | **Managing statistical disclosure control from microdata to protected linked tables with rtauargus** - Nadège Ferrer-Pradines, Julien Desclodure |
 | 12:30–13:30 | **Lunch Break**  |
