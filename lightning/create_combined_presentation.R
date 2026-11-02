@@ -13,7 +13,7 @@
 
 # ---- Packages ------------------------------------------------
 
-packages <- c("pdftools", "qpdf")
+packages <- c("pdftools", "qpdf", "jpeg")
 
 missing <- packages[
   !vapply(packages, requireNamespace, logical(1), quietly = TRUE)
@@ -28,6 +28,12 @@ if (length(missing)) {
 
 SECONDS_PER_SLIDE <- 20
 EXPECTED_SLIDES   <- 15
+LOGO_FILE         <- "uros2026_logo.jpg"
+
+if (!file.exists(LOGO_FILE)) {
+  stop("Logo file does not exist: ", LOGO_FILE)
+}
+uros_logo <- jpeg::readJPEG(LOGO_FILE)
 
 
 
@@ -35,28 +41,103 @@ TEMP_DIR <- tempfile("uros2026_")
 dir.create(TEMP_DIR)
 
 
-# ---- Programme -----------------------------------------------
-OUTPUT_FILE <- "B2_uRos2026_lightning_talks.pdf"
+# B2 ---- Programme -----------------------------------------------
+OUTPUT_FILE <- "B2_00_uRos2026_lightning_talks.pdf"
 presentations <- data.frame(
   speaker = c(
-    "Jane Smith",
-    "John Doe & Maria Rossi",
-    "Alexander Example"
+    "Patrice Kiener",
+    "Daniel Rakotomalala",
+    "Alice Mainguené",
+    "Tanguy Barthelemy",
+    "Zineb Aoulad Hammou Achou, Zakariae Halhal",
+    "Kyrylo Chalyy",
+    "Yves Coltier",
+    "Gorka Campandegui García",
+    "Alexander Kowarik",
+    "Michael Levi-Valensin",
+    "Reijer Idema",
+    "Simona Cafieri"
+
   ),
   title = c(
-    "Using R in Official Statistics",
-    "Modern Approaches to Survey Sampling",
-    "Machine Learning for Statistical Production"
+    "How many R packages in CRAN do you know?",
+    "Template and Function: A Tabular Configuration Pattern for Large Scale Operations on Files with Varying Schemas in Official Statistics",
+    "R you useful for maintaining information systems?",
+    "{IssueTrackeR}: Handling Tickets in R",
+    "From Data to Publication : An Automated R-Based Framework for Consumer Price Index Reporting",
+    "Facilitating R-Based Statistical Validation Through EZR: A Case Study in Melanoma High-Frequency Ultrasound",
+    "Manual Rework Volume Monitoring and Forecasting Tool",
+    "Semi-automated editing of large volumes of foreign trade data for the environmental Economy-Wide Material Flow Account",
+    "VIM::vimpute: A Unified Imputation Engine for Flexible Missing Data Workflows in R",
+    "Sampling Designs and Sample Quality Control: Using Quarto Documents in Agricultural Surveys",
+    "RISQ: Representativity Indicators for Survey Quality",
+    "SmartSurveyAgent: A New Approach to Survey Data Collection in Official Statistics"
   ),
   file = c(
-    "~/git/programme2026/lightning/B2/dummy1.pdf",
-    "~/git/programme2026/lightning/B2/dummy2.pdf",
-    "~/git/programme2026/lightning/B2/dummy3.pdf"
+    'lightning/B2/B2_01_2026-1119-uRos2026-B2-PatriceKiener-RWsearch.pdf',
+    'lightning/B2/B2_02_uros2026_B2_Rakotomalala_Final.pdf',
+    'lightning/B2/B2_03_uRos_nov2026_b2_amainguene.pdf',
+    'lightning/B2/B2_04_Session_Tanguy_Barthelemy_IssueTrackeR.pdf',
+    'lightning/B2/B2_05_uros2026_B2_CPIFramework.pdf',
+    'lightning/B2/B2_06_uRos2026_EZR_Chalyy.pdf',
+    'lightning/B2/B2_07_-Manual Rework Volume Monitoring and Forecasting Tool.pdf',
+    'lightning/B2/B2_08_Gorka Campandegui Garcia - Semi-automated.pdf',
+    'lightning/B2/B2_09_vimpute_kowarik.pdf',
+    'lightning/B2/B2_10_SamplingDesignsandSampleQualityControl .pdf',
+    'lightning/B2/B2_11_uros2026_presentation_idema.pdf',
+    'lightning/B2/B2_12_SmartSurveyAgent_cafieri_B2.pdf'
   ),
   stringsAsFactors = FALSE
 )
 
+# B5 ---- Programme -----------------------------------------------
+OUTPUT_FILE <- "B5_00_uRos2026_lightning_talks.pdf"
+presentations <- data.frame(
+  speaker = c(
+    "Pierre Lamarche",
+    "Andrés Christiansen",
+    "Ilya Kashnitsky",
+    "Marco Caputi",
+    "Romuald Thion",
+    "Guillaume Osier",
+    "Andreea-Denisa Trascan",
+    "Jerico Bajador",
+    "Thomas Guinhut, Eulalie Delaune",
+    "Gianina-Maria Petrașcu",
+    "Cristina Boboc",
+    "Ana-Maria Ciuhu"
 
+  ),
+  title = c(
+    "Common pitfalls when switching from SAS to R",
+    "ILSAmerge and ILSAstats: Two new R packages for international large-scale assessments",
+    "{loomer} - A high-performance auxiliary R package for analyzing the Danish Lifelines dataset",
+    "Further microdata anonymisation tools in R",
+    "Automatic classification of pastoral-use parcels / Classification automatique des parcelles à usage pastoral",
+    "Use of R Packages for Cartography: The Case of Road Traffic Accident Statistics in Luxembourg",
+    "Mapping the Gendered Impact of Economic Shocks: A Spatial Analysis of Mancession vs. Shecession across European Regions",
+    "One R, Many Stories: R as a Visual Language to Tell a Country's Public Health Narrative",
+    "Estimating French election results like the pollsters from partial vote counts on election night: a transparent, reproducible R approach based on open public data",
+    "The Effects of Skills on Gender Wage Inequality in the Digital Economy",
+    "Why Do Some Counties Perform Better? Educational Hubs, High-Tech Development and Skills Mismatch in Romania",
+    "The Intellectual Architecture of Artificial Intelligence-Driven Work Transformation: A Large-Scale Scientometric Exploration of Global Research Dynamics"
+  ),
+  file = c(
+    'lightning/B5/',
+    'lightning/B5/',
+    'lightning/B5/',
+    'lightning/B5/',
+    'lightning/B5/',
+    'lightning/B5/',
+    'lightning/B5/',
+    'lightning/B5/',
+    'lightning/B5/',
+    'lightning/B5/',
+    'lightning/B5/',
+    'lightning/B5/'
+  ),
+  stringsAsFactors = FALSE
+)
 # ---- Helper: wrap text ----------------------------------------
 
 wrap_text <- function(x, width = 45) {
@@ -96,29 +177,16 @@ create_title_slide <- function(speaker, title, filename) {
     border = NA
   )
 
-  # ------------------------------------------------------------
-  # Placeholder uRos 2026 logo
-  # Replace this block later with rasterImage() or similar.
-  # ------------------------------------------------------------
+  # Fit the logo into the top-right area without stretching it.
+  logo_aspect <- dim(uros_logo)[2] / dim(uros_logo)[1]
+  logo_width <- min(22, 10 * logo_aspect)
+  logo_height <- logo_width / logo_aspect
 
-  rect(
-    77, 46,
+  rasterImage(
+    uros_logo,
+    94 - logo_width, 52.5 - logo_height,
     94, 52.5,
-    border = "#333333",
-    lwd = 2
-  )
-
-  text(
-    85.5, 49.8,
-    "uRos 2026",
-    cex = 2,
-    font = 2
-  )
-
-  text(
-    85.5, 47.4,
-    "PARIS",
-    cex = 0.75
+    interpolate = TRUE
   )
 
 
@@ -343,7 +411,10 @@ if (!nzchar(gs)) {
 
 } else {
 
-  # Ghostscript command
+  # Preserve source image resolution and avoid adding JPEG artefacts when
+  # Ghostscript rewrites the PDF to add timing. Pass existing JPEG/JPEG2000
+  # streams through where possible; use lossless Flate for re-encoded images.
+  # This may produce a larger PDF, but cannot restore detail absent in inputs.
   args <- c(
     "-dBATCH",
     "-dNOPAUSE",
@@ -351,6 +422,15 @@ if (!nzchar(gs)) {
     "-sDEVICE=pdfwrite",
     "-dCompatibilityLevel=1.7",
     "-dAutoRotatePages=/None",
+    "-dDownsampleColorImages=false",
+    "-dDownsampleGrayImages=false",
+    "-dDownsampleMonoImages=false",
+    "-dAutoFilterColorImages=false",
+    "-dAutoFilterGrayImages=false",
+    "-dColorImageFilter=/FlateEncode",
+    "-dGrayImageFilter=/FlateEncode",
+    "-dPassThroughJPEGImages=true",
+    "-dPassThroughJPXImages=true",
     paste0("-sOutputFile=", OUTPUT_FILE),
     merged_file,
     ps_file

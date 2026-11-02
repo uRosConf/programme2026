@@ -5,10 +5,9 @@ submissions_uRos.csv
 AGENTS.md
 speakers.csv
 participants/*.csv
-lightning/B2/dummy1.pdf
-lightning/B2/dummy2.pdf
-lightning/B2/dummy3.pdf
+lightning/B2/*.pdf
 submissions_uRos_old.csv
 email*.csv
 BookOfAbstracts/excluded_accepted.csv
 BookOfAbstracts/review_issues.csv
+B2_00_uRos2026_lightning_talks.pdf
