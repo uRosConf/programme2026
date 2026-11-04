@@ -18,7 +18,7 @@
 
 | Time | Auditorium | Bloch-Lainé 1 (“cour”) | Bloch-Lainé 2 (“rue”)  |
 |---|---|---|---|
-| 08:00–09:00 | **Registration and walk-in** |
+| 08:00–09:00 | **Registration and walk-in (Lobby)** |
 | 09:00–09:15 | **Opening** |
 | 09:15-10:15 | **Keynote: R and Open-Source: A love story** - Rebecca Killick (chair: Anna Smyk) |
 | 10:15–11:00 | **EMOS session I (chair: Tina Steenvoorden)** |
@@ -28,6 +28,7 @@
 | 14:00–15:30 | **A2 - AI, Machine Learning and Intelligent Automation** (chair: Sandra Barragán Andrés) | **B2 - Lightning Talks I: Production, Validation and Survey Methods** (chair: Mark van der Loo) | **C2 - Shiny Applications and Statistical Visualisation** (chair: Bernhard Meindl) |
 | 15:30–16:00 | **Coffee break** |
 | 16:00–17:30 | **A3 - Open Source Adoption and the R Community** (chair: Alexander Kowarik) | **B3 - Seasonal Adjustment in Official Statistics** (chair: Rebecca Killick) | **C3 - Statistical Disclosure Control and Synthetic Data** (chair: Ciprian Alexandru) |
+| 18:00-21:00 | **Networking Cocktail (Lobby)**|
 
 ### EMOS session I
 
@@ -117,7 +118,7 @@
 
 | Time | Auditorium | Bloch-Lainé 1 (“cour”) | Bloch-Lainé 2 (“rue”)  |
 |---|---|---|---|
-| 08:00–09:00 | **Registration and walk-in** |
+| 08:00–09:00 | **Registration and walk-in (Lobby)** |
 | 09:00–10:00 | **Keynote: Practical AI for Data Science** - Simon Couch (chair: Mark van der Loo) |
 | 10:00–10:50 | **EMOS session II (chair: Tina Steenvoorden)** |
 | 10:50–11:15 | **Coffee break** |
