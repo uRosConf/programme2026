@@ -177,11 +177,10 @@
 5. **Automatic classification of pastoral-use parcels / Classification automatique des parcelles à usage pastoral** - Romuald Thion
 6. **Use of R Packages for Cartography: The Case of Road Traffic Accident Statistics in Luxembourg** - Guillaume Osier, Alexi Dere, Lucile Bodson
 7. **Mapping the Gendered Impact of Economic Shocks: A Spatial Analysis of Mancession vs. Shecession across European Regions** - Andreea-Denisa Trascan, Camelia-Maria Dan
-8. **One R, Many Stories: R as a Visual Language to Tell a Country's Public Health Narrative** - Jerico Bajador
-9. **Estimating French election results like the pollsters from partial vote counts on election night: a transparent, reproducible R approach based on open public data** - Thomas Guinhut, Eulalie Delaune, Romain Winckell
-10. **The Effects of Skills on Gender Wage Inequality in the Digital Economy** - Gianina-Maria Petrașcu, Andreea-Denisa Trascan
-11. **Why Do Some Counties Perform Better? Educational Hubs, High-Tech Development and Skills Mismatch in Romania** - Cristina Boboc, Gianina Maria Petrașcu
-12. **The Intellectual Architecture of Artificial Intelligence-Driven Work Transformation: A Large-Scale Scientometric Exploration of Global Research Dynamics** - Ioana Barbulescu, Ana-Maria Ciuhu, Valentina Vasile, Andrei Suciu, Razvan Vasile
+8. **Estimating French election results like the pollsters from partial vote counts on election night: a transparent, reproducible R approach based on open public data** - Thomas Guinhut, Eulalie Delaune, Romain Winckell
+9. **The Effects of Skills on Gender Wage Inequality in the Digital Economy** - Gianina-Maria Petrașcu, Andreea-Denisa Trascan
+10. **Why Do Some Counties Perform Better? Educational Hubs, High-Tech Development and Skills Mismatch in Romania** - Cristina Boboc, Gianina Maria Petrașcu
+11. **The Intellectual Architecture of Artificial Intelligence-Driven Work Transformation: A Large-Scale Scientometric Exploration of Global Research Dynamics** - Ioana Barbulescu, Ana-Maria Ciuhu, Valentina Vasile, Andrei Suciu, Razvan Vasile
 
 ### C5 - Imputation and Advanced Statistical Methods
 
