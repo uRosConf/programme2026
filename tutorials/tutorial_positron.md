@@ -20,9 +20,9 @@ Connections, Plots, Help, and more that RStudio users have come to rely on.
 
 |Item     |entry |
 |---------|------|
-|Presentor(s) | [Mine Çetinkaya-Rundel](https://mine-cr.com/) and [Christophe Dervieux](https://opensource.posit.co/people/christophe-dervieux/) |
+|Presentor(s) | [François Michonneau](https://opensource.posit.co/people/fran%C3%A7ois-michonneau/) and [Christophe Dervieux](https://opensource.posit.co/people/christophe-dervieux/) |
 |Duration |90:00 |
-|Materials|[course materials](https://mywebsite.com/uroscourse.zip)|
+|Materials|[course materials](https://github.com/fmichonneau/2026-uros-positron-workshop)|
 
 
 ### Learning Goals
@@ -32,7 +32,6 @@ After this course, users of R and/or RStudio will be able to
 - set up Positron on their system
 - understand how to perform their most-used workflows in Positron
 - understand its integration with the R ecosystem, including R scripts, and document generation
-- enhance their productivity using the Positron Assistant
 - tailor Positron to their needs
 
 
@@ -43,19 +42,17 @@ During this hands-on tutorial, participants will learn how to:
 - Install, configure, and update Positron for an R-focused workflow 
 - Navigate Positron's interface and understand how it compares to RStudio 
 - Work with R scripts and Quarto documents in Positron for interactive R coding and data exploration
-- Try Posit Assistant for core data science workflows, including exploratory analysis, data cleaning, data (Shiny) app development, and modeling
 - Customize Positron with useful settings, extensions, and keyboard shortcuts 
 
 
 ### Target audience
 
-The audience is expected to to be comfortable working with R, including writing scripts 
-and functions.
+The audience is expected to be comfortable working with R, including writing scripts and functions.
 
 
 
 ### Before coming to the course
 
-The Positron IDE is available from [https://positron.posit.co/](https://positron.posit.co/)
+The Positron IDE is available from [https://positron.posit.co/](https://positron.posit.co/). If you cannot install Positron on your laptop, we will provide you access to a web-based version.
 
 
