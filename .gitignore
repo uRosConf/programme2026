@@ -11,3 +11,5 @@ email*.csv
 BookOfAbstracts/excluded_accepted.csv
 BookOfAbstracts/review_issues.csv
 B2_00_uRos2026_lightning_talks.pdf
+lightning/B5/*.pdf
+B5_00_uRos2026_lightning_talks.pdf

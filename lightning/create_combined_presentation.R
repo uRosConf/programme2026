@@ -101,7 +101,6 @@ presentations <- data.frame(
     "Romuald Thion",
     "Guillaume Osier",
     "Andreea-Denisa Trascan",
-    "Jerico Bajador",
     "Thomas Guinhut, Eulalie Delaune",
     "Gianina-Maria Petrașcu",
     "Cristina Boboc",
@@ -116,25 +115,23 @@ presentations <- data.frame(
     "Automatic classification of pastoral-use parcels / Classification automatique des parcelles à usage pastoral",
     "Use of R Packages for Cartography: The Case of Road Traffic Accident Statistics in Luxembourg",
     "Mapping the Gendered Impact of Economic Shocks: A Spatial Analysis of Mancession vs. Shecession across European Regions",
-    "One R, Many Stories: R as a Visual Language to Tell a Country's Public Health Narrative",
     "Estimating French election results like the pollsters from partial vote counts on election night: a transparent, reproducible R approach based on open public data",
     "The Effects of Skills on Gender Wage Inequality in the Digital Economy",
     "Why Do Some Counties Perform Better? Educational Hubs, High-Tech Development and Skills Mismatch in Romania",
-    "The Intellectual Architecture of Artificial Intelligence-Driven Work Transformation: A Large-Scale Scientometric Exploration of Global Research Dynamics"
+    "AI-Assisted Scientific Literature Review with LitRefineR Using OpenAlex"
   ),
   file = c(
-    'lightning/B5/',
-    'lightning/B5/',
-    'lightning/B5/',
-    'lightning/B5/',
-    'lightning/B5/',
-    'lightning/B5/',
-    'lightning/B5/',
-    'lightning/B5/',
-    'lightning/B5/',
-    'lightning/B5/',
-    'lightning/B5/',
-    'lightning/B5/'
+    'lightning/B5/B5_01_Lamarche.pdf',
+    'lightning/B5/B5_02_ILSAmerge and ILSAstats - uRos 2026 v1.pdf',
+    'lightning/B5/B5_03-Kashnitsky-slides-uros-ikx.pdf',
+    'lightning/B5/B5_04_Marco_Caputi_uRos2026.pdf',
+    'lightning/B5/B5_05_THION_automatic-classification-parcels.pdf',
+    'lightning/B5/B5_06_STATECcartography.pdf',
+    'lightning/B5/B5_07_Trascan_Dan_uRos2026.pdf',
+    'lightning/B5/B5_08_Estimating_French_election_results_like_the_pollsters.pdf',
+    'lightning/B5/B5_09_Petrascu_Trascan_uRos2026.pdf',
+    'lightning/B5/B5_10_Boboc_Petrascu_uRos2026.pdf',
+    'lightning/B5/B5_11_CiuhuAnaMaria.pdf'
   ),
   stringsAsFactors = FALSE
 )
