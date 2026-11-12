@@ -35,7 +35,7 @@
 
 - **An R Framework for AI-Assisted Questionnaires in Official Statistics: An Application to Financial Literacy Surveys** - Valeria Rossi
 - **Developing a territorial One Health indicator using R** - Carmen Limone Fenicia
-- **Long-Term Effects of the Czech National Bank's Exchange-Rate Commitment: A Synthetic Control Approach in R** - Ondřej Valtr
+- **Typology of business ecosystems in European Union countries** - Dalidovich Ulada
 
 ### A1 - AI Assistants for Statistical Production
 
@@ -132,7 +132,6 @@
 
 ### EMOS session II
 
-- **Typology of business ecosystems in European Union countries** - Dalidovich Ulada
 - **AI, Robotization and Perceived Occupational Displacement across European regions - an R based Spatial Econometrics Analysis** - Vlad-Andrei Petre, Smaranda Cimpoeru
 - **R-Based Visualization of Continuous-Time Markov Migration Models** - Anna Boukouvala, George Tsaklidis
 - **Subsampling Non-Response Follow-Up in the Canadian Housing Survey: Comparing the Historical Hansen-Hurwitz Method and Non-Probability Estimation** - Thomas Guinhut
