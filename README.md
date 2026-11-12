@@ -40,10 +40,10 @@
 ### A1 - AI Assistants for Statistical Production
 
 - **110 billion euros, one deadline, zero regression: migrating a critical calculation service to R with AI** - Vincent Guyader, Matthieu de Canteloube
-- **An AI-Powered Analysis Assistant for Large-Scale Official Statistics** - Oliver Hauke
 - **Large Language Models as Assistants for Time Series Analysis in Official Statistics: Opportunities for Innovation and Capacity Building** - Jelena Suzić
 - **Scaling Local LLM Coding Assistants for R, Python and SAS in Official Statistics** - Bernhard Fischer
 - **Using LLM's for automated translation of Excel files and SAS scripts to R** - Andreas Jahn
+- **An AI-Powered Analysis Assistant for Large-Scale Official Statistics** - Oliver Hauke
 
 ### B1 - Reproducible Statistical Production Pipelines
 
