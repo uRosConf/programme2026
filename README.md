@@ -125,7 +125,7 @@
 | 10:50–11:15 | **Coffee break** |
 | 11:15–12:45 | **A4 - Survey Sampling, Weighting and Variance Estimation** (chair: Ivana Levačić) | **B4 - Social and Economic Applications** (chair: Cristina Rodica Boboc) | **C4 - Infrastructure and Tools for Statistical Production** (chair: Martijn Tennekes) |
 | 12:45–13:45 | **Lunch break** |
-| 13:45–15:15 | **A5 - Spatial and Small Area Analysis** (chair: Romain Lesur)| **B5 - Lightning Talks II: R Tools, Visualisation and Applications** (chair: Alexander Kowarik) | **C5 - Imputation and Advanced Statistical Methods** (chair: Marcello d'Orazio) |
+| 13:45–15:15 | **A5 - Lightning Talks II: R Tools, Visualisation and Applications** (chair: Alexander Kowarik)| **B5 - Spatial and Small Area Analysis** (chair: Romain Lesur) | **C5 - Imputation and Advanced Statistical Methods** (chair: Marcello d'Orazio) |
 | 15:15–15:45 | **Coffee break** |
 | 15:45–17:15 | **A6 - Nowcasting and Time-Series Methods** (chair: Tanguy Barthelemy)| | **C6 - Data Integration, Survey Processes and Quality** (chair: Bernhard Fischer) |
 | 17:15–17:30 | **Closing** |
@@ -161,15 +161,7 @@
 - **procR: New Features for End-to-End Table Production in Official Statistics** -Younes  Saidani, Ngoc-Han Tran
 - **codelist: working more efficiently with code lists in R** - Jan van Der Laan
 
-### A5 - Spatial and Small Area Analysis
-
-- **3D Thematic Mapping in R with tmap v4 and tmap.mapgl** - Martijn Tennekes
-- **Measuring Spatial Inequalities in University Accessibility Using R and GTFS Data: Evidence from Rome** - Armando D'aniello, Gianluigi Salvucci
-- **Bayesian Small Area Estimation for Multinomial Health Indicators Using R: An Application to Official Statistics** - Ioannis Nikolaidis, Stefanos Giakoumatos
-- **Small Area Estimation of Poverty in the Practice of Statistics Poland** - Marcin Szymkowiak, Kamil Wilak, Tomasz Józefowski, Nobuo Yoshida
-- **Automating Educational Statistics Production Processes Using R and Shiny: A Case Study from Turkish Statistical Institute** - Fethi Saban Ozbek
-
-### B5 - Lightning Talks II: R Tools, Visualisation and Applications
+### A5 - Lightning Talks II: R Tools, Visualisation and Applications
 
 1. **Common pitfalls when switching from SAS to R** - Pierre Lamarche
 2. **ILSAmerge and ILSAstats: Two new R packages for international large-scale assessments** - Andrés Christiansen
@@ -183,12 +175,21 @@
 10. **Why Do Some Counties Perform Better? Educational Hubs, High-Tech Development and Skills Mismatch in Romania** - Cristina Boboc, Gianina Maria Petrașcu
 11. **AI-Assisted Scientific Literature Review with LitRefineR Using OpenAlex** - Ioana Barbulescu, Ana-Maria Ciuhu, Valentina Vasile, Andrei Suciu, Razvan Vasile
 
+### B5 - Spatial and Small Area Analysis
+
+- **3D Thematic Mapping in R with tmap v4 and tmap.mapgl** - Martijn Tennekes
+- **Measuring Spatial Inequalities in University Accessibility Using R and GTFS Data: Evidence from Rome** - Armando D'aniello, Gianluigi Salvucci
+- **Bayesian Small Area Estimation for Multinomial Health Indicators Using R: An Application to Official Statistics** - Ioannis Nikolaidis, Stefanos Giakoumatos
+- **Small Area Estimation of Poverty in the Practice of Statistics Poland** - Marcin Szymkowiak, Kamil Wilak, Tomasz Józefowski, Nobuo Yoshida
+- **Automating Educational Statistics Production Processes Using R and Shiny: A Case Study from Turkish Statistical Institute** - Fethi Saban Ozbek
+
 ### C5 - Imputation and Advanced Statistical Methods
 
 - **Preprocessing Categorical Variables through Edit-Induced Equivalence Classes in ARTIC** - Simona Toti, Romina Filippini
 - **Aggregating incomplete data: accounting for hierarchical relationships** - Viktoria Kis, Erika Lee, Simon Normandeau, Sara Otavo Peña
 - **Estimate distributions with fat and skewed tails with the FatTailsR package** - Patrice Kiener
 - **What's new for time-to-event data in tidymodels** - Hannah Frick
+- **Linking Administrative Data Without Unique Identifiers: A randomForest Approach in R** - Christopher Nölting , Murad Hajiyev
 
 ### A6 - Nowcasting and Time-Series Methods
 
@@ -199,7 +200,6 @@
 - **KOMA - An R package for Bayesian estimation of simultaneous equation models** - Samad Sarferaz, Merlin Scherer
 
 ### C6 - Data Integration, Survey Processes and Quality
-- **Linking Administrative Data Without Unique Identifiers: A randomForest Approach in R** - Christopher Nölting , Murad Hajiyev
 - **postlink: An R Package for Post-Linkage Data Analysis** - Priyanjali Bukke, Gauri Kamat, Jiahao Cui, Roee Gutman, Martin Slawski
 - **BuSuCo: A package for business survey coordination** - Johannes Straubinger
 - **The Survey Fieldwork Digital Twin: An R-Based Early-Warning System for Mixed-Mode Official Statistics** - Hakile Resulbegoviq, Vuk Čađenović
