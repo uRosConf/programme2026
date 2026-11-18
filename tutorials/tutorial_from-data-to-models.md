@@ -13,7 +13,7 @@ This short, hands-on tutorial will get you started with an R tool to implement M
 |---------|------|
 |Presentor(s) | Adrián Pérez and Sandra Barragán |
 |Duration |90:00 |
-|Materials|[course materials](under construction)|
+|Materials|[course materials](./Material_from-data-to-models.zip)|
 
 
 
@@ -26,7 +26,7 @@ core supervised learning techniques and the ability to implement them
 effectively in R.  
 
 Attendees will work through guided coding exercises using both widely adopted
-CRAN packages and custom-developed tools, including the RMLUtils
+CRAN packages and custom-developed tools, including the RMLutils
 object-oriented R package, which facilitates streamlined workflows with a
 common interface for model training, validation, and comparison. Through these
 exercises, participants will learn how to preprocess data, fit models, tune
@@ -38,10 +38,9 @@ hyperparameters, and assess model performance using appropriate metrics.
 
 The following topics will be treated
 
-- Linear models and basic concepts of Machine Learning techniques
-- Decision trees with categorical target
-- Bagging algorithms
-- Boosting algorithms
+- 01 Basic concepts of ML techniques and introduction to RMLutils
+- 02 Classification trees and bagging with categorical target
+- 03 Boosting algorithms with numerical target
 
 
 ### Target audience
@@ -55,5 +54,28 @@ Furthermore, some experience with statistical processes and inferences.
 Please make sure you have installed R and RStudio and have the latest version
 of the following package installed:
 
-- [RMLUtils](https://github.com/es-ine/rmlutils)
+- [RMLutils](https://github.com/es-ine/rmlutils)
+- data.table; MASS; glmnet; ggplot2; rpart; rpart.plot; reshape2; ranger; caret; pROC; gbm; lightgbm.
+  
+  You can use the following code:
+```
+install.packages("remotes")
+remotes::install_github("es-ine/rmlutils")
+#devtools::install_github("es-ine/rmlutils")
+
+if (!require("MASS")) install.packages("MASS")
+if (!require("data.table")) install.packages("data.table")
+if (!require("glmnet")) install.packages("glmnet")
+if (!require("ggplot2")) install.packages("ggplot2")
+if (!requireNamespace("h2o", quietly = TRUE)) install.packages("h2o")
+if (!require("rpart")) install.packages("rpart")
+if (!require("rpart.plot")) install.packages("rpart.plot")
+if (!require("reshape2")) install.packages("reshape2")
+if (!require("ranger")) install.packages("ranger")
+if (!require("caret")) install.packages("caret")
+if (!require("pROC")) install.packages("pROC")
+if (!require("gbm")) install.packages("gbm")
+if (!require("lightgbm")) install.packages("lightgbm")
+```
+
 
