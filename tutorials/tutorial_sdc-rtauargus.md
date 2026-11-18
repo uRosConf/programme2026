@@ -15,9 +15,6 @@ hierarchies.
 |---------|------|
 |Presentor(s) | [Nadège Ferrer-Pradines](https://github.com/nadegeferrerpradines) and [Julien Desclodure](https://jdesclodure.github.io/) |
 |Duration |90:00 |
-|Materials|[course materials](https://mywebsite.com/uroscourse.zip)|
-
-
 
 
 ### Learning Goals
@@ -74,6 +71,8 @@ remotes::install_github(
 )
 ```
 
-A GitHub repository will soon be available to download the R project dedicated to the tutorial.
+### Presentation and course material
+Please find the presentation and the practice sheet (Quarto markdown) on this repository:
+https://github.com/InseeFrLab/uros2026_sdc_tutorial/tree/main 
 
 
