@@ -4,211 +4,203 @@
 
 ## Wednesday, 18 November 2026 - Tutorial Day
 
-| Time | Room 1 | Room 2 | Room 3 |
+| Time | Auditorium | Bloch-Lainé 1 (“cour”) | Bloch-Lainé 2 (“rue”)  |
 |---|---|---|---|
-| 09:00–10:30 | **Getting Started with Positron: A Next-Generation IDE for Data Science** - Cetinkaya-Rundel Mine, Dervieux Christophe | **Spatial Analysis and Cartography with R** - Antunez Kim | |
+| 08:00–09:00 | **Registration and walk-in (Lobby)** |
+| 09:00–10:30 | **[Getting Started with Positron: A Next-Generation IDE for Data Science](tutorials/tutorial_positron.md)** -  François Michonneau, Christophe Dervieux, Mine Çetinkaya-Rundel | **[Spatial Analysis and Cartography with R](tutorials/tutorial_spatial-analyses-and-cartography-with-R.md)** - Kim Antunez | |
 | 10:30–11:00 | **Coffee break** |
-| 11:00–12:30 | **R in the Age of LLMs: From AI-Assisted Development to Chat-Based Data Applications - I** - Michonneau François | **Mapping Official Statistics with the tmapverse and cols4all** - Tennekes Martijn | **Managing statistical disclosure control from microdata to protected linked tables with rtauargus** - Ferrer-Pradines Nadège, Desclodure Julien |
+| 11:00–12:30 | **[R in the Age of LLMs: From AI-Assisted Development to Chat-Based Data Applications - I](tutorials/tutorial_R-in-the-age-of-LLMs.md)** - François Michonneau  | **[Mapping Official Statistics with the tmapverse and cols4all](tutorials/tutorial_mapping-official-statistics-with-the-tmapverse-and-colls4all.md)** - Martijn Tennekes | **[Managing statistical disclosure control from microdata to protected linked tables with rtauargus](tutorials/tutorial_sdc-rtauargus.md)** - Nadège Ferrer-Pradines, Julien Desclodure |
 | 12:30–13:30 | **Lunch Break**  |
-| 13:30–15:00 | **R in the Age of LLMs: From AI-Assisted Development to Chat-Based Data Applications - II** - Michonneau François | **From Data to Models: Hands-On Machine Learning with R** - Pérez Bote Adrián, Barragán Andrés Sandra | **Working with categorical data and codelists in R** - Van Der Laan Jan, De Jonge Edwin |
-| 15:30–16:00 | **Coffee break** |
-| 16:00–17:30 | **Opening the Black Box: Interpreting Machine Learning Models with SHAP Values in R** - Panaiotis Thelma |  | **Tidy Survey Analysis in R: Working with Weights and Sampling Designs for Official Statistics** - Zimmer Stephanie, Powell Rebecca, Velásquez Isabella |
+| 13:30–15:00 | **[R in the Age of LLMs: From AI-Assisted Development to Chat-Based Data Applications - II](tutorials/tutorial_R-in-the-age-of-LLMs.md)** - François Michonneau | **[From Data to Models: Hands-On Machine Learning with R](tutorials/tutorial_from-data-to-models.md)** - Adrián Pérez Bote, Sandra Barragán Andrés | **[Working with categorical data and codelists in R](tutorials/tutorial_categorical-data-and-codelists.md)** - Jan van Der Laan, Edwin de Jonge |
+| 15:00–15:30 | **Coffee break** |
+| 15:30–17:00 |  | **[Opening the Black Box: Interpreting Machine Learning Models with SHAP Values in R](tutorials/tutorial_shap-values-in-R.md)** - Thelma Panaiotis | **[Tidy Survey Analysis in R: Working with Weights and Sampling Designs for Official Statistics](tutorials/tutorial_survey-analysis-in-R.md)** - Stephanie Zimmer, Rebecca Powell, Isabella Velásquez |
 
 ## Thursday, 19 November 2026 - Conference Day 1
 
-| Time | Room 1 | Room 2 | Room 3 |
+| Time | Auditorium | Bloch-Lainé 1 (“cour”) | Bloch-Lainé 2 (“rue”)  |
 |---|---|---|---|
-| 08:00–09:00 | **Registration and walk-in** |
+| 08:00–09:00 | **Registration and walk-in (Lobby)** |
 | 09:00–09:15 | **Opening** |
-| 09:15-10:15 | **Keynote: R and Open-Source: A love story** - Killick Rebecca |
+| 09:15-10:15 | **Keynote: R and Open-Source: A love story** - Rebecca Killick (chair: Anna Smyk) |
 | 10:15–11:00 | **EMOS session I (chair: Tina Steenvoorden)** |
 | 11:00–11:30 | **Coffee break** |
-| 11:30–13:00 | **A1 - AI Assistants for Statistical Production** | **B1 - Reproducible Statistical Production Pipelines** | **C1 - Automated and Accessible Statistical Publishing** |
+| 11:30–13:00 | **A1 - AI Assistants for Statistical Production** (chair: Nina Niederhametner) | **B1 - Reproducible Statistical Production Pipelines** (chair: Ana-Maria Ciuhu) | **C1 - Automated and Accessible Statistical Publishing** (chair: Johannes Straubinger) |
 | 13:00–14:00 | **Lunch break** |
-| 14:00–15:30 | **A2 - AI, Machine Learning and Intelligent Automation** | **B2 - Lightning Talks I: Production, Validation and Survey Methods** | **C2 - Shiny Applications and Statistical Visualisation** |
+| 14:00–15:30 | **A2 - AI, Machine Learning and Intelligent Automation** (chair: Sandra Barragán Andrés) | **B2 - Lightning Talks I: Production, Validation and Survey Methods** (chair: Mark van der Loo) | **C2 - Shiny Applications and Statistical Visualisation** (chair: Bernhard Meindl) |
 | 15:30–16:00 | **Coffee break** |
-| 16:00–17:30 | **A3 - Open Source Adoption and the R Community** | **B3 - Seasonal Adjustment in Official Statistics** | **C3 - Statistical Disclosure Control and Synthetic Data** |
+| 16:00–17:30 | **A3 - Open Source Adoption and the R Community** (chair: Alexander Kowarik) | **B3 - Seasonal Adjustment in Official Statistics** (chair: Rebecca Killick) | **C3 - Statistical Disclosure Control and Synthetic Data** (chair: Ciprian Alexandru) |
+| 18:00-21:00 | **Networking Cocktail (Lobby)**|
 
 ### EMOS session I
 
-- **An R Framework for AI-Assisted Questionnaires in Official Statistics: An Application to Financial Literacy Surveys** - Rossi Valeria
-- **Developing a territorial One Health indicator using R** - Limone Fenicia Carmen
-- **Long-Term Effects of the Czech National Bank's Exchange-Rate Commitment: A Synthetic Control Approach in R** - Valtr Ondřej
+- **An R Framework for AI-Assisted Questionnaires in Official Statistics: An Application to Financial Literacy Surveys** - Valeria Rossi
+- **Developing a territorial One Health indicator using R** - Carmen Limone Fenicia
+- **Typology of business ecosystems in European Union countries** - Dalidovich Ulada
 
 ### A1 - AI Assistants for Statistical Production
 
-- **110 billion euros, one deadline, zero regression: migrating a critical calculation service to R with AI** - Guyader Vincent, De Canteloube Matthieu
-- **An AI-Powered Analysis Assistant for Large-Scale Official Statistics** - Hauke Oliver
-- **Large Language Models as Assistants for Time Series Analysis in Official Statistics: Opportunities for Innovation and Capacity Building** - Suzić Jelena
-- **Scaling Local LLM Coding Assistants for R, Python and SAS in Official Statistics** - Fischer Bernhard
-- **Using LLM's for automated translation of Excel files and SAS scripts to R** - Jahn Andreas
+- **110 billion euros, one deadline, zero regression: migrating a critical calculation service to R with AI** - Vincent Guyader, Matthieu de Canteloube
+- **Large Language Models as Assistants for Time Series Analysis in Official Statistics: Opportunities for Innovation and Capacity Building** - Jelena Suzić
+- **Scaling Local LLM Coding Assistants for R, Python and SAS in Official Statistics** - Bernhard Fischer
+- **Using LLM's for automated translation of Excel files and SAS scripts to R** - Andreas Jahn
+- **An AI-Powered Analysis Assistant for Large-Scale Official Statistics** - Oliver Hauke
 
 ### B1 - Reproducible Statistical Production Pipelines
 
-- **Modernizing Global Survey Data Processing: Reproducible R Pipelines at the IEA** - Moser-Nussgruber Winfried, Kowolik Kamil
-- **Integrating Time Series Processing into an Automated Production Workflow in R** - Heidsieck Suzanne
-- **Spipe: a lightweight workbench for building and monitoring reproducible analytical pipelines in R, illustrated on the GEM Luxembourg production and analysis chain** - Pettinger Maxime
-- **The {ProduceR} package: streamlining and improving the reliability of statistical production** - Reduron Vincent
-- **Building an internal package ecosystem for data processing** - Kis Viktoria, Lee Erika, Normandeau Simon, Otavo Peña Sara
+- **Modernizing Global Survey Data Processing: Reproducible R Pipelines at the IEA** - Winfried Moser-Nussgruber, Kamil Kowolik
+- **Integrating Time Series Processing into an Automated Production Workflow in R** - Suzanne Heidsieck
+- **Spipe: a lightweight workbench for building and monitoring reproducible analytical pipelines in R, illustrated on the GEM Luxembourg production and analysis chain** - Maxime Pettinger
+- **The {ProduceR} package: streamlining and improving the reliability of statistical production** - Vincent Reduron
+- **Building an internal package ecosystem for data processing** - Viktoria Kis, Erika Lee, Simon Normandeau, Sara Otavo Peña
 
-### C1 - Automated and Accessible Statistical Publishing
+### C1 - Automated and Accessible Statistical Outputs
 
 - **Automated Public Science Communication: Building a Bluesky Bot for Real-Time Official Statistics Visualisation with R** - Damien Dupre
-- **Beyond parametrised reports: Adventures automating country notes at the OECD** - Caldas Rivera Maria Paula, Ilizaliturri López Rodolfo
-- **From code to print-ready publication: Automating layout at the French Ministry of Justice** - Marsal Adam, Allard Fanny
-- **Reproducible Statistical Publications with Quarto** - Dervieux Christophe
+- **Beyond parametrised reports: Adventures automating country notes at the OECD** - Maria Paula Caldas Rivera, Rodolfo Ilizaliturri López
+- **From code to print-ready publication: Automating layout at the French Ministry of Justice** - Adam Marsal, Fanny Allard
+- **Reproducible Statistical Publications with Quarto** - Christophe Dervieux
+- **From Data Acquisition to Harmonised Outputs: A Reproducible R Workflow for Official Statistics** - Ciprian Alexandru
 
 ### A2 - AI, Machine Learning and Intelligent Automation
 
-- **Beyond Use Cases: Modular R Packages for Automated Coding and Data Extraction** - Niederhametner Nina, Vattheuer Eileen, Steiner Marlene
-- **Bridging R and Python for AI-Driven NLP** - Lykos Georgios, Dimas Spyridon, Panagopoulou Georgia, Vikentios Michail
-- **Structuring Annual Reports for Official Statistics: A Method for Data Editing Using Large Language Models** - Solveig Bjørkholt, Islam Mousumi Mona, Sarah Torvholm Frøystad, Johansen Odin, Maryam Javed
-- **A Comparison of Model-Based and Unsupervised Learning Methods for Detecting Scaling Errors in R** - Marcello D'orazio, Faricelli Cristina, Magistro Renato
-- **Unsupervised Learning Approaches for Identifying Structural Anomalies in European Regional Statistics** - Bogdan Oancea
+- **Beyond Use Cases: Modular R Packages for Automated Coding and Data Extraction** - Nina Niederhametner, Eileen Vattheuer, Marlene Steiner
+- **Bridging R and Python for AI-Driven NLP** - Georgios Lykos, Spyridon Dimas, Georgia Panagopoulou, Michail Vikentios
+- **Structuring Annual Reports for Official Statistics: A Method for Data Editing Using Large Language Models** - Bjørkholt Solveig, Mona Islam Mousumi, Sarah Torvholm Frøystad, Odin Johansen, Maryam Javed
+- **A Comparison of Model-Based and Unsupervised Learning Methods for Detecting Scaling Errors in R** - Marcello D'orazio, Cristina Faricelli, Renato Magistro
+- **Unsupervised Learning Approaches for Identifying Structural Anomalies in European Regional Statistics** - Bogdan Oancea, Ciprian Alexandru
 
 ### B2 - Lightning Talks I: Production, Validation and Survey Methods
 
-1. **Common pitfalls when switching from SAS to R** - Lamarche Pierre
-2. **Template and Function: A Tabular Configuration Pattern for Large Scale Operations on Files with Varying Schemas in Official Statistics** - Rakotomalala Daniel
-3. **R you useful for maintaining information systems?** - Mainguené Alice
-4. **{IssueTrackeR}: Handling Tickets in R** - Barthelemy Tanguy
-5. **From Data to Publication : An Automated R-Based Framework for Consumer Price Index Reporting** - Aoulad Hammou Achou Zineb, Halhal Zakariae
-6. **Facilitating R-Based Statistical Validation Through EZR: A Case Study in Melanoma High-Frequency Ultrasound Assessment** - Chalyy Kyrylo, Hryshchenko Roman, Bogomolets Olga, Stepanenko Viktor
-7. **Manual Rework Volume Monitoring and Forecasting Tool** - Coltier Yves
-8. **Semi-automated editing of large volumes of foreign trade data for the environmental Economy-Wide Material Flow Account** - Campandegui García Gorka, Maestro López Julia
-9. **VIM::vimpute: A Unified Imputation Engine for Flexible Missing Data Workflows in R** - Kowarik Alexander, Vattheuer Eileen, Templ Matthias, Gussenbauer Johannes, Niederhametner Nina
-10. **Sampling Designs and Sample Quality Control: Using Quarto Documents in Agricultural Surveys** - Levi-Valensin Michael
-11. **RISQ: Representativity Indicators for Survey Quality** - Idema Reijer
-12. **Reproducible Survey-Based Estimation of Household Living Standards in Morocco Using ENNVM 2022 Microdata** - Baabaa Oussama
-13. **SmartSurveyAgent: A New Approach to Survey Data Collection in Official Statistics** - Cafieri Simona
+1. **How many R packages in CRAN do you know?** - Patrice Kiener, Christophe Dutang
+2. **Template and Function: A Tabular Configuration Pattern for Large Scale Operations on Files with Varying Schemas in Official Statistics** - Daniel Rakotomalala
+3. **R you useful for maintaining information systems?** - Alice Mainguené
+4. **{IssueTrackeR}: Handling Tickets in R** - Tanguy Barthelemy
+5. **From Data to Publication : An Automated R-Based Framework for Consumer Price Index Reporting** - Zineb Aoulad Hammou Achou, Zakariae Halhal
+6. **Facilitating R-Based Statistical Validation Through EZR: A Case Study in Melanoma High-Frequency Ultrasound Assessment** - Kyrylo Chalyy, Roman Hryshchenko, Olga Bogomolets, Viktor Stepanenko
+7. **Manual Rework Volume Monitoring and Forecasting Tool** - Yves Coltier
+8. **Semi-automated editing of large volumes of foreign trade data for the environmental Economy-Wide Material Flow Account** - Gorka Campandegui García, Julia Maestro López
+9. **VIM::vimpute: A Unified Imputation Engine for Flexible Missing Data Workflows in R** - Alexander Kowarik , Eileen Vattheuer, Matthias Templ, Johannes Gussenbauer, Nina Niederhametner
+10. **Sampling Designs and Sample Quality Control: Using Quarto Documents in Agricultural Surveys** - Michael Levi-Valensin
+11. **RISQ: Representativity Indicators for Survey Quality** - Reijer Idema
+12. **SmartSurveyAgent: A New Approach to Survey Data Collection in Official Statistics** - Simona Cafieri
+
 
 ### C2 - Shiny Applications and Statistical Visualisation
 
-- **Rapid Crisis-Oriented Survey Visualization in Official Statistics: Flood Damage in Polish Agriculture Using R** - Grabarczyk Kamil
-- **phsshiny: An R Package for Standardisation and Accessibility in the Publication of Health Data** - Gribben Ciara, Mccreath Russell, Mcbride Bateman
-- **R Shiny Platform for Detecting, Validating, and Reporting River Overflow Periods** - Movsisyan Vahe, Habet Madoyan, Karapetyan Ina
-- **Creating population pyramids in less than 100 lines of code** - Neutze Michael
+- **Rapid Crisis-Oriented Survey Visualization in Official Statistics: Flood Damage in Polish Agriculture Using R** - Kamil Grabarczyk
+- **phsshiny: An R Package for Standardisation and Accessibility in the Publication of Health Data** - Ciara Gribben, Russell Mccreath, Bateman Mcbride
+- **R Shiny Platform for Detecting, Validating, and Reporting River Overflow Periods** - Vahe Movsisyan, Madoyan Habet, Ina Karapetyan
+- **Creating population pyramids in less than 100 lines of code** - Michael Neutze
 
 ### A3 - Open Source Adoption and the R Community
 
-- **Beyond code: supporting teams through the transition to Open Source** - Simon Raphael, Biot Vincent, Rigollot Nathalie, Said Meriem
-- **From SAS to R, one small step for data production, one giant leap for official statistics** - Lamarche Pierre, Rousset Clément
-- **Towards metrics for awesome software packages: first results** - Ten Bosch Olav, Van Der Loo Mark
-- **What makes the R community unique?** - Lesur Romain
-- **Publishing in the R Journal** - Van Der Loo Mark
+- **Beyond code: supporting teams through the transition to Open Source** - Raphael Simon, Vincent Biot, Nathalie Rigollot, Meriem Said
+- **From SAS to R, one small step for data production, one giant leap for official statistics** - Pierre Lamarche, Clément Rousset
+- **Towards metrics for awesome software packages: first results** - Olav ten Bosch, Mark van Der Loo
+- **What makes the R community unique?** - Romain Lesur
+- **Publishing in the R Journal** - Mark van Der Loo
 
 ### B3 - Seasonal Adjustment in Official Statistics
 
-- **Assessing Direct and Indirect Seasonal Adjustment Approaches for Labour Cost Indices: A Serbian Case Study** - Suzić Jelena, Tokai Melinda, Katić Dunja, Markovic Ana
-- **pickmdl3: An R package implementing the X-12-ARIMA pickmdl procedure within the JDemetra+ R framework** - Jens Kristoffer Haug, Langsrud Øyvind, Seierstad Ane, Jentoft Susie, Hamre Jørn Ivar, Pham Dinh Quang
-- **regimeseats: An Adaptive State-Space Extension for TRAMO-SEATS in Official Statistics** - Amoroso Cheyenne, Aneiros Germán, García-Martos Carolina, Koopman Siem Jan, Vilar José A.
-- **The RJDverse Package Suite for Time Series Econometrics in Official Statistics** - Webel Karsten, Smyk Anna
-- **{stlpro}: Seasonal Adjustment with Cross-Validated Filter Selection** - Ollech Daniel
+- **Assessing Direct and Indirect Seasonal Adjustment Approaches for Labour Cost Indices: A Serbian Case Study** - Jelena Suzić, Melinda Tokai, Dunja Katić, Ana Markovic
+- **pickmdl3: An R package implementing the X-12-ARIMA pickmdl procedure within the JDemetra+ R framework** - Jens Kristoffer Haug, Øyvind Langsrud, Ane Seierstad, Susie Jentoft, Ivar Hamre Jørn, Quang Pham Dinh
+- **regimeseats: An Adaptive State-Space Extension for TRAMO-SEATS in Official Statistics** - Cheyenne Amoroso, Germán Aneiros, Carolina García-Martos, Jan Koopman Siem, José A. Vilar
+- **The RJDverse Package Suite for Time Series Econometrics in Official Statistics** - Karsten Webel, Anna Smyk
+- **{stlpro}: Seasonal Adjustment with Cross-Validated Filter Selection** - Daniel Ollech
 
 ### C3 - Statistical Disclosure Control and Synthetic Data
 
-- **A wavelet protection method for publishing maps** - De Jonge Edwin
-- **ckm: an easy application of cell-key method to protect tabular data** - Ferrer-Pradines Nadège, Desclodure Julien, Lemaire Dimitri
-- **Protecting linked tables with non-nested hierarchies: a use case with rtauargus** - Ferrer-Pradines Nadège, Desclodure Julien, Lemaire Dimitri
-- **rebalancedNoise: Perturbative Statistical Disclosure Control for Magnitude Tables in R** - Meindl Bernhard
+- **A wavelet protection method for publishing maps** - Edwin de Jonge
+- **ckm: an easy application of cell-key method to protect tabular data** - Nadège Ferrer-Pradines, Julien Desclodure, Dimitri Lemaire
+- **Protecting linked tables with non-nested hierarchies: a use case with rtauargus** - Nadège Ferrer-Pradines, Julien Desclodure , Dimitri Lemaire
+- **rebalancedNoise: Perturbative Statistical Disclosure Control for Magnitude Tables in R** - Bernhard Meindl
 
 ## Friday, 20 November 2026 - Conference Day 2
 
-| Time | Room 1 | Room 2 | Room 3 |
+| Time | Auditorium | Bloch-Lainé 1 (“cour”) | Bloch-Lainé 2 (“rue”)  |
 |---|---|---|---|
-| 08:00–09:00 | **Registration and walk-in** |
-| 09:00–10:00 | **Keynote: Practical AI for Data Science** - Couch Simon |
-| 10:00–10:45 | **EMOS session II (chair: Tina Steenvoorden)** |
-| 10:45–11:15 | **Coffee break** |
-| 11:15–12:45 | **A4 - Survey Sampling, Weighting and Variance Estimation** | **B4 - Social and Economic Applications** | **C4 - Record Linkage and Population Registers** |
+| 08:00–09:00 | **Registration and walk-in (Lobby)** |
+| 09:00–10:00 | **Keynote: Practical AI for Data Science** - Simon Couch (chair: Mark van der Loo) |
+| 10:00–10:50 | **EMOS session II (chair: Tina Steenvoorden)** |
+| 10:50–11:15 | **Coffee break** |
+| 11:15–12:45 | **A4 - Survey Sampling, Weighting and Variance Estimation** (chair: Ivana Levačić) | **B4 - Social and Economic Applications** (chair: Cristina Rodica Boboc) | **C4 - Infrastructure and Tools for Statistical Production** (chair: Martijn Tennekes) |
 | 12:45–13:45 | **Lunch break** |
-| 13:45–15:15 | **A5 - Spatial and Small Area Analysis** | **B5 - Lightning Talks II: R Tools, Visualisation and Applications** | **C5 - Imputation and Advanced Statistical Methods** |
+| 13:45–15:15 | **A5 - Lightning Talks II: R Tools, Visualisation and Applications** (chair: Alexander Kowarik)| **B5 - Spatial and Small Area Analysis** (chair: Romain Lesur) | **C5 - Imputation and Advanced Statistical Methods** (chair: Marcello d'Orazio) |
 | 15:15–15:45 | **Coffee break** |
-| 15:45–17:15 | **A6 - Nowcasting and Time-Series Methods** | **B6 - Survey Quality, Metadata and Fieldwork** | **C6 - Infrastructure and Tools for Statistical Production** |
+| 15:45–17:15 | **A6 - Nowcasting and Time-Series Methods** (chair: Tanguy Barthelemy)| | **C6 - Data Integration, Survey Processes and Quality** (chair: Bernhard Fischer) |
 | 17:15–17:30 | **Closing** |
 
 ### EMOS session II
 
-- **Typology of business ecosystems in European Union countries** - Ulada Dalidovich
-- **AI, Robotization and Perceived Occupational Displacement across European regions - an R based Spatial Econometrics Analysis** - Petre Vlad-Andrei, Cimpoeru Smaranda
-- **R-Based Visualization of Continuous-Time Markov Migration Models** - Boukouvala Anna, Tsaklidis George
+- **AI, Robotization and Perceived Occupational Displacement across European regions - an R based Spatial Econometrics Analysis** - Vlad-Andrei Petre, Smaranda Cimpoeru
+- **R-Based Visualization of Continuous-Time Markov Migration Models** - Anna Boukouvala, George Tsaklidis
+- **Subsampling Non-Response Follow-Up in the Canadian Housing Survey: Comparing the Historical Hansen-Hurwitz Method and Non-Probability Estimation** - Thomas Guinhut
 
 ### A4 - Survey Sampling, Weighting and Variance Estimation
 
-- **Calibration of Survey Weights in R: A Comparative Overview of Available Packages** - Szymkowiak Marcin, Wilak Kamil
-- **Developing an R Package for Sample Weight Estimation** - Osier Guillaume, Lamboray Claude
-- **samplyr: A Tidy Grammar for Survey Sampling Design in R** - Ahmadou Dicko
-- **Making gustave production-ready: multistage designs, wrapper inspection and estimation diagnostics.** - Delclite Thomas
-- **weightflow: a declarative, auditable recipe for survey weighting in R** - Ferreira Juan Pablo
+- **Calibration of Survey Weights in R: A Comparative Overview of Available Packages** - Marcin Szymkowiak, Kamil Wilak
+- **Developing an R Package for Sample Weight Estimation** - Guillaume Osier, Claude Lamboray
+- **samplyr: A Tidy Grammar for Survey Sampling Design in R** - Dicko Ahmadou
+- **Making gustave production-ready: multistage designs, wrapper inspection and estimation diagnostics.** - Thomas Delclite
+- **weightflow: a declarative, auditable recipe for survey weighting in R** - Juan Pablo Ferreira
 
 
 
 ### B4 - Social and Economic Applications
 
-- **Behind-the-Scenes Complexity, Clear Insights Up Front: Longitudinal Minimum Income Benefit Analysis in a French Local Authority, from Database to Simple Indicators** - Chosson Elie
-- **Event-sequence analysis of fertility histories with TraMineR, INDSCAL and DISQUAL** - Morand Elisabeth
+- **Behind-the-Scenes Complexity, Clear Insights Up Front: Longitudinal Minimum Income Benefit Analysis in a French Local Authority, from Database to Simple Indicators** - Elie Chosson
+- **Event-sequence analysis of fertility histories with TraMineR, INDSCAL and DISQUAL** - Elisabeth Morand
 - **Mental health and social participation: A data-driven analysis using R** - Camelia Maria Dan, Cristina Rodica Boboc
-- **Reproducible Machine Learning with Tidymodels for NHL Draft Prediction** - Lochner Tobias, Friedman Alon
+- **Reconciling Local and National Demographic Accounts in R** - Daniel Ward
 
-### C4 - Record Linkage and Population Registers
+### C4 - Infrastructure and Tools for Statistical Production
 
-- **Linking Administrative Data Without Unique Identifiers: A randomForest Approach in R** - Nölting Christopher, Hajiyev Murad
-- **postlink: An R Package for Post-Linkage Data Analysis** - Bukke Priyanjali, Kamat Gauri, Cui Jiahao, Gutman Roee, Slawski Martin
-- **Reconciling Local and National Demographic Accounts in R** - Ward Daniel
+- **AccScript: an R-based domain-specific language for reproducible national accounts production** - Iliass Taleb
+- **DuckDB beyond R: demystifying the analytical database in your toolbox** - Ines Hiverlet
+- **National Accountant: A Reproducible R-DuckDB Framework for Balancing Supply and Use Tables with Hard and Soft Constraints** - Alpay Kocak Necmettin
+- **procR: New Features for End-to-End Table Production in Official Statistics** -Younes  Saidani, Ngoc-Han Tran
+- **codelist: working more efficiently with code lists in R** - Jan van Der Laan
 
-### A5 - Spatial and Small Area Analysis
+### A5 - Lightning Talks II: R Tools, Visualisation and Applications
 
-- **3D Thematic Mapping in R with tmap v4 and tmap.mapgl** - Tennekes Martijn
-- **Measuring Spatial Inequalities in University Accessibility Using R and GTFS Data: Evidence from Rome** - D'aniello Armando, Salvucci Gianluigi
-- **Bayesian Small Area Estimation for Multinomial Health Indicators Using R: An Application to Official Statistics** - Nikolaidis Ioannis, Giakoumatos Stefanos
-- **Small Area Estimation of Poverty in the Practice of Statistics Poland** - Szymkowiak Marcin, Wilak Kamil, Józefowski Tomasz, Yoshida Nobuo
-- **Automating Educational Statistics Production Processes Using R and Shiny: A Case Study from Turkish Statistical Institute** - Ozbek Fethi Saban
+1. **Common pitfalls when switching from SAS to R** - Pierre Lamarche
+2. **ILSAmerge and ILSAstats: Two new R packages for international large-scale assessments** - Andrés Christiansen
+3. **{loomer} - A high-performance auxiliary R package for analyzing the Danish Lifelines dataset** - Ilya Kashnitsky
+4. **Further microdata anonymisation tools in R** - Marco Caputi
+5. **Automatic classification of pastoral-use parcels / Classification automatique des parcelles à usage pastoral** - Romuald Thion
+6. **Use of R Packages for Cartography: The Case of Road Traffic Accident Statistics in Luxembourg** - Guillaume Osier, Alexi Dere, Lucile Bodson
+7. **Mapping the Gendered Impact of Economic Shocks: A Spatial Analysis of Mancession vs. Shecession across European Regions** - Andreea-Denisa Trascan, Camelia-Maria Dan
+8. **Estimating French election results like the pollsters from partial vote counts on election night: a transparent, reproducible R approach based on open public data** - Thomas Guinhut, Eulalie Delaune, Romain Winckell
+9. **The Effects of Skills on Gender Wage Inequality in the Digital Economy** - Gianina-Maria Petrașcu, Andreea-Denisa Trascan
+10. **Why Do Some Counties Perform Better? Educational Hubs, High-Tech Development and Skills Mismatch in Romania** - Cristina Boboc, Gianina Maria Petrașcu
+11. **AI-Assisted Scientific Literature Review with LitRefineR Using OpenAlex** - Ioana Barbulescu, Ana-Maria Ciuhu, Valentina Vasile, Andrei Suciu, Razvan Vasile
 
-### B5 - Lightning Talks II: R Tools, Visualisation and Applications
+### B5 - Spatial and Small Area Analysis
 
-1. **How many R packages in CRAN do you know?** - Kiener Patrice, Dutang Christophe
-2. **ILSAmerge and ILSAstats: Two new R packages for international large-scale assessments** - Christiansen Andrés
-3. **Rrepest: An Analyzer of International Large Scale Assessments in Education** - Ilizaliturri López Rodolfo, Avvisati Francesco, Keslair François
-4. **{loomer} - A high-performance auxiliary R package for analyzing the Danish Lifelines dataset** - Kashnitsky Ilya
-5. **Further microdata anonymisation tools in R** - Caputi Marco
-6. **Automatic classification of pastoral-use parcels / Classification automatique des parcelles Ã usage pastoral** - Thion Romuald
-7. **Use of R Packages for Cartography: The Case of Road Traffic Accident Statistics in Luxembourg** - Osier Guillaume, Dere Alexi, Bodson Lucile
-8. **Mapping the Gendered Impact of Economic Shocks: A Spatial Analysis of Mancession vs. Shecession across European Regions** - Trascan Andreea-Denisa, Camelia Maria Dan
-9. **One R, Many Stories: R as a Visual Language to Tell a Country's Public Health Narrative** - Bajador Jerico
-10. **Estimating French election results like the pollsters from partial vote counts on election night: a transparent, reproducible R approach based on open public data** - Guinhut Thomas, Delaune Eulalie, Winckell Romain
-11. **The Effects of Skills on Gender Wage Inequality in the Digital Economy** - Petrașcu Gianina-Maria, Trascan Andreea-Denisa
-12. **Why Do Some Counties Perform Better? Educational Hubs, High-Tech Development and Skills Mismatch in Romania** - Boboc Cristina, Petrașcu Gianina Maria
-13. **Understanding International Remittance Flows: A Comparative Analysis Across Distinct Corridors Using Hybrid Machine Learning Methodologies** - Zhang Jing
-14. **The Intellectual Architecture of Artificial Intelligence-Driven Work Transformation: A Large-Scale Scientometric Exploration of Global Research Dynamics** - Barbulescu Ioana, Ciuhu Ana-Maria, Vasile Valentina, Suciu Andrei
+- **3D Thematic Mapping in R with tmap v4 and tmap.mapgl** - Martijn Tennekes
+- **Measuring Spatial Inequalities in University Accessibility Using R and GTFS Data: Evidence from Rome** - Armando D'aniello, Gianluigi Salvucci
+- **Bayesian Small Area Estimation for Multinomial Health Indicators Using R: An Application to Official Statistics** - Ioannis Nikolaidis, Stefanos Giakoumatos
+- **Small Area Estimation of Poverty in the Practice of Statistics Poland** - Marcin Szymkowiak, Kamil Wilak, Tomasz Józefowski, Nobuo Yoshida
+- **Automating Educational Statistics Production Processes Using R and Shiny: A Case Study from Turkish Statistical Institute** - Fethi Saban Ozbek
 
 ### C5 - Imputation and Advanced Statistical Methods
 
-- **MRimputation: An R Package for Multiply Robust Imputation** - Czerniawska Aniela, Beręsewicz Maciej
-- **Preprocessing Categorical Variables through Edit-Induced Equivalence Classes in ARTIC** - Toti Simona, Filippini Romina
-- **Aggregating incomplete data: accounting for hierarchical relationships** - Kis Viktoria, Lee Erika, Normandeau Simon, Otavo Peña Sara
-- **Estimate distributions with fat and skewed tails with the FatTailsR package** - Kiener Patrice
-- **What's new for time-to-event data in tidymodels** - Frick Hannah
+- **Preprocessing Categorical Variables through Edit-Induced Equivalence Classes in ARTIC** - Simona Toti, Romina Filippini
+- **Aggregating incomplete data: accounting for hierarchical relationships** - Viktoria Kis, Erika Lee, Simon Normandeau, Sara Otavo Peña
+- **Estimate distributions with fat and skewed tails with the FatTailsR package** - Patrice Kiener
+- **What's new for time-to-event data in tidymodels** - Hannah Frick
+- **Linking Administrative Data Without Unique Identifiers: A randomForest Approach in R** - Christopher Nölting , Murad Hajiyev
 
 ### A6 - Nowcasting and Time-Series Methods
 
-- **An R-Based Nowcasting Dashboard for Industrial Production Index: Comparative Analysis of Classical and Machine Learning Methods** - Dedeoglu Duygu, Sert Osman
-- **Harvesting Data as Crops Are Harvested : An Automated R Pipeline for Timely Yield Estimates** - Touzani Hanan
-- **Making Singular Spectrum Analysis More Accessible: A Step-by-Step Framework and R Implementation** - Delaune Eulalie
-- **Using R to provide a new interface to an old time series program** - Mélard Guy
-- **KOMA - An R package for Bayesian estimation of simultaneous equation models** - Sarferaz Samad, Scherer Merlin
+- **An R-Based Nowcasting Dashboard for Industrial Production Index: Comparative Analysis of Classical and Machine Learning Methods** - Duygu Dedeoglu, Osman Sert
+- **Harvesting Data as Crops Are Harvested : An Automated R Pipeline for Timely Yield Estimates** - Hanan Touzani
+- **Making Singular Spectrum Analysis More Accessible: A Step-by-Step Framework and R Implementation** - Eulalie Delaune
+- **Using R to provide a new interface to an old time series program** - Guy Mélard
+- **KOMA - An R package for Bayesian estimation of simultaneous equation models** - Samad Sarferaz, Merlin Scherer
 
-### B6 - Survey Quality, Metadata and Fieldwork
-
-- **BuSuCo: A package for business survey coordination** - Straubinger Johannes
-- **A Psychometric Approach of Eurostat Business and Consumer Survey: Reliability, Factor Structure and Item Response Theory Analysis using R** - Sandu Mihaela Cornelia
-- **Predicting Response in Official Mixed-Mode Household Surveys: A Machine Learning Approach** - Succi Raffaella, Di Consiglio Loredana, Mamolo Marija
-- **The Survey Fieldwork Digital Twin: An R-Based Early-Warning System for Mixed-Mode Official Statistics** - Resulbegoviq Hakile, Čađenović Vuk
-- **The Metadata Quality Assistant (MQA): an R/Shiny prototype for supporting the preparation of SIMS quality reports** - Spiliopoulou Vasiliki, Pierrakou Christina, Molfetas Konstantinos
-
-### C6 - Infrastructure and Tools for Statistical Production
-
-- **AccScript: an R-based domain-specific language for reproducible national accounts production** - Taleb Iliass
-- **DuckDB beyond R: demystifying the analytical database in your toolbox** - Hiverlet Ines
-- **National Accountant: A Reproducible R-DuckDB Framework for Balancing Supply and Use Tables with Hard and Soft Constraints** - Kocak Necmettin Alpay
-- **procR: New Features for End-to-End Table Production in Official Statistics** - Saidani Younes, Tran Ngoc-Han
-- **codelist: working more efficiently with code lists in R** - Van Der Laan Jan
+### C6 - Data Integration, Survey Processes and Quality
+- **postlink: An R Package for Post-Linkage Data Analysis** - Priyanjali Bukke, Gauri Kamat, Jiahao Cui, Roee Gutman, Martin Slawski
+- **BuSuCo: A package for business survey coordination** - Johannes Straubinger
+- **The Survey Fieldwork Digital Twin: An R-Based Early-Warning System for Mixed-Mode Official Statistics** - Hakile Resulbegoviq, Vuk Čađenović
+- **The Metadata Quality Assistant (MQA): an R/Shiny prototype for supporting the preparation of SIMS quality reports** - Vasiliki Spiliopoulou, Christina Pierrakou, Konstantinos Molfetas

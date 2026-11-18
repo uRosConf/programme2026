@@ -14,7 +14,7 @@ In three hours experience and learn how you can accelerate R application develop
 |---------|------|
 |Presentor(s) | [François Michonneau](https://francoismichonneau.net/) |
 |Duration |3hr |
-|Materials|[course materials](https://mywebsite.com/uroscourse.zip)|
+|Materials|N/A|
 
 
 

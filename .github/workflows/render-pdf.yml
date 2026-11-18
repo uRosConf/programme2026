@@ -7,8 +7,8 @@ on:
       - nicerPDF/programme_pdf.R
       - nicerPDF/programme.css
       - nicerPDF/install_packages.R
-      - BookOfAbstracts/book_abstracts_pdf.R
-      - BookOfAbstracts/read_submissions.R
+      - BookOfAbstracts/**
+      - uros2026_logo.jpg
       - abstracts.csv
       - .github/workflows/render-pdf.yml
   workflow_dispatch:
@@ -47,6 +47,12 @@ jobs:
         env:
           PAGEDOWN_CHROME: ${{ steps.setup-chrome.outputs.chrome-path }}
         run: Rscript BookOfAbstracts/book_abstracts_pdf.R abstracts.csv uros2026_book_of_abstracts.pdf
+
+      - name: Validate complete book and page references
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y qpdf poppler-utils
+          python3 BookOfAbstracts/validate_book.py
 
       - name: Commit and push PDFs
         run: |

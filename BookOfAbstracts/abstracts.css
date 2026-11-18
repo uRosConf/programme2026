@@ -1,0 +1,36 @@
+@page:first { @bottom-right { content: none; } }
+h2 { font-size: 22pt; color: #2879b9; }
+h3 { font-size: 12pt; line-height: 1.35; margin: 6mm 0 2mm; }
+p { line-height: 1.5; margin: 0 0 4mm; }
+a { color: #2879b9; text-decoration: none; }
+.title-page { height: 260mm; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; border-top: 3mm solid #2879b9; border-bottom: 1mm solid #253b54; }
+.title-logo { display: block; width: 48mm; height: auto; margin: 4mm 0 14mm; }
+.title-page h1 { max-width: 170mm; margin: 0 0 16mm; font-size: 25pt; font-weight: 600; line-height: 1.3; }
+.book-title { display: inline-block; color: #2879b9; margin-top: 5mm; font-size: 29pt; font-weight: 700; }
+.conference-edition { font-size: 22pt; font-weight: 700; margin-bottom: 3mm; }
+.conference-date { font-size: 12pt; }
+.publisher { margin-top: 25mm; font-size: 11pt; line-height: 1.6; }
+.publication-page, .editorial-page, .contents-page, .abstract-section, .index-page, .practical-page { break-before: page; }
+.publication-page, .editorial-page, .practical-page { font-size: 11pt; }
+.publication-box { border: 1pt solid #2879b9; background: #f4f7fa; padding: 8mm; margin: 10mm 0; }
+.publication-box h3 { margin-top: 0; font-size: 15pt; }
+.publication-note, .source-note { color: #526176; font-size: 9pt; }
+.issn-note { font-size: 9pt; }
+.editorial-page h3 { color: #2879b9; }
+.abstract-section h2 { margin-bottom: 6mm; }
+.abstract { break-inside: avoid; margin-bottom: 6mm; padding: 3mm; background: #f9f9f9; border-radius: 4px; }
+.abstract-title { font-size: 13pt; font-weight: 700; margin: 0 0 2mm; color: #222d3b; line-height: 1.25; }
+.abstract .author { color: #40556c; font-size: 9pt; margin-bottom: 2mm; line-height: 1.4; }
+.abstract .affiliation { color: #526176; font-size: 8pt; margin-bottom: 3mm; line-height: 1.4; }
+.abstract-text { font-size: 9pt; line-height: 1.4; text-align: justify; white-space: pre-line; overflow-wrap: anywhere; }
+.speaker-author { text-decoration: underline; text-underline-offset: 1.5px; }
+.author sup { font-size: 7pt; margin-left: 1px; }
+.contents-list { list-style: none; padding: 0; font-size: 13pt; line-height: 2.5; }
+.contents-list a { display: block; }
+.contents-list a::after { content: target-counter(attr(href), page); float: right; }
+.index-list { columns: 2; column-gap: 10mm; font-size: 9pt; }
+.index-entry { break-inside: avoid; margin-bottom: 2mm; line-height: 1.4; }
+.index-ref::after { content: target-counter(attr(href), page); }
+.rooms { width: 100%; border-collapse: collapse; margin: 4mm 0; }
+.rooms th, .rooms td { padding: 3mm; border-bottom: 1px solid #d3dde6; text-align: left; }
+.rooms th { background: #eaf0f5; }

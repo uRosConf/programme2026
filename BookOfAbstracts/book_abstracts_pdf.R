@@ -16,7 +16,7 @@ input <- if (length(args) >= 1L) {
 } else {
   "abstracts.csv"
 }
-output <- if (length(args) >= 2L) args[[2]] else "book_abstracts.pdf"
+output <- if (length(args) >= 2L) args[[2]] else "uros2026_book_of_abstracts.pdf"
 if (!grepl("\\.pdf$", output, ignore.case = TRUE)) {
   output <- paste0(output, ".pdf")
 }
@@ -114,7 +114,11 @@ render_authors <- function(authors, speakers) {
   author_html <- vapply(
     author_names,
     function(author) {
-      escaped_author <- html_escape(author)
+      refs <- regmatches(author, gregexpr("\\([0-9]+\\)", author))[[1]]
+      name <- trimws(gsub("\\([0-9]+\\)", "", author))
+      escaped_author <- html_escape(name)
+      if (length(refs)) escaped_author <- paste0(escaped_author, "<sup>",
+        paste(gsub("[()]", "", refs), collapse = ","), "</sup>")
       if (normalize_person(author) %in% speaker_keys) {
         sprintf('<span class="speaker-author">%s</span>', escaped_author)
       } else {
@@ -140,8 +144,13 @@ render_affiliations <- function(labos) {
 # Input should be abstracts.csv (filtered by read_submissions.R)
 abstracts <- fread(input)
 
-# Exclude Tutorials from the Book of Abstracts.
-abstracts <- abstracts[TYPDOC != "Tutorial", ]
+required_columns <- c("DOCID", "SPEAKERS", "Authors", "LABOS", "TYPDOC", "TITLE", "ABSTRACT")
+if (!all(required_columns %in% names(abstracts))) stop("Regenerate abstracts.csv using read_submissions.R")
+if (anyDuplicated(abstracts$DOCID)) stop("Duplicate abstract identifiers")
+known_types <- c("Tutorial", "Keynote presentation", "Regular presentation", "lightning talk (5min)", "EMOS session")
+if (any(!abstracts$TYPDOC %in% known_types)) stop("Unsupported presentation type")
+abstracts[, anchor := paste0("abstract-", DOCID)]
+tutorial_abstracts <- abstracts[TYPDOC == "Tutorial"]
 
 # Split by presentation type
 keynote_abstracts <- abstracts[TYPDOC == "Keynote presentation", ]
@@ -152,9 +161,14 @@ emos_abstracts <- abstracts[TYPDOC == "EMOS session", ]
 render_abstract <- function(t) {
   authors <- if ("Authors" %in% names(t)) t$Authors else t$SPEAKERS
   authors <- render_authors(authors, t$SPEAKERS)
-  affiliations <- if ("LABOS" %in% names(t)) render_affiliations(t$LABOS) else ""
+  affiliations <- if ("LABOS" %in% names(t)) {
+    render_affiliations(t$LABOS)
+  } else {
+    ""
+  }
   sprintf(
-    '<div class="abstract"><div class="abstract-title">%s</div>%s%s<div class="abstract-text">%s</div></div>',
+    '<div class="abstract" id="%s"><h3 class="abstract-title">%s</h3>%s%s<div class="abstract-text">%s</div></div>',
+    html_escape(t$anchor),
     html_escape(t$TITLE),
     authors,
     affiliations,
@@ -162,7 +176,7 @@ render_abstract <- function(t) {
   )
 }
 
-render_section <- function(abstracts_df, section_title) {
+render_section <- function(abstracts_df, section_title, section_id) {
   if (nrow(abstracts_df) == 0) {
     return("")
   }
@@ -174,80 +188,71 @@ render_section <- function(abstracts_df, section_title) {
     character(1)
   )
   sprintf(
-    '<section class="abstract-section"><h2>%s</h2><div class="abstract-list">%s</div></section>',
+    '<section class="abstract-section" id="%s"><h2>%s</h2><div class="abstract-list">%s</div></section>',
+    section_id,
     html_escape(section_title),
     paste(talks, collapse = "\n")
   )
 }
 
-render_title_page <- function(logo_src) {
-  paste(
-    c(
-      '<section class="title-page">',
-      sprintf(
-        '<img class="title-logo" src="%s" alt="uRos 2026 logo">',
-        html_escape(logo_src)
-      ),
-      '<h1>Book of Abstracts</h1>',
-      '<div class="programme-label">The Use of R in Official Statistics - uRos2026 Conference</div>',
-      '<div class="subtitle">Paris · 18–20 November 2026</div>',
-      '</section>'
-    ),
-    collapse = "\n"
-  )
+read_fragment <- function(name) paste(readLines(file.path(script_dir, name), warn = FALSE, encoding = "UTF-8"), collapse = "\n")
+
+render_index <- function() {
+  people <- rbindlist(lapply(seq_len(nrow(abstracts)), function(i) {
+    names <- trimws(gsub("\\([0-9]+\\)", "", split_people(abstracts$Authors[i])))
+    data.table(name = names, anchor = abstracts$anchor[i])
+  }))
+  people <- people[order(match(anchor, ordered_anchors))]
+  people[, key := normalize_person(name)]
+  # Equivalent punctuation/case variants share one entry; retain accents in print.
+  entries <- people[, .(name = name[1], anchors = list(unique(anchor))), by = key]
+  sort_key <- tolower(iconv(entries$name, from = "UTF-8", to = "ASCII//TRANSLIT"))
+  entries <- entries[order(sort_key)]
+  items <- vapply(seq_len(nrow(entries)), function(i) {
+    refs <- sprintf('<a class="index-ref" href="#%s" aria-label="Abstract page"></a>', entries$anchors[[i]])
+    sprintf('<div class="index-entry">%s: %s</div>', html_escape(entries$name[i]), paste(refs, collapse = ", "))
+  }, character(1))
+  paste0('<section class="index-page" id="author-index"><h2>Author Index</h2>',
+    '<p>Authors and co-authors are listed alphabetically by their names as printed. References give the first page of each abstract.</p>',
+    '<div class="index-list">', paste(items, collapse = "\n"), '</div></section>')
 }
 
-render_html_body <- function(keynote_df, regular_df, lightning_df, emos_df, logo_src) {
-  out <- c(
-    render_title_page(logo_src)
-  )
-
-  out <- c(out, render_section(keynote_df, "Keynotes"))
-  out <- c(out, render_section(regular_df, "Regular Presentations"))
-  out <- c(out, render_section(lightning_df, "Lightning Talks"))
-  out <- c(out, render_section(emos_df, "EMOS presentations"))
-
-  paste(out, collapse = "\n")
-}
-
-body <- render_html_body(
-  keynote_abstracts,
-  regular_abstracts,
-  lightning_abstracts,
-  emos_abstracts,
-  "uros2026_logo.jpg"
+sections <- list(
+  list(keynote_abstracts, "Keynotes", "keynotes"),
+  list(tutorial_abstracts, "Tutorials", "tutorials"),
+  list(regular_abstracts, "Regular Presentations", "regular-presentations"),
+  list(lightning_abstracts, "Lightning Talks", "lightning-talks"),
+  list(emos_abstracts, "EMOS Presentations", "emos-presentations")
 )
+sections <- Filter(function(x) nrow(x[[1]]) > 0, sections)
+ordered_anchors <- unlist(lapply(sections, function(x) x[[1]]$anchor))
+contents <- c('<section class="contents-page"><h2>Contents</h2><ul class="contents-list">',
+  '<li><a href="#editorial-board">Editorial Board</a></li>',
+  vapply(sections, function(x) sprintf('<li><a href="#%s">%s</a></li>', x[[3]], x[[2]]), character(1)),
+  '<li><a href="#author-index">Author Index</a></li>',
+  '<li><a href="#practical-information">Practical Conference Information</a></li></ul>',
+  '<p>Presenting authors are underlined. Superscript numbers identify the affiliations supplied with each submission.</p></section>')
+body <- paste(c(read_fragment("front_matter.html"), contents,
+  vapply(sections, function(x) do.call(render_section, x), character(1)),
+  render_index(), read_fragment("practical_information.html")), collapse = "\n")
 
 tmp <- tempfile("uros-abstracts-")
 dir.create(tmp)
 on.exit(unlink(tmp, recursive = TRUE, force = TRUE), add = TRUE)
-invisible(file.copy(css_file, file.path(tmp, "programme.css"), overwrite = TRUE))
-invisible(file.copy(logo_file, file.path(tmp, "uros2026_logo.jpg"), overwrite = TRUE))
+invisible(file.copy(
+  css_file,
+  file.path(tmp, "programme.css"),
+  overwrite = TRUE
+))
+invisible(file.copy(
+  logo_file,
+  file.path(tmp, "uros2026_logo.jpg"),
+  overwrite = TRUE
+))
 
-# Create modified CSS for abstracts
+# Keep book styling separate from programme styling.
 abstracts_css <- file.path(tmp, "abstracts.css")
-writeLines(
-  c(
-    readLines(css_file),
-    "",
-    ".title-page { min-height: 260mm; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; break-after: page; }",
-    ".title-logo { display: block; width: 48mm; height: auto; margin: 0 0 12mm; }",
-    ".title-page h1 { margin: 0 0 4mm; font-size: 34pt; line-height: 1.05; }",
-    ".title-page .programme-label { max-width: 150mm; font-size: 15pt; line-height: 1.25; margin-bottom: 3mm; }",
-    ".title-page .subtitle { font-size: 11pt; }",
-    ".abstract-section { break-before: page; }",
-    ".abstract-section h2 { font-size: 18pt; color: #2879b9; margin-bottom: 4mm; }",
-    ".abstract-list { columns: 1; }",
-    ".abstract { break-inside: avoid; margin-bottom: 6mm; padding: 3mm; background: #f9f9f9; border-radius: 4px; }",
-    ".abstract-title { font-size: 13pt; font-weight: 700; margin-bottom: 2mm; color: #222d3b; }",
-    ".abstract .author { color: #657386; font-size: 9pt; margin-bottom: 1mm; font-style: italic; }",
-    ".abstract .affiliation { color: #657386; font-size: 8pt; margin-bottom: 3mm; }",
-    ".speaker-author { text-decoration: underline; text-underline-offset: 1.5px; }",
-    ".abstract-text { font-size: 9pt; line-height: 1.4; text-align: justify; }",
-    ".abstract-text p { margin: 0 0 2mm; }"
-  ),
-  abstracts_css
-)
+writeLines(c(readLines(css_file), readLines(file.path(script_dir, "abstracts.css"))), abstracts_css)
 
 rmd <- file.path(tmp, "abstracts.Rmd")
 html <- file.path(tmp, "abstracts.html")
@@ -255,6 +260,8 @@ writeLines(
   c(
     "---",
     "title: null",
+    'pagetitle: "International Conference “Use of R in Official Statistics (uRos)” – Book of Abstracts"',
+    "lang: en",
     "output:",
     "  pagedown::html_paged:",
     sprintf("    css: %s", basename(abstracts_css)),
