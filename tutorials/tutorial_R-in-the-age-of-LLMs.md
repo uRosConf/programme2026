@@ -14,7 +14,7 @@ In three hours experience and learn how you can accelerate R application develop
 |---------|------|
 |Presentor(s) | [François Michonneau](https://francoismichonneau.net/) |
 |Duration |3hr |
-|Materials|N/A|
+|Materials| [Slides](https://fmichonneau.github.io/2026-uRos-positron-workshop/) and [Exercises](https://github.com/fmichonneau/2026-uRos-materials) |
 
 
 
